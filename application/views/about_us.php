@@ -9,25 +9,13 @@
 						</div>
 					</section>
 					<div class="entry">
-						<h2>Praesentium voluptatum deleniti lorem</h2>
+						<h2>Siapa Kami</h2>
 						<div class="text">
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit.</p>
+							<p>Eten Catering terbentuk pada tahun 2018 dengan pemikiran bahwa tubuh yang sehat adalah harta yang tidak ternilai. Rutinitas yang sibuk dan kurangnya pemahaman akan pentingnya makanan sehat, membuat banyak orang mudah jatuh sakit bahkan di usia muda. Kami paham sulitnya meluangkan waktu untuk mempersiapkan makanan sehat di tengah kesibukan Anda. Kini kami hadir sebagai solusi. Sesibuk apapun jadwal keseharian Anda, Eten Catering siap menyediakan makanan sehat yang lezat sesuai kebutuhan. Dengan ragam pilihan menu berkualitas, Eten Catering siap menjadi bekal sehat untuk keseharian Anda.</p>
 						</div>
-						<h2>Nam libero tempore soluta nobis est eligendi </h2>
+						<h2>Filosofi Kami</h2>
 						<div class="text">
-							<p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis:</p>
-							<ul>
-								<li><span>1.</span>Phasellus vitae enim non quam adipiscing suscipit nec quis mauris.</li>
-								<li><span>2.</span>Vivamus feugiat erat vel pellentesque luctus.</li>
-								<li><span>3.</span>Nullam ac urna facilisis, fringilla arcu in, sodales velit.</li>
-								<li><span>4.</span>Nam tempus nisi ornare urna mollis cursus.</li>
-							</ul>
-						</div>
-						<h2>Labore et dolore magnam aliquam quaerat voluptatem</h2>
-						<div class="text">
-							<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. 
-							<a href="">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. </a>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.</p>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
+							<p>Mengusung konsep “Smart Eating”, Eten Catering percaya bahwa kualitas makanan lebih penting dari kuantitas. Anda bertanggung jawab untuk pandai memilih apa yang Anda makan. Ingatlah bahwa apapun yang Anda makan akan mempengaruhi kualitas kesehatan Anda, baik saat ini maupun di kemudian hari. Tubuh Anda adalah satu-satunya hal yang Anda tidak dapat hidup tanpanya. Seringkali makanan sehat dianggap sebagai siksaan karena identik dengan rasa seadanya dan porsi yang tidak mengenyangkan. Bagaimana bisa hidup sehat secara terus-menerus jika kita tidak dapat menikmati apa yang kita makan? Oleh karena itu, makanan sehat sudah seharusnya lezat, mengenyangkan, dan terjangkau. Agar mudah disimpan dan menghemat biaya pengiriman, Eten Catering memberikan opsi pengantaran sekali dalam seminggu yang disajikan dalam paket cold-on-purpose dengan kemasan kedap udara (vacuum-sealed). Paket ini menjamin seluruh nutrisi terjaga tanpa paparan mikroorganisme merugikan sekaligus tanpa pengawet.</p>
 						</div>
 					</div>
 				</div>

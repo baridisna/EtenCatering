@@ -9,7 +9,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta http-equiv="X-UA-Compatible" fcontent="IE=edge,chrome=1">
 	<meta name="format-detection" content="telephone=no">
 	<link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
 	<title>Eten Catering</title>
@@ -56,7 +56,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							<li><a href="<?php echo base_url()?>">Home</a></li>
 							<li><a href="<?php echo base_url()?>Product">Menu</a></li>
 							<li><a href="<?php echo base_url()?>Promotion">Promotions</a></li>
-							<li><a href="<?php echo base_url()?>">About Us</a></li>
+							<li><a href="<?php echo base_url()?>Home/about_us">About Us</a></li>
 						</ul>
 						<div  class="ul_search">
 							<a class="search" href="#"><span>search</span></a>

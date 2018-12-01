@@ -3,25 +3,28 @@
 					<div class="box_images">
 						<a href="#"><img src="<?php echo base_url()?>assets/images/JBCweb_catering.jpg" alt="" ></a>
 					</div>
-					<div class="box_sub_total2">
+
+					
+					<div class="box_sub_total2" style="margin-left: 0px; padding: 0 0; width: 100%;">
 						<ul>					
-						<h2><strong>Area Yang Dijangkau</strong></h2>
-						<div class="ul_search2" style="font-size: 18px; margin-top: -40px">
-							<span style="color: #56504e">Nama Kota</span></a>
+						<h2>Area Yang Dijangkau</h2>
+						<div class="ul_search2" style="font-size: 15px; margin-top: -43px;">
+		<!-- 					<span style="color: #56504e">Nama Kota</span></a> -->
 							<br/>
-							<br/>							
-							<div class="row" style="margin-left: 47px">
-									<select id="size">
+							<!-- <br/> -->							
+							<div class="row">
+									<select id="size" style="position: center">
 										<option value="" hidden>-Pilih Kota-</option>
 										<option>Yogyakarta</option>
 										<option>Jakarta</option>
 										<option>Bandung</option>
 									</select>
-								</div>
+							</div>
 						</div >
-						<a class="btn btn_finalize2" href="#">CEK</a>					
-					</ul>
-				</div>	
+						<a class="btn btn_finalize2"href="#">CEK</a>
+						<br/>
+						</ul>
+					</div>
 					<br>
 					<br>
 					<br>
@@ -31,13 +34,13 @@
 					</div>
 						<br>
 						<br>
-				<div class="row well" style="margin-left: 90px">
-	<ul id="progressbar" class="progressbar">
-		<li class="active" >Mencari makanan</li>
-		<li class="active" >Memilih makanan sesuai dengan jumlah yang diinginkan</li>
-		<li class="active" >Membayar pesanan</li>            
-	</ul>
-</div>	
+				<div class="row well" style="position: relative; margin-left: 90px;">
+					<ul id="progressbar" class="progressbar">
+					<li class="active" >Mencari makanan</li>
+					<li class="active" >Memilih makanan sesuai dengan jumlah yang diinginkan</li>
+					<li class="active" >Membayar pesanan</li>            
+					</ul>
+				</div>	
 
 					<div class="clear"></div>
 					<section class="container">
@@ -48,7 +51,7 @@
 								<ul class="item-list">
 									<li>
 										<div class="item">
-											<div class="image">
+											<div class="image_home">
 											<a href="#"><img src="<?php echo base_url()?>assets/images/makanan.jpeg"  alt="" /></a>
 												<div class="hover" style="margin-top: -20px">
 													<p>Perspiciatis unde omnis iste natus voluptatem</p>
@@ -59,7 +62,7 @@
 									</li>
 									<li>
 										<div class="item">
-											<div class="image">
+											<div class="image_home">
 												<a href="#"><img src="<?php echo base_url()?>assets/images/makanan2.jpeg"  alt="" /></a>
 												<div class="hover" style="margin-top: -20px">
 													<p>Perspiciatis unde omnis iste natus voluptatem</p>
@@ -70,7 +73,7 @@
 									</li>
 									<li>
 										<div class="item">
-											<div class="image">
+											<div class="image_home">
 												<a href="#"><img src="<?php echo base_url()?>assets/images/makanan3.jpeg"  alt="" /></a>
 												<div class="hover" style="margin-top: -20px">
 													<p>Perspiciatis unde omnis iste natus voluptatem</p>
@@ -81,7 +84,7 @@
 									</li>
 									<li>
 										<div class="item">
-											<div class="image">
+											<div class="image_home">
 												<a href="#"><img src="<?php echo base_url()?>assets/images/makanan4.jpeg"  alt="" /></a>
 												<div class="hover" style="margin-top: -20px">
 													<p>Perspiciatis unde omnis iste natus voluptatem</p>
@@ -92,7 +95,7 @@
 									</li>
 									<li class="last">
 										<div class="item">
-											<div class="image">
+											<div class="image_home">
 												<a href="#"><img src="<?php echo base_url()?>assets/images/makanan5.jpeg"  alt="" /></a>
 												<div class="hover" style="margin-top: -20px">
 													<p>Perspiciatis unde omnis iste natus voluptatem</p>
@@ -103,7 +106,7 @@
 									</li>
 									<li>
 										<div class="item">
-											<div class="image">
+											<div class="image_home">
 												<a href="#"><img src="<?php echo base_url()?>assets/images/makanan6.jpeg"  alt="" /></a>
 												<div class="hover" style="margin-top: -20px">
 													<p>Perspiciatis unde omnis iste natus voluptatem</p>
@@ -114,7 +117,7 @@
 									</li>
 									<li>
 										<div class="item">
-											<div class="image">
+											<div class="image_home">
 												<a href="#"><img src="<?php echo base_url()?>assets/images/makanan7.jpeg"  alt="" /></a>
 												<div class="hover" style="margin-top: -20px">
 													<p>Perspiciatis unde omnis iste natus voluptatem</p>
@@ -138,27 +141,27 @@
 						<li>
 							<div class="item">
 								<div class="image">
-									<a href="index.html"><img src="<?php echo base_url()?>assets/images/burger.jpg"  alt="" /></a>
+									<a href="index.html"><img src="<?php echo base_url()?>assets/images/salmon.jpg"  alt="" /></a>
 								</div>
-								<span>Enak bets</span>
+								<span>So yummy!</span>
 								<span class="name"><a href="index.html">-Isna-</a></span>				
 							</div>
 						</li>
 						<li>
 							<div class="item">
 								<div class="image">
-									<a href="index.html"><img src="<?php echo base_url()?>assets/images/sandwich.jpeg"  alt="" /></a>
+									<a href="index.html"><img src="<?php echo base_url()?>assets/images/posts-8414709.jpg"  alt="" /></a>
 								</div>
-								<span>Mak Nyus</span>
+								<span>Legit!</span>
 								<span class="name"><a href="index.html">-Nita-</a></span>
 							</div>
 						</li>
 						<li>
 							<div class="item">
 								<div class="image">
-									<a href="index.html"><img src="<?php echo base_url()?>assets/images/sushi.jpeg"  alt="" /></a>
+									<a href="index.html"><img src="<?php echo base_url()?>assets/images/post_3124034.jpeg"  alt="" /></a>
 								</div>
-								<span>Mentah yekk</span>
+								<span>The taste is so good</span>
 								<span class="name"><a href="index.html">-Fella-</a></span>
 							</div>
 						</li>
@@ -225,5 +228,6 @@
 	<script type="text/javascript" src="<?php echo base_url()?>/assets/js/jquery.bxslider.js"></script>
 	<script src="<?php echo base_url()?>/assets/js/jquery-ui-1.10.4.custom.js"></script>
 	<script type="text/javascript" src="<?php echo base_url()?>/assets/js/main.js"></script>
+	
 </body>
 </html>
