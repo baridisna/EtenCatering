@@ -9,29 +9,29 @@
 					<ul class="item-product">
 						<li>
 							<div class="item">
-								<div class="image">
+								<div class="image3">
 									<a href="index.html"><img src="<?php echo base_url()?>assets/images/promo1jadi.png"  alt="" /></a>
-								</div>
+								</div><br>
 								<span style="font-size: 20px">Ayam Pak Tembong : Ingkung Bakar</span>
-								<span class="name"><strike>Rp 120.000</strike><strong>Rp 60.000</strong></a></span>
+								<span class="name1"><strike>Rp 120.000</strike><strong>Rp 60.000</strong></a></span>
 							</div>
 						</li>
 						<li>
 							<div class="item">
-								<div class="image">
+								<div class="image3">
 									<a href="index.html"><img src="<?php echo base_url()?>assets/images/promo2jadi.png"  alt="" /></a>
-								</div>
+								</div><br>
 								<span style="font-size: 20px">Nanamia Pizzeria : Italian Pizza</span>
-								<span class="name"><strike>Rp 45.000</strike><strong>Rp 22.500</strong></span>
+								<span class="name1"><strike>Rp 45.000</strike><strong>Rp 22.500</strong></span>
 							</div>
 						</li>
 						<li>
 							<div class="item">
-								<div class="image">
+								<div class="image3">
 									<a href="index.html"><img src="<?php echo base_url()?>assets/images/promo3jadi.png"  alt="" /></a>
-								</div>
+								</div><br>
 								<span style="font-size: 20px">Mang Engking : Udang Galah Bakar</span>
-								<span class="name"><strike>Rp 60.000</strike><strong>Rp 30.000</strong></span>
+								<span class="name1"><strike>Rp 60.000</strike><strong>Rp 30.000</strong></span>
 							</div>
 						</li>
 					</ul>

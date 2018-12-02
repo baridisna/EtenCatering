@@ -3,7 +3,7 @@
 					<section class="bar">
 						<div class="bar-frame">
 							<ul class="breadcrumbs">
-								<li><a href="index.html">Home</a></li>
+								<li><a href="<?php echo base_url()?>home">Home</a></li>
 								<li>Menu</li>
 							</ul>
 						</div>
@@ -14,13 +14,15 @@
 								<div class="row">
 									<label for="sort"><strong>Sort by :</strong></label>
 									<select id="sort">
-										<option>Popouler</option>
-										<option>Price</option>
+										<option value=''>Select</option>
+										<option>Populer</option>
+										<option value='<?= $price->product_price; ?>'>Price</option>
 									</select>
 								</div>
 								<div class="row">
 									<label for="page"><strong>Products per page:</strong></label>
 									<select id="page">
+										<option value=''>Select</option>
 										<option>8</option>
 										<option>12</option>
 									</select>
@@ -28,14 +30,15 @@
 								<div class="row">
 									<label for="page"><strong>Meal's origin:</strong></label>
 									<select id="page">
+										<option value=''>Select</option>
 										<option>Western</option>
-										<option>Oriental</option>
 										<option>Indonesian</option>
 									</select>
 								</div>
 								<div class="row">
 									<label for="page"><strong>Type of meal:</strong></label>
 									<select id="page">
+										<option value=''>Select</option>
 										<option>Appetizer</option>
 										<option>Main Course</option>
 										<option>Dessert</option>
@@ -45,78 +48,17 @@
 						</form>
 					</div>
 					<ul class="item-product">
-						<li>
+						<?php foreach ($data->result() as $key) : ?>
+						<li>							
 							<div class="item">
 								<div class="image">
-									<a href="<?php echo base_url()?>Product/product_detail"><img src="<?php echo base_url()?>assets/images/post_2665091.png"  alt="" /></a>
+									<a href="<?php echo base_url(); ?>product/product_detail/<?= $key->product_id ?>"><img src="<?=base_url(); ?>assets/images/<?= $key->photo; ?>"  alt="" /></a>
 								</div>
-								<span class="name"><a href="<?php echo base_url()?>Product/product_detail">Lorem ipsum dolor</a></span>
-								<span>Rp 38.000</span>
-							</div>
+								<span class="name"><?= $key->product_name; ?></span>
+								<span class="name2">Rp <?= $key->product_price;?></span>
+							</div>							
 						</li>
-						<li>
-							<div class="item">
-								<div class="image">
-									<a href="<?php echo base_url()?>Product/product_detail"><img src="<?php echo base_url()?>assets/images/post_4249429.png"  alt="" /></a>
-								</div>
-								<span class="name"><a href="<?php echo base_url()?>Product/product_detail">Lorem ipsum dolor</a></span>
-								<span>Rp 40.000</span>
-							</div>
-						</li>
-						<li>
-							<div class="item">
-								<div class="image">
-									<a href="<?php echo base_url()?>Product/product_detail"><img src="<?php echo base_url()?>assets/images/15410037805bd9da042d429.png"  alt="" /></a>
-								</div>
-								<span class="name"><a href="<?php echo base_url()?>Product/product_detail">Lorem ipsum dolor</a></span>
-								<span>Rp 45.500</span>
-							</div>
-						</li>
-						<li>
-							<div class="item">
-								<div class="image">
-									<a href="<?php echo base_url()?>Product/product_detail"><img src="<?php echo base_url()?>assets/images/post_2085686.png"  alt="" /></a>
-								</div>
-								<span class="name"><a href="<?php echo base_url()?>Product/product_detail">Lorem ipsum dolor</a></span>
-								<span>Rp 34.000</span>
-							</div>
-						</li>
-						<li>
-							<div class="item">
-								<div class="image">
-									<a href="<?php echo base_url()?>Product/product_detail"><img src="<?php echo base_url()?>assets/images/cropped_5852283_main.png"  alt="" /></a>
-								</div>
-								<span class="name"><a href="<?php echo base_url()?>Product/product_detail">Lorem ipsum dolor</a></span>
-								<span>Rp 35.000</span>
-							</div>
-						</li>
-						<li>
-							<div class="item">
-								<div class="image">
-									<a href="<?php echo base_url()?>Product/product_detail"><img src="<?php echo base_url()?>assets/images/post_3163642.png"  alt="" /></a>
-								</div>
-								<span class="name"><a href="<?php echo base_url()?>Product/product_detail">Lorem ipsum dolor</a></span>
-								<span>Rp 33.000</span>
-							</div>
-						</li>
-						<li>
-							<div class="item">
-								<div class="image">
-									<a href="<?php echo base_url()?>Product/product_detail"><img src="<?php echo base_url()?>assets/images/15361094185b8f2b6ad97aa.png"  alt="" /></a>
-								</div>
-								<span class="name"><a href="<?php echo base_url()?>Product/product_detail">Lorem ipsum dolor</a></span>
-								<span>Rp 19.000</span>
-							</div>
-						</li>
-						<li>
-							<div class="item">
-								<div class="image">
-									<a href="#"><img src="<?php echo base_url()?>assets/images/15361084805b8f27c0c2781.png"  alt="" /></a>
-								</div>
-								<span class="name"><a href="<?php echo base_url()?>Product/product_detail">Lorem ipsum dolor</a></span>
-								<span>Rp 21.500</span>
-							</div>
-						</li>
+						<?php endforeach; ?>
 					</ul>
 					<div class="top-bar top-bar-add">
 						<ul class="paging">

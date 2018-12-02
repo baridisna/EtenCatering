@@ -32,5 +32,11 @@ class model_product extends CI_Model {
 
 		return $this->db->get();
 	}
+
+	public function sort_price($id_product)
+	{
+		$query = $this->db->query('SELECT * FROM products ORDER BY product_price ASC');
+		return $query->row();
+	}
 }
 ?>

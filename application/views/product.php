@@ -1,10 +1,10 @@
-<section class="main">
-				<div class="content"f>
+<section class="main">	
+				<div class="content">
 					<section class="bar">
 						<div class="bar-frame">
 							<ul class="breadcrumbs">
-								<li><a href="index.html">Home</a></li>
-								<li><a href="products.html">Menu</a></li>
+								<li><a href="<?php echo base_url()?>home">Home</a></li>
+								<li><a href="<?php echo base_url()?>product">Menu</a></li>
 								<li>Product Description</li>
 							</ul>
 						</div>
@@ -12,32 +12,34 @@
 					<div class="details-info">
 						<div class="slid_box">
 							<ul class="bxslider">
-							  <li><img src="<?php echo base_url()?>assets/images/post_2665091.png" /></li>
+							  <li><img src="<?php echo base_url();?>/assets/images/<?= $detail->photo?>" class="responsive-img" alt="" /></li>
 							</ul>
 						</div>
 						<div class="description">
 							<div class="head">
-								<h1 class="title"><strong>Veggie Bowl With Coconut Rice</strong></h1>
-								<h2>Review : 4.5/5 (20 users)</h2>
-								<h3>- Satuan          Rp 38.000 / porsi</h3>
-								<h3>- Box (min 30)    Rp 36.000 / porsi</h3>
-								<h3>- Gubug (min 100) Rp 33.000 / porsi</h3>
+								<h1 class="title"><strong><?= $detail->product_name?></strong></h1>
+								<h2>Review : <?= $detail->product_review?></h2>
+								<h3>- Satuan          Rp <?= $detail->product_satuan?> / porsi</h3>
+								<h3>- Box (min 30)    Rp <?= $detail->product_box?> / porsi</h3>
+								<h3>- Gubug (min 100) Rp <?= $detail->product_gubug?> / porsi</h3>
 							</div>
 							<div class="section">
 								<form class="form-sort page" action="cart.html">
 									<fieldset>
 										<div class="row">
 											<div class="row">
-												<label for="price"><strong>Packet:</strong></label>
+												<label for="price"><strong>Packet :</strong></label>
 												<select id="price">
-													<option>Satuan</option>
-													<option>Box</option>
-													<option>Gubug</option>
+													<option value="">Select</option>
+													<option value="Satuan">Satuan</option>
+													<option value="Box">Box</option>
+													<option value="Gubug">Gubug</option>
 												</select>
 											</div>
 											<div class="row">
-												<label for="quantity"><strong>Quanity:</strong></label>
+												<label for="quantity"><strong>Quantity :</strong></label>
 												<select id="quantity">
+													<option value="">Select</option>
 													<option>1</option>
 													<option>2</option>
 												</select>
@@ -53,24 +55,24 @@
 									<li><a href="#tabs-1">Product Information</a></li>
 									<li><a href="#tabs-3">Reviews</a></li>
 								</ul>
-								<div id="tabs-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</div>
+								<div id="tabs-1"><?= $detail->product_description?></div>
 								<div id="tabs-3">
 									<ul class="reviews">
 										<li>
 											<p class="name">Izna, 25.08.2018</p>
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+											<p>Enak banget, salah satu makanan favoritku nih</p>
 										</li>
 										<li class="light">
 											<p class="name">Vela, 24.08.2018</p>
-											<p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+											<p>Aku orangnya ga terlalu suka makanan manis, tapi ini rasanya lain daripada yang lain</p>
 										</li>
 										<li>
 											<p class="name">Hapiz, 21.08.2018</p>
-											<p>Eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+											<p>Selalu bisa buat oleh-oleh buat keluarga di Depok</p>
 										</li>
 										<li class="light">
 											<p class="name">Breel, 24.07.2018</p>
-											<p>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+											<p>Always be my favorite lah kalo yang satu ini, manis iya, asem iya, asin iya. Super lengkap untuk melengkapi hidupku yang sepi</p>
 										</li>
 									</ul>
 								</div>
