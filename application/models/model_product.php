@@ -19,5 +19,11 @@ class model_product extends CI_Model {
 		$query = $this->db->query("SELECT * FROM product_variant WHERE product_id='$id_product'");
 		return $query->row();
 	}
+
+	public function bestseller_product($id_product)
+	{
+		$query = $this->db->query('SELECT a.product_id, a.product_name, a.photo, MIN(b.price) as price FROM products a JOIN product_variant ON a.product_id = b.product_id GROUP BY product_id LIMIT 50');
+		return $query->result();
+	}
 }
 ?>

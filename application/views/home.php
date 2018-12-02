@@ -33,9 +33,9 @@
 							<br>
 					</div>
 
-				<div class="row well" style="position: relative; margin-left: 90px;">
-					<ul id="progressbar" class="progressbar">
-					<li class="active" >Mencari makanan</li>
+				<div class="row well" style="position: relative; margin-left: 9%; margin-right: auto;%; left: auto;">
+					<ul id="progressbar" class="progressbar" style="left: auto; margin-right: 0%; ">
+					<li class="active" style="">Mencari makanan</li>
 					<li class="active" >Memilih makanan sesuai dengan jumlah yang diinginkan</li>
 					<li class="active" >Membayar pesanan</li>            
 					</ul>
@@ -142,7 +142,7 @@
 											</div>
 										</div>
 									</li>
-									<li>
+<!-- 									<li>
 										<div class="item">
 											<div class="image_home">
 												<a href="#"><img src="<?php echo base_url()?>assets/images/makanan6.jpeg"  alt="" /></a>
@@ -152,8 +152,8 @@
 												</div>
 											</div>
 										</div>
-									</li>
-									<li>
+									</li> -->
+									<!-- <li>
 										<div class="item">
 											<div class="image_home">
 												<a href="#"><img src="<?php echo base_url()?>assets/images/makanan7.jpeg"  alt="" /></a>
@@ -163,7 +163,7 @@
 												</div>
 											</div>
 										</div>
-									</li>									
+									</li>	 -->								
 								</ul>
 							</div>
 							<a href="#" class="btn-right"></a>

@@ -188,11 +188,13 @@ a:hover{text-decoration:underline;}
 .checkout span{
 	float: left;
 	margin: 12px 25px 0 20px;
+		line-height: 5px;
 }
 .checkout span.grey{
-	float: left;
+/*	float: left;*/
 	margin: 12px 25px 0 20px;
 	color: #978379;
+
 }
 .checkout span.orange{
 	margin:0;
@@ -466,7 +468,7 @@ div[class*=col-]{
     border-radius: 5px;*/
 /*    behavior: url(css/PIE.htc);*/
  /*   padding: 50px 0;*/
-/*    background: #FF8C00;
+    background: #FF8C00;
     position: relative;	
     float: right;
 }		
@@ -499,7 +501,7 @@ div[class*=col-]{
 	display: block;		
 	margin: 0 auto;		
 }		
-.box_sub_total2-col .btn.btn_finalize2:hover{text-decoration: none;}*/
+.box_sub_total2-col .btn.btn_finalize2:hover{text-decoration: none;}
 .box_image_list{
 	float: right;
 	width: 270px;
