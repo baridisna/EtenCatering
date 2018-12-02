@@ -85,7 +85,7 @@
 						<div class="bottom-slider">
 							<a href="#" class="btn-left"></a>
 							<div class="slides">
-								<p>Best Seller</p>
+								<p style="color: #ffffff">Best Seller</p>
 								<ul class="item-list">
 									<li>
 										<div class="item">
