@@ -1,46 +1,84 @@
 <section class="main">				
 				<div class="content">
-					<div class="box_images">
+					<div class="box_images-col">
 						<a href="#"><img src="<?php echo base_url()?>assets/images/JBCweb_catering.jpg" alt="" ></a>
 					</div>
-
-					
-					<div class="box_sub_total2" style="margin-left: 0px; padding: 0 0; width: 100%;">
+<!-- 
+					<div class="box_sub_total2-col" style="margin-left: 0px; padding-: auto; width: 29%; float: right; height: auto;">
 						<ul>					
 						<h2>Area Yang Dijangkau</h2>
-						<div class="ul_search2" style="font-size: 15px; margin-top: -43px;">
+						<div class="ul_search2" style="font-size: 15px;"> -->
 		<!-- 					<span style="color: #56504e">Nama Kota</span></a> -->
-							<br/>
+							<!-- <br/> -->
 							<!-- <br/> -->							
-							<div class="row">
-									<select id="size" style="position: center">
+<!-- 							<div class="row" style="margin-left: auto; margin-right: auto; width: 193px; margin-top: 0px; position: relative; bottom: 20px;">
+									<select id="size" >
 										<option value="" hidden>-Pilih Kota-</option>
 										<option>Yogyakarta</option>
 										<option>Jakarta</option>
 										<option>Bandung</option>
 									</select>
-							</div>
-						</div >
+							</div> -->
+<!-- 						</div >
 						<a class="btn btn_finalize2"href="#">CEK</a>
 						<br/>
 						</ul>
-					</div>
-					<br>
-					<br>
-					<br>
+					</div> -->
+<!-- 					<br> -->
+<!-- 					<br>
+					<br> -->
 
-					<div class="head" style="font-size: 30px">								
+					<div class="head" style="font-size: 30px; margin-top: 30px; line-height: 35px;">								
 							<p><strong><center>LANGKAH PEMESANAN</center></strong></p>
+							<br>
 					</div>
-						<br>
-						<br>
+
 				<div class="row well" style="position: relative; margin-left: 90px;">
 					<ul id="progressbar" class="progressbar">
 					<li class="active" >Mencari makanan</li>
 					<li class="active" >Memilih makanan sesuai dengan jumlah yang diinginkan</li>
 					<li class="active" >Membayar pesanan</li>            
 					</ul>
+					<br>
 				</div>	
+				<br>
+				<br>
+				<div class="clear"></div>
+
+					<div class="head" style="font-size: 30px; margin-top: 40px; text-align: center;">		<br>						
+							<p><strong><center>TESTIMONI</center></strong></p>
+					</div>
+						<br>
+						<br>					
+					<ul class="item-product">
+						<li>
+							<div class="item">
+								<div class="image">
+									<a href="index.html"><img src="<?php echo base_url()?>assets/images/testi1.png"  alt="" /></a>
+								</div>
+								<span>Pelayanan dan rasa terbaik.</span>
+								<span class="name"><a href="index.html">-Najwa Shihab-</a></span>				
+							</div>
+						</li>
+						<li>
+							<div class="item">
+								<div class="image">
+									<a href="index.html"><img src="<?php echo base_url()?>assets/images/testi2.png"  alt="" /></a>
+								</div>
+								<span>Catering best in town!</span>
+								<span class="name"><a href="index.html">-Alice Norin-</a></span>
+							</div>
+						</li>
+						<li>
+							<div class="item">
+								<div class="image">
+									<a href="index.html"><img src="<?php echo base_url()?>assets/images/testi3.png"  alt="" /></a>
+								</div>
+								<span>Taste good and healthy!</span>
+								<span class="name"><a href="index.html">-Fella-</a></span>
+							</div>
+						</li>
+					</ul>
 
 					<div class="clear"></div>
 					<section class="container">
@@ -131,42 +169,6 @@
 							<a href="#" class="btn-right"></a>
 						</div>
 					</section>
-
-					<div class="head" style="font-size: 45px">								
-							<p><strong><center>TESTIMONI</center></strong></p>
-					</div>
-						<br>
-						<br>					
-					<ul class="item-product">
-						<li>
-							<div class="item">
-								<div class="image">
-									<a href="index.html"><img src="<?php echo base_url()?>assets/images/salmon.jpg"  alt="" /></a>
-								</div>
-								<span>So yummy!</span>
-								<span class="name"><a href="index.html">-Isna-</a></span>				
-							</div>
-						</li>
-						<li>
-							<div class="item">
-								<div class="image">
-									<a href="index.html"><img src="<?php echo base_url()?>assets/images/posts-8414709.jpg"  alt="" /></a>
-								</div>
-								<span>Legit!</span>
-								<span class="name"><a href="index.html">-Nita-</a></span>
-							</div>
-						</li>
-						<li>
-							<div class="item">
-								<div class="image">
-									<a href="index.html"><img src="<?php echo base_url()?>assets/images/post_3124034.jpeg"  alt="" /></a>
-								</div>
-								<span>The taste is so good</span>
-								<span class="name"><a href="index.html">-Fella-</a></span>
-							</div>
-						</li>
-					</ul>
-				
 
 					<!-- <div class="block-advice">
 						<div class="advice-holder">

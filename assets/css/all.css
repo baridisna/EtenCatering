@@ -414,38 +414,71 @@ div[class*=col-]{
 	width: 870px;
 	float: left;
 }*/
-.content .box_images img{
-	position: relative;
+
+/*#wrapper{
 	width: 100%;
-	height: auto;
-	margin-left: 0px;
+	margin: auto;
 }
-.content .box_images .info{
-	position: absolute;
+#wrapper > div{
+	margin: auto;
+	width: 100%;
+}
+#columns{
+	display: table;
+}*/
+/*#columns .box_images-col{
+	display: table-cell;
+	width: 75%
+	
+}*/
+.content .box_images-col{
+	position: relative;
+}
+.content .box_images-col img{
+/*	position: relative;*/
+	width: 100%;
+    height: auto;
+    max-height: 300px;
+    min-height: auto;
+    object-fit: cover;
+/*	width: 100%;
+	height: 300px;*/
+/*	margin-left: 0px;
+	float: left;*/
+/*  height: auto;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    max-width: 100%;*/
+}
+.content .box_images-col .info{
+	position: relative;
 	z-index: 100;
 	top: 25%;
-	left: 9%;
+/*	left: 9%;*/
 }
 /*buat search kota*/		
-.box_sub_total2{		
+/*.box_sub_total2-col{		
     text-align: center;
-    width: 100%;
+    width: 29%;
+    height: auto;
     margin-left: 0px;
-    border-radius: 5px;
-    behavior: url(css/PIE.htc);
+    border-radius: 5px;*/
+/*    behavior: url(css/PIE.htc);*/
  /*   padding: 50px 0;*/
-    background: #FF8C00;
+/*    background: #FF8C00;
     position: relative;	
+    float: right;
 }		
-.box_sub_total2 h1{		
+.box_sub_total2-col h1{		
 	font-size: 18px;		
 	line-height: 20px;		
 	margin: 0 0 15px;		
 }		
-.box_sub_total2 p{		
+.box_sub_total2-col p{		
 	padding: 0 0 20px;		
 }		
-.box_sub_total2 h2{		
+.box_sub_total2-col h2{		
 	position : relative;		
 	bottom: -13px;		
 	font-size: 18px;		
@@ -454,10 +487,10 @@ div[class*=col-]{
 	display: block;		
 	margin: 0 0 30px;		
 }		
-.box_sub_total2 .btn.btn_finalize2{		
+.box_sub_total2-col .btn.btn_finalize2{		
 	background: #5b3e36;		
 	position : relative;		
-	top: 5px;		
+	top: -5px;		
 	color: #fff;		
 	font-size: 14px;		
 	line-height: 40px;		
@@ -466,7 +499,7 @@ div[class*=col-]{
 	display: block;		
 	margin: 0 auto;		
 }		
-.box_sub_total2 .btn.btn_finalize2:hover{text-decoration: none;}
+.box_sub_total2-col .btn.btn_finalize2:hover{text-decoration: none;}*/
 .box_image_list{
 	float: right;
 	width: 270px;
@@ -845,6 +878,7 @@ div.selector select {
 .details-info .head {
 	margin: 0 0 30px;
 	border-bottom: 1px solid #ece8e2;
+	margin-top: 30px;
 }
 .details-info .title{
 	font-size: 24px;
@@ -1158,6 +1192,9 @@ div[class*=col-]{
 	body{
 		background-image: url(../images/2635d1b8.png);
 		background-size:540px 516px;
+	}
+	p{
+		font-size: 3.2vw;
 	}
 	.menu_trigger{
 		background-image: url(../images/btn_mobile_menu@x2.png);
