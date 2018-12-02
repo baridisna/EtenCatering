@@ -20,10 +20,10 @@ class model_product extends CI_Model {
 		return $query->row();
 	}
 
-	public function bestseller_product($id_product)
+	public function product_bestseller($id_product)
 	{
-		$query = $this->db->query('SELECT a.product_id, a.product_name, a.photo, MIN(b.price) as price FROM products a JOIN product_variant ON a.product_id = b.product_id GROUP BY product_id LIMIT 50');
-		return $query->result();
+		$query = $this->db->query("SELECT product_id, product_description, photo FROM products WHERE product_id='$id_product'");
+		return $query->row();
 	}
 
 	function get_all($table)
