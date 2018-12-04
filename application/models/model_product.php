@@ -20,11 +20,11 @@ class model_product extends CI_Model {
 		return $query->row();
 	}
 
-	public function product_bestseller($id_product)
-	{
-		$query = $this->db->query("SELECT product_id, product_description, photo FROM products WHERE product_id='$id_product'");
-		return $query->row();
-	}
+	// public function product_bestseller($id_product)
+	// {
+	// 	$query = $this->db->query("SELECT product_id, product_description, photo FROM products WHERE product_id='$id_product'");
+	// 	return $query->row();
+	// }
 
 	function get_all($table)
 	{

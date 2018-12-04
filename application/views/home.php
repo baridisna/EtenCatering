@@ -1,7 +1,7 @@
 <section class="main">				
 				<div class="content">
 					<div class="box_images-col">
-						<a href="#"><img src="<?php echo base_url()?>assets/images/JBCweb_catering.jpg" alt="" ></a>
+						<a href="#>"><img src="<?php echo base_url();?>assets/images/JBCweb_catering.jpg" alt="" ></a>
 					</div>
 <!-- 
 					<div class="box_sub_total2-col" style="margin-left: 0px; padding-: auto; width: 29%; float: right; height: auto;">
@@ -87,95 +87,85 @@
 							<div class="slides">
 								<p style="color: #ffffff">Best Seller</p>
 								<ul class="item-list">
-									<li>
-										<div class="item">
-											<div class="image_home">
-<!-- 											<a href="#"><img src="<?php echo base_url();?>assets/images/<?= $bestseller->photo ?>"  alt="" /></a>
- -->												<div class="hover" style="margin-top: -20px">
-<!-- 													<p><?= $bestseller->product_description?></p>						
- -->												</div>
-											</div>
-										</div>
-									</li>
-									<!-- <li>
-										<div class="item">
-											<div class="image_home">
-												<a href="#"><img src="<?php echo base_url()?>assets/images/makanan2.jpeg"  alt="" /></a>
-												<div class="hover" style="margin-top: -20px">
-													<p>Perspiciatis unde omnis iste natus voluptatem</p>
-												</div>
-											</div>
-										</div>
-									</li>
-									<li>
-										<div class="item">
-											<div class="image_home">
-												<a href="#"><img src="<?php echo base_url()?>assets/images/makanan3.jpeg"  alt="" /></a>
-												<div class="hover" style="margin-top: -20px">
-													<p>Perspiciatis unde omnis iste natus voluptatem</p>
-												</div>
-											</div>
-										</div>
-									</li>
-									<li>
-										<div class="item">
-											<div class="image_home">
-												<a href="#"><img src="<?php echo base_url()?>assets/images/makanan4.jpeg"  alt="" /></a>
-												<div class="hover" style="margin-top: -20px">
-													<p>Perspiciatis unde omnis iste natus voluptatem</p>
-												</div>
-											</div>
-										</div>
-									</li>
-									<li class="last">
-										<div class="item">
-											<div class="image_home">
-												<a href="#"><img src="<?php echo base_url()?>assets/images/makanan5.jpeg"  alt="" /></a>
-												<div class="hover" style="margin-top: -20px">
-													<p>Perspiciatis unde omnis iste natus voluptatem</p>
-												</div>
-											</div>
-										</div>
-									</li> -->
-<!-- 									<li>
-										<div class="item">
-											<div class="image_home">
-												<a href="#"><img src="<?php echo base_url()?>assets/images/makanan6.jpeg"  alt="" /></a>
-												<div class="hover" style="margin-top: -20px">
-													<p>Perspiciatis unde omnis iste natus voluptatem</p>
-													<strong>Rp 120.000</strong>
-												</div>
-											</div>
-										</div>
-									</li> -->
-									<!-- <li>
-										<div class="item">
-											<div class="image_home">
-												<a href="#"><img src="<?php echo base_url()?>assets/images/makanan7.jpeg"  alt="" /></a>
-												<div class="hover" style="margin-top: -20px">
-													<p>Perspiciatis unde omnis iste natus voluptatem</p>
-													<strong>Rp 120.000</strong>
-												</div>
-											</div>
-										</div>
-									</li>	 -->								
+			         <li>
+			          <div class="item">
+			           <div class="image_home" style="margin: 0 20px;">
+			           <a href="#"><img src="<?php echo base_url()?>assets/images/Ayam Bakar_Taliwang-Indonesian_main_course.jpg"  alt="" /></a>
+			            <div class="hover" style="margin-top: -35px;">
+			             <p style="font-size: 13px; margin: 65px 12px -10px;"><span>Sensasi rasa ayam taliwang yang pedas dengan kuatnya kencur. Ayam yang digunakan ialah ayam kampung muda agar terasa lebih gurih dan empuk.</span></p>   
+			            </div>
+			           </div>
+			          </div>
+			         </li>
+			         <li>
+			          <div class="item">
+			           <div class="image_home" style="margin: 0 20px;">
+			            <a href="#"><img src="<?php echo base_url()?>assets/images/Baked_Salmon_wetern_main_course.png"  alt="" /></a>
+			            <div class="hover" style="margin-top: -35px">
+			             <p style="font-size: 13px; margin: 65px 12px -10px;"><span>Salmon panggang yang diolah dengan bumbu spesial, seperti kecap asin dan gula coklat. Dengan sedikit aroma lemon dan bawang putih.</span></p>
+			            </div>
+			           </div>
+			          </div>
+			         </li>
+			         <li>
+			          <div class="item">
+			           <div class="image_home" style="margin: 0 20px;">
+			            <a href="#"><img src="<?php echo base_url()?>assets/images/Cinnamon_Rolls-Western_Dessert.jpg"  alt="" /></a>
+			            <div class="hover" style="margin-top: -35px">
+			             <p style="font-size: 13px; margin: 65px 12px -10px;"><span>Cinnamon rolls yang disajikan bersama glaze cheese cream, dengan rasa yang pas tidak terlalu manis dan harum kayu manis yang semerbak.</span></p>
+			            </div>
+			           </div>
+			          </div>
+			         </li>
+<!-- 			         <li>
+			          <div class="item">
+			           <div class="image_home" style="margin: 0 30px;">
+			            <a href="#"><img src="<?php echo base_url()?>assets/images/makanan4.jpeg"  alt="" /></a>
+			            <div class="hover" style="margin-top: -20px">
+			             <p>Perspiciatis unde omnis iste natus voluptatem</p>
+			             <strong>Rp 120.000</strong>
+			            </div>
+			           </div>
+			          </div>
+			         </li> -->
+			         <!-- <li class="last">
+			          <div class="item">
+			           <div class="image_home" style="margin: 0 10px;">
+			            <a href="#"><img src="<?php echo base_url()?>assets/images/makanan5.jpeg"  alt="" /></a>
+			            <div class="hover" style="margin-top: -20px">
+			             <p>Perspiciatis unde omnis iste natus voluptatem</p>
+			             <strong>Rp 120.000</strong>
+			            </div>
+			           </div>
+			          </div>
+			         </li>
+			         <li>
+			          <div class="item">
+			           <div class="image_home" style="margin: 0 10px;">
+			            <a href="#"><img src="<?php echo base_url()?>assets/images/makanan6.jpeg"  alt="" /></a>
+			            <div class="hover" style="margin-top: -20px">
+			             <p>Perspiciatis unde omnis iste natus voluptatem</p>
+			             <strong>Rp 120.000</strong>
+			            </div>
+			           </div>
+			          </div>
+			         </li>
+			         <li>
+			          <div class="item">
+			           <div class="image_home" style="margin: 0 10px;">
+			            <a href="#"><img src="<?php echo base_url()?>assets/images/makanan7.jpeg"  alt="" /></a>
+			            <div class="hover" style="margin-top: -20px">
+			             <p>Perspiciatis unde omnis iste natus voluptatem</p>
+			             <strong>Rp 120.000</strong>
+			            </div>
+			           </div>
+			          </div>
+			         </li>         							 -->
 								</ul>
 							</div>
 							<a href="#" class="btn-right"></a>
 						</div>
 					</section>
-
-					<!-- <div class="block-advice">
-						<div class="advice-holder">
-							<p>Join our newsletter</p>
-						</div>
-						<form action="#" class="form-newsletter">
-							<fieldset>
-								<input type="text" placeholder="Put your email..." />
-								<input class="btn black normal" type="submit" value="Subscribe" />
-							</fieldset>
-						</form>
-					</div> -->
 					
 					<div class="clear"></div>
 				</div>
@@ -200,15 +190,15 @@
 				</ul>
 				<ul class="right_side">
 					<li>
-						<span>Social Media:</span>
-						<div class="social">
+						<span>S						<div class="social">
 							<a href="https://www.facebook.com/" class="fb">Facebook</a>
 							<a href="https://twitter.com/" class="tw">Twitter</a>
 						</div>
 						<div class="social">
 							<a href="https://www.instagram.com/" class="gl">Instagram</a>
 							<a href="https://id.pinterest.com/" class="pn">Pinterest</a>
-						</div>
+						</div>ocial Media:</span>
+
 					</li>
 				</ul>
 				<div class="clear"></div>

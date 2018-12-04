@@ -188,7 +188,6 @@ a:hover{text-decoration:underline;}
 .checkout span{
 	float: left;
 	margin: 12px 25px 0 20px;
-		line-height: 5px;
 }
 .checkout span.grey{
 /*	float: left;*/
@@ -563,17 +562,18 @@ div[class*=col-]{
 	display: block;
 	color: #661c34;
 	font-weight:bold;
-	font-size: 24px;
+	font-size: 15px;
 	line-height: 26px;
 	text-align: center;
+	margin-top: 0px;
 }
 .main .container .bottom-slider .item p{
 	color: #fff;
 	text-align: center;
 	display: block;
-	font-size: 16px;
+	font-size: 13px;
 	line-height: 18px;
-	margin: 65px 0 -10px;
+	margin: 65px 12px -10px;
 }
 .container{position: relative;margin: 28px 0 58px 0;}
 .container .bottom-slider {
