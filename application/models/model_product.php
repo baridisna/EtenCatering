@@ -29,14 +29,78 @@ class model_product extends CI_Model {
 	function get_all($table)
 	{
 		$this->db->from($table);
-
+		
 		return $this->db->get();
 	}
 
-	public function sort_price($id_product)
+	function get_all_price($table)
 	{
-		$query = $this->db->query('SELECT * FROM products ORDER BY product_price ASC');
-		return $query->row();
+		$this->db->from($table);
+		$this->db->order_by("product_price", "asc");
+		return $this->db->get();
 	}
+
+	function get_all_popular($table)
+	{
+		$this->db->from($table);
+		$this->db->order_by("product_review", "desc");
+		return $this->db->get();
+	}
+
+	function get_all_western($table)
+	{
+		$this->db->select('*');
+		$this->db->from('products');
+		$this->db->where('origin', 'Western');
+		$this->db->distinct('origin');
+		return $this->db->get();
+	}
+
+	function get_all_indonesian($table)
+	{
+		$this->db->select('*');
+		$this->db->from('products');
+		$this->db->where('origin', 'Indonesian');
+		$this->db->distinct('origin');
+		return $this->db->get();
+	}
+
+	function get_all_main($table)
+	{
+		$this->db->select('*');
+		$this->db->from('products');
+		$this->db->where('type', 'Main Course');
+		$this->db->distinct('type');
+		return $this->db->get();
+	}
+
+	function get_all_appetizer($table)
+	{
+		$this->db->select('*');
+		$this->db->from('products');
+		$this->db->where('type', 'Appetizer');
+		$this->db->distinct('type');
+		return $this->db->get();
+	}
+
+	function get_all_dessert($table)
+	{
+		$this->db->select('*');
+		$this->db->from('products');
+		$this->db->where('type', 'Dessert');
+		$this->db->distinct('type');
+		return $this->db->get();
+	}
+
+	public function get($table) {
+	   $query=$this->db->get_where('product_price',array('products'=>$products));
+	   $result= $query->result_array();
+	   if($result==TRUE) {
+	     return true;
+	     }
+	   return false;
+	  }
 }
+
+
 ?>
