@@ -15,16 +15,8 @@
 									<label for="sort"><strong>Sort by :</strong></label>
 									<select id="sort">
 										<option value=''>Select</option>
-										<option>Populer</option>
-										<option value='<?= $price->product_price; ?>'>Price</option>
-									</select>
-								</div>
-								<div class="row">
-									<label for="page"><strong>Products per page:</strong></label>
-									<select id="page">
-										<option value=''>Select</option>
-										<option>8</option>
-										<option>12</option>
+										<option value='Popular'>Populer</option>
+										<option value='Price'>Price</option>
 									</select>
 								</div>
 								<div class="row">
@@ -60,14 +52,6 @@
 						</li>
 						<?php endforeach; ?>
 					</ul>
-					<div class="top-bar top-bar-add">
-						<ul class="paging">
-							<li class="prev"><a href="#">prev</a></li>
-							<li class="active"><a href="#">1</a></li>
-							<li><a href="#">2</a></li>
-							<li class="next"><a href="#">next</a></li>
-						</ul>
-					</div>
 				</div>
 			</section>
 		</div>
