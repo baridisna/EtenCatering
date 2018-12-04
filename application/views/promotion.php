@@ -10,47 +10,18 @@
 						<br>
 						<br>					
 					<ul class="item-product">
+						<?php foreach ($data->result() as $key) : ?>
 						<li>
 							<div class="item">
 								<div class="image">
-									<a href="index.html"><img src="<?php echo base_url()?>assets/images/promo1jadi.png"  alt="" /></a>
+									<a href="index.php"><img src="<?=base_url(); ?>assets/images/<?= $key->photo_promosi; ?>"  alt="" /></a>
 								</div><br>
-								<span style="font-size: 15px"><strong>Valid Until : 30 Januari 2019</strong></span>
-								<span class="name1" style="color: #6e6e6e">Rp 60.000</a></span>
+								<span style="font-size: 15px; line-height: 0px;"><strong><?= $key->promotions_name; ?></strong></span>
+								<br>
+								<span class="name1" style="color: #6e6e6e">Valid Until : <?= $key->promotions_date; ?></a></span>
 							</div>
 						</li>
-						<li>
-							<div class="item">
-								<div class="image">
-									<a href="index.html"><img src="<?php echo base_url()?>assets/images/promo2jadi.png"  alt="" /></a>
-								</div><br>
-								<span style="font-size: 15px"><strong>Valid Until : 30 Januari 2019</strong></span>
-								<span class="name1" style="color: #6e6e6e">Rp 22.500</span>
-							</div>
-						</li>
-						<li>
-							<div class="item">
-								<div class="image">
-									<a href="index.html"><img src="<?php echo base_url()?>assets/images/promo3jadi.png"  alt="" /></a>
-								</div><br>
-								<span style="font-size: 15px"><strong>Valid Until : 30 Januari 2019</strong></span>
-								<span class="name1" style="color: #6e6e6e">Rp 30.000</span>
-							</div>
-						</li>
-					</ul>
-				
-
-					<!-- <div class="block-advice">
-						<div class="advice-holder">
-							<p>Join our newsletter</p>
-						</div>
-						<form action="#" class="form-newsletter">
-							<fieldset>
-								<input type="text" placeholder="Put your email..." />
-								<input class="btn black normal" type="submit" value="Subscribe" />
-							</fieldset>
-						</form>
-					</div> -->
+						<?php endforeach; ?>
 					
 					<div class="clear"></div>
 				</div>

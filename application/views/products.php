@@ -44,7 +44,7 @@
 						<li>							
 							<div class="item">
 								<div class="image">
-									<a href="<?php echo base_url(); ?>product/product_detail/<?= $key->product_id ?>"><img src="<?=base_url(); ?>assets/images/<?= $key->photo; ?>"  alt="" /></a>
+									<a href="index.php"><img src="<?=base_url(); ?>assets/images/<?= $key->photo; ?>"  alt="" /></a>
 								</div>
 								<span class="name"><?= $key->product_name; ?></span>
 								<span class="name2">Rp <?= $key->product_price;?></span>
