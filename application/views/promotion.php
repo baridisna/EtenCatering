@@ -1,8 +1,15 @@
 			<section class="main">				
 				<div class="content">
-					<br>
+					<section class="bar">
+						<div class="bar-frame">
+							<ul class="breadcrumbs">
+								<li><a href="<?php echo base_url()?>home">Home</a></li>
+								<li>Promotion</li>
+							</ul>
+						</div>
+					</section>
 					<div class="head" style="font-size: 45px;">								
-							<p><strong><center>PROMOTIONS</center></strong></p>
+							<p><strong><center>ALL DAY VALUE MEAL!!</center></strong></p>
 							<br>
 							<br>
 	

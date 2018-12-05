@@ -46,11 +46,12 @@
 						<?php foreach ($data as $key) : ?>
 						<li>							
 							<div class="item">
+								<a href="<?php echo base_url(); ?>product/product_detail/<?= $key->product_id ?>">
 								<div class="image">
-									<a href="<?php echo base_url(); ?>product/product_detail/<?= $key->product_id ?>"><img src="<?=base_url(); ?>assets/images/<?= $key->photo; ?>"  alt="" /></a>
+									<img src="<?=base_url(); ?>assets/images/<?= $key->photo; ?>"  alt="" />
 								</div>
 								<span class="name"><?= $key->product_name; ?></span>
-								<span class="name2">Rp <?= $key->product_price;?></span>
+								<span class="name2">Rp <?= $key->product_price;?></span></a>
 							</div>							
 						</li>
 						<?php endforeach; ?>
