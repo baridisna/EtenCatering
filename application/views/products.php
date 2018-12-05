@@ -62,29 +62,29 @@
 <div class="footer-content">
 				<ul class="left_side">
 					<li>
-						<span><strong>Our Mission :</strong></span>
-						<p style="line-height: 26px;">Veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit quia.</p>
+						<span>Our Mission :</span>
+						<p style="line-height: 26px;">Eten Catering siap menyediakan makanan sehat yang lezat sesuai kebutuhan. Dengan ragam pilihan menu berkualitas, Eten Catering siap menjadi bekal sehat untuk keseharian Anda.</p>
 					</li>
 					<li>
 						<span>  </span>
 						<p>  </p>
 					</li>
 					<li>
-						<span><strong>Contact Us :</strong></span>
+						<span>Contact Us :</span>
 						<p>Eten Catering<br />Indonesia</p>
 						<p>Tel. (123) 456 789<br />catering@eten.com</p>
 					</li>
 				</ul>
 				<ul class="right_side">
 					<li>
-						<span><strong>Social Media:</strong></span>
+						<span>Social Media:</span>
 						<div class="social">
-							<a href="#" class="fb">Facebook</a>
-							<a href="#" class="tw">Twitter</a>
+							<a href="https://www.facebook.com/" class="fb">Facebook</a>
+							<a href="https://twitter.com/" class="tw">Twitter</a>
 						</div>
 						<div class="social">
-							<a href="#" class="gl">Instagram</a>
-							<a href="#" class="pn">Pinterest</a>
+							<a href="https://www.instagram.com/" class="gl">Instagram</a>
+							<a href="https://id.pinterest.com/" class="pn">Pinterest</a>
 						</div>
 					</li>
 				</ul>
