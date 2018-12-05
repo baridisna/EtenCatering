@@ -10,14 +10,14 @@ class model_product extends CI_Model {
 
 	public function product_detail($id_product)
 	{
-		$query = $this->db->query("SELECT product_id, product_name, product_description, photo, product_satuan, product_box, product_review, product_gubug FROM products WHERE product_id='$id_product'");
+		$query = $this->db->query("SELECT product_id, product_name, product_description, photo, product_review FROM products WHERE product_id='$id_product'");
 		return $query->row();
 	}
 
 	public function product_variant($id_product)
 	{
 		$query = $this->db->query("SELECT * FROM product_variant WHERE product_id='$id_product'");
-		return $query->row();
+		return $query->result();
 	}
 
 	public function product_bestseller($id_product)
@@ -26,81 +26,24 @@ class model_product extends CI_Model {
 		return $query->row();
 	}
 
-	function get_all($table)
+	function get_all()
 	{
-		$this->db->from($table);
+		$query = $this->db->query("SELECT * FROM products");
+		return $query->result();
 		
-		return $this->db->get();
 	}
 
-	function get_all_price($table)
+	public function cart_item($data)
+    {
+        $this->db->insert('cart_item', $data);
+        $id_product = $this->db->insert_id();
+        return (isset($id_product)) ? $id_product : FALSE;
+    }
+
+	public function sort($origin, $type, $sortby)
 	{
-		$this->db->from($table);
-		$this->db->order_by("product_price", "asc");
-		return $this->db->get();
+		$query = $this->db->query("SELECT * FROM products WHERE origin='$origin' AND type='$type' ORDER BY $sortby");
+		return $query->result();
 	}
-
-	function get_all_popular($table)
-	{
-		$this->db->from($table);
-		$this->db->order_by("product_review", "desc");
-		return $this->db->get();
-	}
-
-	function get_all_western($table)
-	{
-		$this->db->select('*');
-		$this->db->from('products');
-		$this->db->where('origin', 'Western');
-		$this->db->distinct('origin');
-		return $this->db->get();
-	}
-
-	function get_all_indonesian($table)
-	{
-		$this->db->select('*');
-		$this->db->from('products');
-		$this->db->where('origin', 'Indonesian');
-		$this->db->distinct('origin');
-		return $this->db->get();
-	}
-
-	function get_all_main($table)
-	{
-		$this->db->select('*');
-		$this->db->from('products');
-		$this->db->where('type', 'Main Course');
-		$this->db->distinct('type');
-		return $this->db->get();
-	}
-
-	function get_all_appetizer($table)
-	{
-		$this->db->select('*');
-		$this->db->from('products');
-		$this->db->where('type', 'Appetizer');
-		$this->db->distinct('type');
-		return $this->db->get();
-	}
-
-	function get_all_dessert($table)
-	{
-		$this->db->select('*');
-		$this->db->from('products');
-		$this->db->where('type', 'Dessert');
-		$this->db->distinct('type');
-		return $this->db->get();
-	}
-
-	public function get($table) {
-	   $query=$this->db->get_where('product_price',array('products'=>$products));
-	   $result= $query->result_array();
-	   if($result==TRUE) {
-	     return true;
-	     }
-	   return false;
-	  }
 }
-
-
 ?>

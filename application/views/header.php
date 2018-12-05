@@ -35,7 +35,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							<li class="login"><a href="#">Logout</a></li>
 						</ul>
 						<div class="checkout">
-							<span class="grey" style="text-align: center;">1 product, <span class="orange" style="text-align: center;"><strong>Rp 38.000</strong></span></span>
+							<span class="grey">1 product, <span class="orange"><strong>Rp 38.000</strong></span></span>
 							<a href="<?php echo base_url()?>Cart" class="btn btn_checkout">Checkout</a>
 						</div>
 					</div>
