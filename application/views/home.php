@@ -90,7 +90,7 @@
 			         <li>
 			          <div class="item">
 			           <div class="image_home" style="margin: 0 20px;">
-			           <a href="#"><img src="<?php echo base_url()?>assets/images/AyamBakar_Taliwang-Indonesian_main_course.jpg"  alt="" /></a>
+			           <a href="#"><img src="<?php echo base_url()?>assets/images/Ayam Bakar_Taliwang-Indonesian_main_course.jpg"  alt="" /></a>
 			            <div class="hover" style="margin-top: -35px;">
 			             <p style="font-size: 13px; margin: 65px 12px -10px;"><span>Sensasi rasa ayam taliwang yang pedas dengan kuatnya kencur. Ayam yang digunakan ialah ayam kampung muda agar terasa lebih gurih dan empuk.</span></p>   
 			            </div>
@@ -132,7 +132,7 @@
 			           <div class="image_home" style="margin: 0 20px;">
 			            <a href="#"><img src="<?php echo base_url()?>assets/images/ChickenBuffaloWings-western&appetizer.jpeg"  alt="" /></a>
 			            <div class="hover" style="margin-top: -35px">
-			             <p style="font-size: 13px; margin: 65px 12px -10px;"><span>Sayap Ayam yang renyah dengan bumbu yang menggoda selera. Dijamin ketagihaan!!</span></p>
+			             <p style="font-size: 13px; margin: 65px 12px -10px;"><span>Sayap Ayam yang renyah dengan bumbu yang menggoda selera. Dijamin ketagihaan!</span></p>
 			            </div>
 			           </div>
 			          </div>
