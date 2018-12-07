@@ -38,11 +38,15 @@ class Cart extends CI_Controller {
 
 			$count_product=0;
 			$total_pay=0;
-			foreach ($cart as $key) {
+
+			if (!empty($cart)) {
+				foreach ($cart as $key) {
 				$total_cost = $key->total_cost;
 				$total_pay = $total_pay + $total_cost;
 				$count_product = $count_product + 1;
+				}
 			}
+			
 
 			$data = array(
 			'cart_item' => $cart,

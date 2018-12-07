@@ -18,9 +18,35 @@ class Promotion extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
+
+	public function __construct()
+	{
+		parent::__construct();
+		$this->load->model('model_cart');
+
+	}
+
 	public function index()
 	{
-		$this->load->view('header');
+		$userID=$this->session->userdata('ses_id');
+
+		$cart=$this->model_cart->Cart_customer($userID);
+
+			$count_product=0;
+			$total_pay=0;
+
+			if (!empty($cart)) {
+				foreach ($cart as $key) {
+				$total_cost = $key->total_cost;
+				$total_pay = $total_pay + $total_cost;
+				$count_product = $count_product + 1;
+				}
+			}
+
+		$data = array(
+			'total_pay' => $total_pay,
+			'count_product' => $count_product );
+		$this->load->view('header', $data);
 		$this->load->view('promotion');
 	}
 }

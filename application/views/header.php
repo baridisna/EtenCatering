@@ -13,7 +13,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<meta name="format-detection" content="telephone=no">
 	<link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
 	<title>Eten Catering</title>
-	<!-- <link rel="stylesheet" href="<?php //echo base_url()?>/assets/css/bootstrap.css" /> -->
+	<link rel="stylesheet" href="<?php //echo base_url()?>/assets/css/bootstrap.css" />
 	<link rel="stylesheet" href="<?php echo base_url()?>/assets/css/fancySelect.css" />
 	<link rel="stylesheet" href="<?php echo base_url()?>/assets/css/uniform.css" />
 	<link rel="stylesheet" href="<?php echo base_url()?>/assets/css/jquery.bxslider.css" />
