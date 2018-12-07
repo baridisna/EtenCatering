@@ -24,22 +24,22 @@
 								<?php endforeach; ?>
 							</div>
 							<div class="section">
-								<form class="form-sort page" action="<?php echo base_url(); ?>product/cart">
+								<form class="form-sort page" method="post" action="<?php echo base_url(); ?>Cart/add_cart">
 									<fieldset>
 										<div class="row">
 											<div class="row">
 												<label for="price"><strong>Packet :</strong></label>
-												<select id="price">
+												<select id="price" name="variant">
 													<option value="">Select</option>
 													<?php foreach ($jenis as $key) : ?>
-													<option><?= $key->variant_name?></option>
+													<option value="<?= $key->variant_id ?>"><?= $key->variant_name?></option>
 													<?php endforeach; ?>
 												</select>
 											</div>
 
 											<div class="row">
 												<label for="quantity"><strong>Quantity :</strong></label>
-													<input type="number" class="btn-qty" />
+													<input name="quantity" type="number" class="btn-qty" />
 											</div>
 											<div class="clear"></div>
 										</div>
