@@ -3,7 +3,7 @@
 					<section class="bar">
 						<div class="bar-frame">
 							<ul class="breadcrumbs">
-								<li><a href="index.html">Home</a></li>
+								<li><a href="<?php echo base_url()?>home">Home</a></li>
 								<li>About Us</li>
 							</ul>
 						</div>
@@ -11,11 +11,11 @@
 					<div class="entry">
 						<h2>Siapa Kami</h2>
 						<div class="text">
-							<p>Eten Catering terbentuk pada tahun 2018 dengan pemikiran bahwa tubuh yang sehat adalah harta yang tidak ternilai. Rutinitas yang sibuk dan kurangnya pemahaman akan pentingnya makanan sehat, membuat banyak orang mudah jatuh sakit bahkan di usia muda. Kami paham sulitnya meluangkan waktu untuk mempersiapkan makanan sehat di tengah kesibukan Anda. Kini kami hadir sebagai solusi. Sesibuk apapun jadwal keseharian Anda, Eten Catering siap menyediakan makanan sehat yang lezat sesuai kebutuhan. Dengan ragam pilihan menu berkualitas, Eten Catering siap menjadi bekal sehat untuk keseharian Anda.</p>
+							<p style="color: #6e6e6e">Eten Catering terbentuk pada tahun 2018 dengan pemikiran bahwa tubuh yang sehat adalah harta yang tidak ternilai. Rutinitas yang sibuk dan kurangnya pemahaman akan pentingnya makanan sehat, membuat banyak orang mudah jatuh sakit bahkan di usia muda. Kami paham sulitnya meluangkan waktu untuk mempersiapkan makanan sehat di tengah kesibukan Anda. Kini kami hadir sebagai solusi. Sesibuk apapun jadwal keseharian Anda, Eten Catering siap menyediakan makanan sehat yang lezat sesuai kebutuhan. Dengan ragam pilihan menu berkualitas, Eten Catering siap menjadi bekal sehat untuk keseharian Anda.</p>
 						</div>
 						<h2>Filosofi Kami</h2>
 						<div class="text">
-							<p>Mengusung konsep “Smart Eating”, Eten Catering percaya bahwa kualitas makanan lebih penting dari kuantitas. Anda bertanggung jawab untuk pandai memilih apa yang Anda makan. Ingatlah bahwa apapun yang Anda makan akan mempengaruhi kualitas kesehatan Anda, baik saat ini maupun di kemudian hari. Tubuh Anda adalah satu-satunya hal yang Anda tidak dapat hidup tanpanya. Seringkali makanan sehat dianggap sebagai siksaan karena identik dengan rasa seadanya dan porsi yang tidak mengenyangkan. Bagaimana bisa hidup sehat secara terus-menerus jika kita tidak dapat menikmati apa yang kita makan? Oleh karena itu, makanan sehat sudah seharusnya lezat, mengenyangkan, dan terjangkau. Agar mudah disimpan dan menghemat biaya pengiriman, Eten Catering memberikan opsi pengantaran sekali dalam seminggu yang disajikan dalam paket cold-on-purpose dengan kemasan kedap udara (vacuum-sealed). Paket ini menjamin seluruh nutrisi terjaga tanpa paparan mikroorganisme merugikan sekaligus tanpa pengawet.</p>
+							<p style="color: #6e6e6e">Mengusung konsep “Smart Eating”, Eten Catering percaya bahwa kualitas makanan lebih penting dari kuantitas. Anda bertanggung jawab untuk pandai memilih apa yang Anda makan. Ingatlah bahwa apapun yang Anda makan akan mempengaruhi kualitas kesehatan Anda, baik saat ini maupun di kemudian hari. Tubuh Anda adalah satu-satunya hal yang Anda tidak dapat hidup tanpanya. Seringkali makanan sehat dianggap sebagai siksaan karena identik dengan rasa seadanya dan porsi yang tidak mengenyangkan. Bagaimana bisa hidup sehat secara terus-menerus jika kita tidak dapat menikmati apa yang kita makan? Oleh karena itu, makanan sehat sudah seharusnya lezat, mengenyangkan, dan terjangkau. Agar mudah disimpan dan menghemat biaya pengiriman, Eten Catering memberikan opsi pengantaran sekali dalam seminggu yang disajikan dalam paket cold-on-purpose dengan kemasan kedap udara (vacuum-sealed). Paket ini menjamin seluruh nutrisi terjaga tanpa paparan mikroorganisme merugikan sekaligus tanpa pengawet.</p>
 						</div>
 					</div>
 				</div>
@@ -26,7 +26,7 @@
 				<ul class="left_side">
 					<li>
 						<span>Our Mission :</span>
-						<p style="line-height: 26px;">Veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit quia.</p>
+						<p style="line-height: 26px;">Eten Catering siap menyediakan makanan sehat yang lezat sesuai kebutuhan. Dengan ragam pilihan menu berkualitas, Eten Catering siap menjadi bekal sehat untuk keseharian Anda.</p>
 					</li>
 					<li>
 						<span>  </span>
@@ -42,12 +42,12 @@
 					<li>
 						<span>Social Media:</span>
 						<div class="social">
-							<a href="#" class="fb">Facebook</a>
-							<a href="#" class="tw">Twitter</a>
+							<a href="https://www.facebook.com/" class="fb">Facebook</a>
+							<a href="https://twitter.com/" class="tw">Twitter</a>
 						</div>
 						<div class="social">
-							<a href="#" class="gl">Google+</a>
-							<a href="#" class="pn">Pinterest</a>
+							<a href="https://www.instagram.com/" class="gl">Instagram</a>
+							<a href="https://id.pinterest.com/" class="pn">Pinterest</a>
 						</div>
 					</li>
 				</ul>
