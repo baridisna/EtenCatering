@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 07, 2018 at 12:05 PM
+-- Generation Time: Dec 07, 2018 at 12:17 PM
 -- Server version: 10.1.32-MariaDB
 -- PHP Version: 7.2.5
 
@@ -142,22 +142,22 @@ INSERT INTO `product_variant` (`variant_id`, `product_id`, `variant_name`, `pric
 (6, 2, 'Gubug (min 100)', 60000),
 (7, 3, 'Satuan', 29000),
 (8, 3, 'Box (min 20)', 31000),
-(9, 3, 'Gubug (min 100)', 38),
-(10, 4, 'Satuan', 42),
-(11, 4, 'Box (min 20)', 50),
-(12, 4, 'Gubug (min 100)', 60),
-(13, 5, 'Satuan', 24),
-(14, 5, 'Box (min 20)', 26),
-(15, 5, 'Gubug (min 100)', 28),
-(16, 6, 'Satuan', 13),
-(17, 6, 'Box (min 20)', 14),
-(18, 6, 'Gubug (min 100)', 16),
-(19, 7, 'Satuan', 20),
-(20, 7, 'Box (min 20)', 22),
-(21, 7, 'Gubug (min 100)', 25),
-(22, 8, 'Satuan', 18),
-(23, 8, 'Box (min 20)', 19),
-(24, 8, 'Gubug (min 100)', 21);
+(9, 3, 'Gubug (min 100)', 38000),
+(10, 4, 'Satuan', 42000),
+(11, 4, 'Box (min 20)', 50000),
+(12, 4, 'Gubug (min 100)', 60000),
+(13, 5, 'Satuan', 24000),
+(14, 5, 'Box (min 20)', 26000),
+(15, 5, 'Gubug (min 100)', 28000),
+(16, 6, 'Satuan', 13000),
+(17, 6, 'Box (min 20)', 14000),
+(18, 6, 'Gubug (min 100)', 16000),
+(19, 7, 'Satuan', 20000),
+(20, 7, 'Box (min 20)', 22000),
+(21, 7, 'Gubug (min 100)', 25000),
+(22, 8, 'Satuan', 18000),
+(23, 8, 'Box (min 20)', 19000),
+(24, 8, 'Gubug (min 100)', 21000);
 
 -- --------------------------------------------------------
 
