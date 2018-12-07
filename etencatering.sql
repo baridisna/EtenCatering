@@ -40,12 +40,11 @@ CREATE TABLE `admin` (
 --
 
 CREATE TABLE `cart_item` (
-  `product_id` varchar(100) NOT NULL,
-  `product_name` varchar(100) DEFAULT NULL,
+  `cart_id` int(100) NOT NULL,
+  `variant_id` int(100) NOT NULL,
+  `customer_id` varchar(100) NOT NULL,
   `quantity` int(100) DEFAULT NULL,
-  `unit_cost` int(100) DEFAULT NULL,
-  `total_cost` int(100) DEFAULT NULL,
-  `packet` varchar(100) NOT NULL
+  `unit_cost` int(100) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -56,11 +55,13 @@ CREATE TABLE `cart_item` (
 
 CREATE TABLE `customer` (
   `UserID` varchar(100) NOT NULL,
-  `email_cust` varchar(50) DEFAULT NULL,
-  `firstname` varchar(100) DEFAULT NULL,
-  `lastname` varchar(100) DEFAULT NULL,
+  `name` varchar(100) DEFAULT NULL,
   `address` varchar(100) DEFAULT NULL,
-  `phone` int(100) DEFAULT NULL
+  `provinsi` varchar(100) DEFAULT NULL,
+  `kabupaten` varchar(100) DEFAULT NULL,
+  `kecamatan` varchar(100) DEFAULT NULL,
+  `postal_code` int(8) DEFAULT NULL,
+  `phone` varchar(20) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -185,7 +186,8 @@ CREATE TABLE `shopping_cart` (
 
 CREATE TABLE `user` (
   `UserID` varchar(100) NOT NULL,
-  `Password` varchar(100) NOT NULL
+  `Password` varchar(100) NOT NULL,
+  `email` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
