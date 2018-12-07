@@ -1,7 +1,7 @@
 <section class="main">				
 				<div class="content">
 					<div class="box_images-col">
-						<a href="#>"><img src="<?php echo base_url();?>assets/images/JBCweb_catering.jpg" alt="" ></a>
+						<a href="#"><img src="<?php echo base_url();?>assets/images/JBCweb_catering.jpg" alt="" style="height: 300px; width: 100%; object-fit: cover;"></a>
 					</div>
 <!-- 
 					<div class="box_sub_total2-col" style="margin-left: 0px; padding-: auto; width: 29%; float: right; height: auto;">
@@ -90,7 +90,7 @@
 			         <li>
 			          <div class="item">
 			           <div class="image_home" style="margin: 0 20px;">
-			           <a href="#"><img src="<?php echo base_url()?>assets/images/Ayam Bakar_Taliwang-Indonesian_main_course.jpg"  alt="" /></a>
+			           <a href="#"><img src="<?php echo base_url()?>assets/images/AyamBakar_Taliwang-Indonesian_main_course.jpg"  alt="" /></a>
 			            <div class="hover" style="margin-top: -35px;">
 			             <p style="font-size: 13px; margin: 65px 12px -10px;"><span>Sensasi rasa ayam taliwang yang pedas dengan kuatnya kencur. Ayam yang digunakan ialah ayam kampung muda agar terasa lebih gurih dan empuk.</span></p>   
 			            </div>
@@ -116,7 +116,27 @@
 			            </div>
 			           </div>
 			          </div>
-			         </li>       							
+			         </li>       	
+			         <li>
+			          <div class="item">
+			           <div class="image_home" style="margin: 0 20px;">
+			            <a href="#"><img src="<?php echo base_url()?>assets/images/SatePadang-IndonesiaMainCourse.jpg"  alt="" /></a>
+			            <div class="hover" style="margin-top: -35px">
+			             <p style="font-size: 13px; margin: 65px 12px -10px;"><span>Salmon panggang yang diolah dengan bumbu spesial, seperti kecap asin dan gula coklat. Dengan sedikit aroma lemon dan bawang putih.</span></p>
+			            </div>
+			           </div>
+			          </div>
+			         </li>
+			         <li>
+			          <div class="item">
+			           <div class="image_home" style="margin: 0 20px;">
+			            <a href="#"><img src="<?php echo base_url()?>assets/images/ChickenBuffaloWings-western&appetizer.jpeg"  alt="" /></a>
+			            <div class="hover" style="margin-top: -35px">
+			             <p style="font-size: 13px; margin: 65px 12px -10px;"><span>Cinnamon rolls yang disajikan bersama glaze cheese cream, dengan rasa yang pas tidak terlalu manis dan harum kayu manis yang semerbak.</span></p>
+			            </div>
+			           </div>
+			          </div>
+			         </li> 						
 								</ul>
 							</div>
 							<a href="#" class="btn-right"></a>
