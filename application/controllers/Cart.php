@@ -59,6 +59,23 @@ class Cart extends CI_Controller {
 		
 	}
 
+	public function add_cart()
+	{
+		$variant=$this->input->post('variant');
+		$quantity=$this->input->post('quantity');
+		$customer=$this->session->userdata('ses_id');
+
+		$data = array(
+			'variant_id' => $variant,
+			'quantity' => $quantity,
+			'customer_id' => $customer );
+
+		$this->model_cart->add($data);
+
+		echo "<script>alert('Produk Anda berhasi masuk cart :)'); window.location='".base_url('Product')."' </script>";
+
+	}
+
 	public function update()
 	{
 		$id=$this->input->post('cart_id');

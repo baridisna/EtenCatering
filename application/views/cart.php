@@ -31,7 +31,7 @@
 							</td>
 							<td class="white two">Rp<?= $key->unit_cost ?></td>
 							<td class="white three"><?= $key->quantity ?> porsi</td>
-							<td class="white four">Rp<?= $key->total_cost ?></td>
+							<td class="white four">Rp<?= $key->unit_cost * $key->quantity ?></td>
 							<td class="white last"><div class="row">
 								<button class="btn" style="margin: 5px; background: dodgerblue; color: white; line-height: 15px">Edit</button>
 								<button class="btn-delete" style="margin-top: 5px">delete</button>	
