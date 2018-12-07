@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 06, 2018 at 01:03 PM
+-- Generation Time: Dec 07, 2018 at 12:05 PM
 -- Server version: 10.1.32-MariaDB
 -- PHP Version: 7.2.5
 
@@ -64,6 +64,13 @@ CREATE TABLE `customer` (
   `phone` varchar(20) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `customer`
+--
+
+INSERT INTO `customer` (`UserID`, `name`, `address`, `provinsi`, `kabupaten`, `kecamatan`, `postal_code`, `phone`) VALUES
+('fellanaura', 'thufaila', NULL, NULL, NULL, NULL, NULL, NULL);
+
 -- --------------------------------------------------------
 
 --
@@ -119,7 +126,7 @@ CREATE TABLE `product_variant` (
   `variant_id` int(50) NOT NULL,
   `product_id` int(50) NOT NULL,
   `variant_name` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `price` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL
+  `price` int(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
@@ -127,30 +134,30 @@ CREATE TABLE `product_variant` (
 --
 
 INSERT INTO `product_variant` (`variant_id`, `product_id`, `variant_name`, `price`) VALUES
-(1, 1, 'Satuan', '70.000'),
-(2, 1, 'Box', '85.000'),
-(3, 1, 'Gubug', '98.000'),
-(4, 2, 'Satuan', '42.000'),
-(5, 2, 'Box', '53.000'),
-(6, 2, 'Gubug', '60.000'),
-(7, 3, 'Satuan', '29.000'),
-(8, 3, 'Box', '31.000'),
-(9, 3, 'Gubug', '38.000'),
-(10, 4, 'Satuan', '42.000'),
-(11, 4, 'Box', '50.000'),
-(12, 4, 'Gubug', '60.000'),
-(13, 5, 'Satuan', '24.000'),
-(14, 5, 'Box', '26.000'),
-(15, 5, 'Gubug', '28.000'),
-(16, 6, 'Satuan', '13.000'),
-(17, 6, 'Box', '14.000'),
-(18, 6, 'Gubug', '16.000'),
-(19, 7, 'Satuan', '20.000'),
-(20, 7, 'Box', '22.000'),
-(21, 7, 'Gubug', '25.000'),
-(22, 8, 'Satuan', '18.000'),
-(23, 8, 'Box', '19.000'),
-(24, 8, 'Gubug', '21.000');
+(1, 1, 'Satuan', 70000),
+(2, 1, 'Box (min 20)', 85000),
+(3, 1, 'Gubug (min 100)', 98000),
+(4, 2, 'Satuan', 42000),
+(5, 2, 'Box (min 20)', 53000),
+(6, 2, 'Gubug (min 100)', 60000),
+(7, 3, 'Satuan', 29000),
+(8, 3, 'Box (min 20)', 31000),
+(9, 3, 'Gubug (min 100)', 38),
+(10, 4, 'Satuan', 42),
+(11, 4, 'Box (min 20)', 50),
+(12, 4, 'Gubug (min 100)', 60),
+(13, 5, 'Satuan', 24),
+(14, 5, 'Box (min 20)', 26),
+(15, 5, 'Gubug (min 100)', 28),
+(16, 6, 'Satuan', 13),
+(17, 6, 'Box (min 20)', 14),
+(18, 6, 'Gubug (min 100)', 16),
+(19, 7, 'Satuan', 20),
+(20, 7, 'Box (min 20)', 22),
+(21, 7, 'Gubug (min 100)', 25),
+(22, 8, 'Satuan', 18),
+(23, 8, 'Box (min 20)', 19),
+(24, 8, 'Gubug (min 100)', 21);
 
 -- --------------------------------------------------------
 
@@ -191,6 +198,13 @@ CREATE TABLE `user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
+-- Dumping data for table `user`
+--
+
+INSERT INTO `user` (`UserID`, `Password`, `email`) VALUES
+('fellanaura', 'passeten', 'thufellanaura@yahoo.com');
+
+--
 -- Indexes for dumped tables
 --
 
@@ -202,54 +216,10 @@ ALTER TABLE `admin`
   ADD UNIQUE KEY `uc_UserID` (`UserID`);
 
 --
--- Indexes for table `cart_item`
---
-ALTER TABLE `cart_item`
-  ADD PRIMARY KEY (`product_id`);
-
---
--- Indexes for table `customer`
---
-ALTER TABLE `customer`
-  ADD PRIMARY KEY (`UserID`),
-  ADD UNIQUE KEY `uc_UserID` (`UserID`);
-
---
--- Indexes for table `orders`
---
-ALTER TABLE `orders`
-  ADD PRIMARY KEY (`order_id`);
-
---
--- Indexes for table `products`
---
-ALTER TABLE `products`
-  ADD PRIMARY KEY (`product_id`);
-
---
 -- Indexes for table `product_variant`
 --
 ALTER TABLE `product_variant`
   ADD PRIMARY KEY (`variant_id`);
-
---
--- Indexes for table `promotions`
---
-ALTER TABLE `promotions`
-  ADD PRIMARY KEY (`promotions_id`);
-
---
--- Indexes for table `shopping_cart`
---
-ALTER TABLE `shopping_cart`
-  ADD PRIMARY KEY (`cart_id`),
-  ADD KEY `product_id` (`product_id`);
-
---
--- Indexes for table `user`
---
-ALTER TABLE `user`
-  ADD PRIMARY KEY (`UserID`,`Password`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -260,40 +230,6 @@ ALTER TABLE `user`
 --
 ALTER TABLE `product_variant`
   MODIFY `variant_id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
-
---
--- Constraints for dumped tables
---
-
---
--- Constraints for table `admin`
---
-ALTER TABLE `admin`
-  ADD CONSTRAINT `admin_ibfk_1` FOREIGN KEY (`UserID`) REFERENCES `user` (`UserID`);
-
---
--- Constraints for table `cart_item`
---
-ALTER TABLE `cart_item`
-  ADD CONSTRAINT `cart_item_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `products` (`product_id`),
-  ADD CONSTRAINT `cart_item_ibfk_2` FOREIGN KEY (`product_id`) REFERENCES `products` (`product_id`),
-  ADD CONSTRAINT `cart_item_ibfk_3` FOREIGN KEY (`product_id`) REFERENCES `products` (`product_id`);
-
---
--- Constraints for table `customer`
---
-ALTER TABLE `customer`
-  ADD CONSTRAINT `customer_ibfk_1` FOREIGN KEY (`UserID`) REFERENCES `user` (`UserID`);
-
---
--- Constraints for table `shopping_cart`
---
-ALTER TABLE `shopping_cart`
-  ADD CONSTRAINT `shopping_cart_ibfk_1` FOREIGN KEY (`product_id`) REFERENCES `products` (`product_id`),
-  ADD CONSTRAINT `shopping_cart_ibfk_2` FOREIGN KEY (`product_id`) REFERENCES `products` (`product_id`),
-  ADD CONSTRAINT `shopping_cart_ibfk_3` FOREIGN KEY (`product_id`) REFERENCES `products` (`product_id`),
-  ADD CONSTRAINT `shopping_cart_ibfk_4` FOREIGN KEY (`product_id`) REFERENCES `products` (`product_id`),
-  ADD CONSTRAINT `shopping_cart_ibfk_5` FOREIGN KEY (`product_id`) REFERENCES `products` (`product_id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

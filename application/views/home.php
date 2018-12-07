@@ -190,14 +190,15 @@
 				</ul>
 				<ul class="right_side">
 					<li>
-						<span>S						<div class="social">
+						<span>Social Media:</span>				
+						<div class="social">
 							<a href="https://www.facebook.com/" class="fb">Facebook</a>
 							<a href="https://twitter.com/" class="tw">Twitter</a>
 						</div>
 						<div class="social">
 							<a href="https://www.instagram.com/" class="gl">Instagram</a>
 							<a href="https://id.pinterest.com/" class="pn">Pinterest</a>
-						</div>ocial Media:</span>
+						</div>
 
 					</li>
 				</ul>
