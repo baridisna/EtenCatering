@@ -20,56 +20,29 @@
 							<td class="braun total"><span>Total</span></td>
 							<td class="braun last"></td>
 						</tr>
+					<?php foreach ($cart_item as $key) : ?>
 						<tr>
 							<td class="white first">
-								<img src="<?php echo base_url()?>assets/images/post_2665091.png" height="110" width="105" alt="" />
+								<img src="<?php echo base_url()?>assets/images/<?= $key->photo ?>" height="110" width="105" alt="" />
 								<div class="description">
-									<h3><a href="#">Veggie Bowl With Coconut Rice</a></h3>
-									<p>Dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate.</p>
+									<h3><a href="#"><?= $key->product_name ?></a></h3>
+									<p>variant: <?= $key->variant_name ?></p>
 								</div>
 							</td>
-							<td class="white two">Rp 38.000</td>
-							<td class="white three">
-								<div class="row">
-									<select id="size">
-										<option>1</option>
-										<option>2</option>
-									</select>
-								</div>
-							</td>
-							<td class="white four">Rp 38.000</td>
-							<td class="white last"><div class="row"><a class="btn-delete" href="#">delete</a></div></td>
+							<td class="white two">Rp<?= $key->unit_cost ?></td>
+							<td class="white three"><?= $key->quantity ?> porsi</td>
+							<td class="white four">Rp<?= $key->total_cost ?></td>
+							<td class="white last"><div class="row">
+								<button class="btn" style="margin: 5px; background: dodgerblue; color: white; line-height: 15px">Edit</button>
+								<button class="btn-delete" style="margin-top: 5px">delete</button>	
+							</div></td>
 						</tr>
+					<?php endforeach; ?>
 					</table>
-					<ul class="list-table" style="display: none;">
-					<li>
-						<div class="rows rows-item">
-							<img src="<?php echo base_url()?>assets/images/post_2665091.png" height="110" width="105" alt="" />
-							<h3><a href="#">Veggie Bowl With Coconut Rice</a></h3>
-						</div>
-						<div class="rows-holder">
-							<div class="rows rows-select">
-								<div class="row">
-									<select id="quantity">
-										<option>1</option>
-										<option>2</option>
-									</select>
-								</div>
-							</div>
-							<div class="rows rows-price">
-								<span>Rp 38.000</span>
-							</div>
-							<div class="rows rows-delete">
-								<a class="btn-delete" href="#">delete</a>
-							</div>
-						</div>
-					</li>
-				</ul>
 					<div class="box_sub_total">
-						<h4>Subtotal: Rp 50.000</h4>
-						<p>+ Shippment: Rp 0</p>
-						<h2>Total to pay: Rp 50.000</h2>
-						<a class="btn btn_finalize" href="http://localhost/EtenCatering/cart/checkout">Finalize and pay</a>
+						<h4>Subtotal: Rp <?php echo $total_pay ?></h4>
+						<h4 style="color: orangered">Total to pay: Rp <?php echo $total_pay ?></h4>
+						<a class="btn btn_finalize" href="#" style="padding: 0">Checkout and pay</a>
 					</div>
 				</div>
 			</section>
@@ -79,7 +52,7 @@
 				<ul class="left_side">
 					<li>
 						<span>Our Mission :</span>
-						<p style="line-height: 26px;">Veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit quia.</p>
+						<p style="line-height: 26px;">Eten Catering siap menyediakan makanan sehat yang lezat sesuai kebutuhan. Dengan ragam pilihan menu berkualitas, Eten Catering siap menjadi bekal sehat untuk keseharian Anda.</p>
 					</li>
 					<li>
 						<span>  </span>
@@ -95,12 +68,12 @@
 					<li>
 						<span>Social Media:</span>
 						<div class="social">
-							<a href="#" class="fb">Facebook</a>
-							<a href="#" class="tw">Twitter</a>
+							<a href="https://www.facebook.com/" class="fb">Facebook</a>
+							<a href="https://twitter.com/" class="tw">Twitter</a>
 						</div>
 						<div class="social">
-							<a href="#" class="gl">Google+</a>
-							<a href="#" class="pn">Pinterest</a>
+							<a href="https://www.instagram.com/" class="gl">Instagram</a>
+							<a href="https://id.pinterest.com/" class="pn">Pinterest</a>
 						</div>
 					</li>
 				</ul>
