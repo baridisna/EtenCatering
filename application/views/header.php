@@ -61,14 +61,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								</div>
 							</div>
 						<?php endif; ?>
-
 					<div class="clear"></div>
 					<a class="menu_trigger" href="#">menu</a>
 					<nav id="nav">
 						<ul class="navi">
 							<li class="searc_li" >
 								<div  class="ul_search li">
-									<a class="search" href="#" style="color: #ffffff"><span>search</span></a>
+									<a class="search" href="#"><span>search</span></a>
 									<form method="get" class="searchform" action="#">
 										<input type="text" class="field" name="s" id="s" placeholder="What are you looking for?" />
 										<input type="submit" class="submit" value=""  />

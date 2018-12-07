@@ -3,59 +3,129 @@
 					<section class="bar">
 						<div class="bar-frame">
 							<ul class="breadcrumbs">
-								<li><a href="<?php echo base_url()?>home">Home</a></li>
+								<li><a href="index.html">Home</a></li>
 								<li>Menu</li>
 							</ul>
 						</div>
 					</section>
 					<div class="top-bar">
-						<form class="form-sort" method = "POST" action="<?php echo base_url(); ?>product/sort">
+						<form class="form-sort" action="#">
 							<fieldset>
 								<div class="row">
 									<label for="sort"><strong>Sort by :</strong></label>
-									<select id="sort" name='sort'>
-										<option value=''>Select</option>
-										<option value='popular'>Populer</option>
-										<option value='price'>Price</option>
+									<select id="sort">
+										<option>Popouler</option>
+										<option>Price</option>
 									</select>
 								</div>
 								<div class="row">
-									<label for="origin"><strong>Meal's origin :</strong></label>
-									<select id="origin" name="origin">
-										<option value=''>Select</option>
-										<option value='Western'>Western</option>
-										<option value='Indonesian'>Indonesian</option>
+									<label for="page"><strong>Products per page:</strong></label>
+									<select id="page">
+										<option>8</option>
+										<option>12</option>
 									</select>
 								</div>
 								<div class="row">
-									<label for="type"><strong>Type of meal :</strong></label>
-									<select id="type" name='type'>
-										<option value=''>Select</option>
-										<option value='Appetizer'>Appetizer</option>
-										<option value='Main Course'>Main Course</option>
-										<option value='Dessert'>Dessert</option>
+									<label for="page"><strong>Meal's origin:</strong></label>
+									<select id="page">
+										<option>Western</option>
+										<option>Oriental</option>
+										<option>Indonesian</option>
 									</select>
 								</div>
 								<div class="row">
-									<input type="submit" value="GO" style="margin-top: 23px" class="btn pink" />
+									<label for="page"><strong>Type of meal:</strong></label>
+									<select id="page">
+										<option>Appetizer</option>
+										<option>Main Course</option>
+										<option>Dessert</option>
+									</select>
 								</div>
-							</fieldset>							
+							</fieldset>
 						</form>
 					</div>
 					<ul class="item-product">
-						<?php foreach ($data as $key) : ?>
-						<li>							
+						<li>
 							<div class="item">
-								<a href="<?php echo base_url(); ?>product/product_detail/<?= $key->product_id ?>">
 								<div class="image">
-									<img src="<?=base_url(); ?>assets/images/<?= $key->photo; ?>"  alt="" />
+									<a href="<?php echo base_url()?>Product/product_detail"><img src="<?php echo base_url()?>assets/images/post_2665091.png"  alt="" /></a>
 								</div>
-								<span class="name"><?= $key->product_name; ?></span>
-								<span class="name2">Rp <?= $key->product_price;?></span></a>
-							</div>							
+								<span class="name"><a href="<?php echo base_url()?>Product/product_detail">Lorem ipsum dolor</a></span>
+								<span>Rp 38.000</span>
+							</div>
 						</li>
-						<?php endforeach; ?>
+						<li>
+							<div class="item">
+								<div class="image">
+									<a href="<?php echo base_url()?>Product/product_detail"><img src="<?php echo base_url()?>assets/images/post_4249429.png"  alt="" /></a>
+								</div>
+								<span class="name"><a href="<?php echo base_url()?>Product/product_detail">Lorem ipsum dolor</a></span>
+								<span>Rp 40.000</span>
+							</div>
+						</li>
+						<li>
+							<div class="item">
+								<div class="image">
+									<a href="<?php echo base_url()?>Product/product_detail"><img src="<?php echo base_url()?>assets/images/15410037805bd9da042d429.png"  alt="" /></a>
+								</div>
+								<span class="name"><a href="<?php echo base_url()?>Product/product_detail">Lorem ipsum dolor</a></span>
+								<span>Rp 45.500</span>
+							</div>
+						</li>
+						<li>
+							<div class="item">
+								<div class="image">
+									<a href="<?php echo base_url()?>Product/product_detail"><img src="<?php echo base_url()?>assets/images/post_2085686.png"  alt="" /></a>
+								</div>
+								<span class="name"><a href="<?php echo base_url()?>Product/product_detail">Lorem ipsum dolor</a></span>
+								<span>Rp 34.000</span>
+							</div>
+						</li>
+						<li>
+							<div class="item">
+								<div class="image">
+									<a href="<?php echo base_url()?>Product/product_detail"><img src="<?php echo base_url()?>assets/images/cropped_5852283_main.png"  alt="" /></a>
+								</div>
+								<span class="name"><a href="<?php echo base_url()?>Product/product_detail">Lorem ipsum dolor</a></span>
+								<span>Rp 35.000</span>
+							</div>
+						</li>
+						<li>
+							<div class="item">
+								<div class="image">
+									<a href="<?php echo base_url()?>Product/product_detail"><img src="<?php echo base_url()?>assets/images/post_3163642.png"  alt="" /></a>
+								</div>
+								<span class="name"><a href="<?php echo base_url()?>Product/product_detail">Lorem ipsum dolor</a></span>
+								<span>Rp 33.000</span>
+							</div>
+						</li>
+						<li>
+							<div class="item">
+								<div class="image">
+									<a href="<?php echo base_url()?>Product/product_detail"><img src="<?php echo base_url()?>assets/images/15361094185b8f2b6ad97aa.png"  alt="" /></a>
+								</div>
+								<span class="name"><a href="<?php echo base_url()?>Product/product_detail">Lorem ipsum dolor</a></span>
+								<span>Rp 19.000</span>
+							</div>
+						</li>
+						<li>
+							<div class="item">
+								<div class="image">
+									<a href="#"><img src="<?php echo base_url()?>assets/images/15361084805b8f27c0c2781.png"  alt="" /></a>
+								</div>
+								<span class="name"><a href="<?php echo base_url()?>Product/product_detail">Lorem ipsum dolor</a></span>
+								<span>Rp 21.500</span>
+							</div>
+						</li>
 					</ul>
+					<div class="top-bar top-bar-add">
+						<ul class="paging">
+							<li class="prev"><a href="#">prev</a></li>
+							<li class="active"><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li class="next"><a href="#">next</a></li>
+						</ul>
+					</div>
 				</div>
 			</section>
 		</div>
@@ -63,29 +133,29 @@
 <div class="footer-content">
 				<ul class="left_side">
 					<li>
-						<span>Our Mission :</span>
-						<p style="line-height: 26px;">Eten Catering siap menyediakan makanan sehat yang lezat sesuai kebutuhan. Dengan ragam pilihan menu berkualitas, Eten Catering siap menjadi bekal sehat untuk keseharian Anda.</p>
+						<span><strong>Our Mission :</strong></span>
+						<p style="line-height: 26px;">Veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit quia.</p>
 					</li>
 					<li>
 						<span>  </span>
 						<p>  </p>
 					</li>
 					<li>
-						<span>Contact Us :</span>
+						<span><strong>Contact Us :</strong></span>
 						<p>Eten Catering<br />Indonesia</p>
 						<p>Tel. (123) 456 789<br />catering@eten.com</p>
 					</li>
 				</ul>
 				<ul class="right_side">
 					<li>
-						<span>Social Media:</span>
+						<span><strong>Social Media:</strong></span>
 						<div class="social">
-							<a href="https://www.facebook.com/" class="fb">Facebook</a>
-							<a href="https://twitter.com/" class="tw">Twitter</a>
+							<a href="#" class="fb">Facebook</a>
+							<a href="#" class="tw">Twitter</a>
 						</div>
 						<div class="social">
-							<a href="https://www.instagram.com/" class="gl">Instagram</a>
-							<a href="https://id.pinterest.com/" class="pn">Pinterest</a>
+							<a href="#" class="gl">Instagram</a>
+							<a href="#" class="pn">Pinterest</a>
 						</div>
 					</li>
 				</ul>
