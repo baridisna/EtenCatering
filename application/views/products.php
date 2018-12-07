@@ -49,7 +49,11 @@
 								<a href="<?php echo base_url(); ?>product/product_detail/<?= $key->product_id ?>">
 								<div class="image">
 <<<<<<< HEAD
+<<<<<<< HEAD
 									<a href="index.php"><img src="<?=base_url(); ?>assets/images/<?= $key->photo; ?>"  alt="" /></a>
+=======
+									<img src="<?=base_url(); ?>assets/images/<?= $key->photo; ?>"  alt="" />
+>>>>>>> master
 =======
 									<img src="<?=base_url(); ?>assets/images/<?= $key->photo; ?>"  alt="" />
 >>>>>>> master
