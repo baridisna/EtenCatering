@@ -1,7 +1,7 @@
 <section class="main">				
 				<div class="content">
 					<div class="box_images-col">
-						<a href="#>"><img src="<?php echo base_url();?>assets/images/JBCweb_catering.jpg" alt="" ></a>
+						<a href="#"><img src="<?php echo base_url();?>assets/images/JBCweb_catering.jpg" alt="" style="height: 300px; width: 100%; object-fit: cover;"></a>
 					</div>
 <!-- 
 					<div class="box_sub_total2-col" style="margin-left: 0px; padding-: auto; width: 29%; float: right; height: auto;">
@@ -82,7 +82,7 @@
 
 					<div class="clear"></div>
 					<section class="container">
-						<div class="bottom-slider">
+						<div class="bottom-slider" style="background: #FF8C00">
 							<a href="#" class="btn-left"></a>
 							<div class="slides">
 								<p style="color: #ffffff">Best Seller</p>
@@ -90,7 +90,7 @@
 			         <li>
 			          <div class="item">
 			           <div class="image_home" style="margin: 0 20px;">
-			           <a href="#"><img src="<?php echo base_url()?>assets/images/Ayam Bakar_Taliwang-Indonesian_main_course.jpg"  alt="" /></a>
+			           <a href="#"><img src="<?php echo base_url()?>assets/images/AyamBakar_Taliwang-Indonesian_main_course.jpg"  alt="" /></a>
 			            <div class="hover" style="margin-top: -35px;">
 			             <p style="font-size: 13px; margin: 65px 12px -10px;"><span>Sensasi rasa ayam taliwang yang pedas dengan kuatnya kencur. Ayam yang digunakan ialah ayam kampung muda agar terasa lebih gurih dan empuk.</span></p>   
 			            </div>
@@ -116,51 +116,27 @@
 			            </div>
 			           </div>
 			          </div>
-			         </li>
-<!-- 			         <li>
+			         </li>       	
+			         <li>
 			          <div class="item">
-			           <div class="image_home" style="margin: 0 30px;">
-			            <a href="#"><img src="<?php echo base_url()?>assets/images/makanan4.jpeg"  alt="" /></a>
-			            <div class="hover" style="margin-top: -20px">
-			             <p>Perspiciatis unde omnis iste natus voluptatem</p>
-			             <strong>Rp 120.000</strong>
-			            </div>
-			           </div>
-			          </div>
-			         </li> -->
-			         <!-- <li class="last">
-			          <div class="item">
-			           <div class="image_home" style="margin: 0 10px;">
-			            <a href="#"><img src="<?php echo base_url()?>assets/images/makanan5.jpeg"  alt="" /></a>
-			            <div class="hover" style="margin-top: -20px">
-			             <p>Perspiciatis unde omnis iste natus voluptatem</p>
-			             <strong>Rp 120.000</strong>
+			           <div class="image_home" style="margin: 0 20px;">
+			            <a href="#"><img src="<?php echo base_url()?>assets/images/Sate_Padang-Indonesia_Main_Course.jpg"  alt="" /></a>
+			            <div class="hover" style="margin-top: -35px">
+			             <p style="font-size: 13px; margin: 65px 12px -10px;"><span>Sate padang yang merupakan makanan khas padang. Daging ayamnya yang lembut ditambah perpaduan bumbu khas padang seolah memanjakan lidah nusantara.</span></p>
 			            </div>
 			           </div>
 			          </div>
 			         </li>
 			         <li>
 			          <div class="item">
-			           <div class="image_home" style="margin: 0 10px;">
-			            <a href="#"><img src="<?php echo base_url()?>assets/images/makanan6.jpeg"  alt="" /></a>
-			            <div class="hover" style="margin-top: -20px">
-			             <p>Perspiciatis unde omnis iste natus voluptatem</p>
-			             <strong>Rp 120.000</strong>
+			           <div class="image_home" style="margin: 0 20px;">
+			            <a href="#"><img src="<?php echo base_url()?>assets/images/ChickenBuffaloWings-western&appetizer.jpeg"  alt="" /></a>
+			            <div class="hover" style="margin-top: -35px">
+			             <p style="font-size: 13px; margin: 65px 12px -10px;"><span>Sayap Ayam yang renyah dengan bumbu yang menggoda selera. Dijamin ketagihaan!!</span></p>
 			            </div>
 			           </div>
 			          </div>
-			         </li>
-			         <li>
-			          <div class="item">
-			           <div class="image_home" style="margin: 0 10px;">
-			            <a href="#"><img src="<?php echo base_url()?>assets/images/makanan7.jpeg"  alt="" /></a>
-			            <div class="hover" style="margin-top: -20px">
-			             <p>Perspiciatis unde omnis iste natus voluptatem</p>
-			             <strong>Rp 120.000</strong>
-			            </div>
-			           </div>
-			          </div>
-			         </li>         							 -->
+			         </li> 						
 								</ul>
 							</div>
 							<a href="#" class="btn-right"></a>
@@ -190,7 +166,7 @@
 				</ul>
 				<ul class="right_side">
 					<li>
-						<span>Social Media:</span>				
+						<span>Social Media:</span>
 						<div class="social">
 							<a href="https://www.facebook.com/" class="fb">Facebook</a>
 							<a href="https://twitter.com/" class="tw">Twitter</a>

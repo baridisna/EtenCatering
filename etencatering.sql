@@ -169,8 +169,17 @@ CREATE TABLE `promotions` (
   `promotions_id` varchar(100) NOT NULL,
   `promotions_name` varchar(100) DEFAULT NULL,
   `promotions_date` date DEFAULT NULL,
-  `promotions_description` varchar(1000) DEFAULT NULL
+  `photo_promosi` varchar(500) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `promotions`
+--
+
+INSERT INTO `promotions` (`promotions_id`, `promotions_name`, `promotions_date`, `photo_promosi`) VALUES
+('1', 'Free Fires for All', '2019-01-02', 'fries.jpg'),
+('2', 'Gratis Biaya Pengiriman', '2019-01-31', 'ongkir.jpg'),
+('3', 'Book Giveaway', '2018-12-12', 'buku.jpg');
 
 -- --------------------------------------------------------
 
