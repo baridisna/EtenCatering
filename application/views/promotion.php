@@ -1,18 +1,8 @@
 			<section class="main">				
 				<div class="content">
-					<section class="bar">
-						<div class="bar-frame">
-							<ul class="breadcrumbs">
-								<li><a href="<?php echo base_url()?>home">Home</a></li>
-								<li>Promotion</li>
-							</ul>
-						</div>
-					</section>
-					<div class="head" style="font-size: 45px;">								
-							<p><strong><center>ALL DAY VALUE MEAL!!</center></strong></p>
-							<br>
-							<br>
-	
+					<br>
+					<div class="head" style="font-size: 45px">								
+							<p><strong><center>PROMOTIONS</center></strong></p>
 					</div>
 						<br>
 						<br>					
@@ -39,7 +29,7 @@
 				<ul class="left_side">
 					<li>
 						<span>Our Mission :</span>
-						<p style="line-height: 26px;">Eten Catering siap menyediakan makanan sehat yang lezat sesuai kebutuhan. Dengan ragam pilihan menu berkualitas, Eten Catering siap menjadi bekal sehat untuk keseharian Anda.</p>
+						<p style="line-height: 26px;">Veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit quia.</p>
 					</li>
 					<li>
 						<span>  </span>
@@ -55,12 +45,12 @@
 					<li>
 						<span>Social Media:</span>
 						<div class="social">
-							<a href="https://www.facebook.com/" class="fb">Facebook</a>
-							<a href="https://twitter.com/" class="tw">Twitter</a>
+							<a href="#" class="fb">Facebook</a>
+							<a href="#" class="tw">Twitter</a>
 						</div>
 						<div class="social">
-							<a href="https://www.instagram.com/" class="gl">Instagram</a>
-							<a href="https://id.pinterest.com/" class="pn">Pinterest</a>
+							<a href="#" class="gl">Google+</a>
+							<a href="#" class="pn">Pinterest</a>
 						</div>
 					</li>
 				</ul>

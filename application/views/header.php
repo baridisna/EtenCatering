@@ -13,6 +13,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<meta name="format-detection" content="telephone=no">
 	<link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
 	<title>Eten Catering</title>
+	<!-- <link rel="stylesheet" href="<?php //echo base_url()?>/assets/css/bootstrap.css" /> -->
 	<link rel="stylesheet" href="<?php echo base_url()?>/assets/css/fancySelect.css" />
 	<link rel="stylesheet" href="<?php echo base_url()?>/assets/css/uniform.css" />
 	<link rel="stylesheet" href="<?php echo base_url()?>/assets/css/jquery.bxslider.css" />
@@ -45,7 +46,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<ul class="navi">
 							<li class="searc_li" >
 								<div  class="ul_search li">
-									<a class="search" href="#" style="color: #ffffff"><span>search</span></a>
+									<a class="search" href="#"><span>search</span></a>
 									<form method="get" class="searchform" action="#">
 										<input type="text" class="field" name="s" id="s" placeholder="What are you looking for?" />
 										<input type="submit" class="submit" value=""  />
