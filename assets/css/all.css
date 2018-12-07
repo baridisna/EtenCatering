@@ -23,7 +23,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 
-img{
+img {
 	vertical-align: middle;
 }
 
@@ -46,7 +46,7 @@ table {
 	border-spacing: 0;
 }
 
-a[href], label[for], select, 
+a[href], label[for], select,
 input[type=checkbox], input[type=radio] {
 	cursor: pointer;
 	font-family: 'Varela Round', sans-serif;
@@ -83,7 +83,7 @@ body,
 html {height: 100%;}
 body{
 	margin:0;
-	color:#978379;
+	color:#FF8C00;
 	font-family: 'Varela Round', sans-serif;
 	font-size: 16px;
 	line-height: 18px;
@@ -285,7 +285,7 @@ a:hover{text-decoration:underline;}
 	content: none; 
 }
 #progressbar li.active {
-	color: #6e6e6e;
+	color: green;
 }
 #progressbar li.danger {
 	color: red;
@@ -388,37 +388,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f6f8', end
 	margin: 0 auto;
 	position:relative;
 }
-/*div[class*=col-]{
-    padding: auto;
-    margin-left: 0px;
-}
-.col-3 {width: 70%; background-color: pink;margin-left: 0px};
-.col-4{width: 30%; background-color: lavender;};*/
-
-/*@media only screen and (-webkit-min-device-pixel-ratio:2) ,(min--moz-device-pixel-ratio:2),(-o-min-device-pixel-ratio:2/1),(min-device-pixel-ratio:2),(min-resolution:192dpi),(min-resolution:2dppx) {
-    div [class*="col-"] {
-        width: 100%;
-    }*/
 .content{position: relative;}
-/*.row::after {
-    content: "";
-    display: block;
-}
-div[class*=col-]{
-    padding: auto;
-}
-.col-3 {width: 70%; background-color: pink;};
-.col-4 {width: 30%; background-color: lavender;};
 .content .box_images{
 	position: relative;
 	width: 870px;
 	float: left;
-}*/
+}
 .content .box_images img{
 	position: relative;
 	width: 100%;
 	height: auto;
-	margin-left: 0px;
 }
 .content .box_images .info{
 	position: absolute;
@@ -426,47 +405,6 @@ div[class*=col-]{
 	top: 25%;
 	left: 9%;
 }
-/*buat search kota*/		
-.box_sub_total2{		
-    text-align: center;
-    width: 100%;
-    margin-left: 0px;
-    border-radius: 5px;
-    behavior: url(css/PIE.htc);
- /*   padding: 50px 0;*/
-    background: #FF8C00;
-    position: relative;	
-}		
-.box_sub_total2 h1{		
-	font-size: 18px;		
-	line-height: 20px;		
-	margin: 0 0 15px;		
-}		
-.box_sub_total2 p{		
-	padding: 0 0 20px;		
-}		
-.box_sub_total2 h2{		
-	position : relative;		
-	bottom: -13px;		
-	font-size: 18px;		
-	line-height: 40px;		
-	color: #ffffff;		
-	display: block;		
-	margin: 0 0 30px;		
-}		
-.box_sub_total2 .btn.btn_finalize2{		
-	background: #5b3e36;		
-	position : relative;		
-	top: 5px;		
-	color: #fff;		
-	font-size: 14px;		
-	line-height: 40px;		
-	width: 60px;		
-	height: 35px;		
-	display: block;		
-	margin: 0 auto;		
-}		
-.box_sub_total2 .btn.btn_finalize2:hover{text-decoration: none;}
 .box_image_list{
 	float: right;
 	width: 270px;
@@ -500,26 +438,17 @@ div[class*=col-]{
 	position: relative;
 }
 .item .image img {
-    width: 100%;
-    height: 260px;
-    object-fit: cover;
-}
-.item .image_home {
-	position: relative;
-}
-.item .image_home img {
 	width: 100%;
-	height: 180px;
-	object-fit: cover;
+	height: 260px;
 }
 .item .hover {
 	display: none;
-	height: 120%;
+	height: 100%;
     left: 0;
     position: absolute;
     top: 0;
     width: 100%;
-    background: #978379;
+    background: #ea5f8a;
     opacity: 0.9;
     cursor: pointer;
 }
@@ -918,20 +847,20 @@ div.selector select {
 .list_table .braun.first{
 	border-radius: 5px 0 0 0;
 	behavior: url(css/PIE.htc);
-	width: 60%;
+	width: 40%;
 	color: #fff;
 }
 .list_table .braun.last{
 	border-radius: 0 5px 0 0;
 	behavior: url(css/PIE.htc);
-	width: 5%;
+	width: 20%;
 }
 .list_table .braun.price,.list_table  .white.two{
 	width: 10%;
 	color:#fff;
 }
 .list_table .braun.qua,.list_table .white.three{
-	width: 15%;
+	width: 10%;
 	color: #fff;
 }
 .list_table .braun.total,.list_table .white.four{
@@ -982,7 +911,7 @@ div.selector select {
 }
 .list_table div.fancy-select div.trigger{min-width: 35px;background-position: 80% 50%;}
 .list_table div.fancy-select ul.options{min-width:  77px;}
-.list_table .white.three .row,.list_table .white.last .row{display: inline-block;}
+.list_table .white.three .row,.list_table .white.last .row{display: inline-flex;}
 .btn-delete {
 	width: 27px;
 	height: 27px;
@@ -992,13 +921,6 @@ div.selector select {
 	display: block;
 }
 .btn-delete:hover{opacity: 0.7;}
-
-div[class*=col-]{
-    float: left;
-    padding: 15px;
-}
-}
-
 .box_sub_total{
 	text-align: center;
 	width: 370px;
@@ -1044,8 +966,47 @@ div[class*=col-]{
 	margin: 0 0 10px;
 }
 
-
-
+/*buat search kota*/		
+.box_sub_total2{		
+	text-align: center;		
+	width: 285px;			
+	margin-left: 885px;		
+	border-radius: 5px;		
+	behavior: url(css/PIE.htc);		
+	padding: 88px 0;		
+	background: #e27e04;		
+	position: relative;		
+}		
+.box_sub_total2 h1{		
+	font-size: 18px;		
+	line-height: 20px;		
+	margin: 0 0 15px;		
+}		
+.box_sub_total2 p{		
+	padding: 0 0 20px;		
+}		
+.box_sub_total2 h2{		
+	position : relative;		
+	bottom: 60px;		
+	font-size: 24px;		
+	line-height: 32px;		
+	color: #5b3e36;		
+	display: block;		
+	margin: 0 0 30px;		
+}		
+.box_sub_total2 .btn.btn_finalize2{		
+	background: #5b3e36;		
+	position : relative;		
+	top: 75px;		
+	color: #fff;		
+	font-size: 14px;		
+	line-height: 51px;		
+	width: 60px;		
+	height: 50px;		
+	display: block;		
+	margin: 0 auto;		
+}		
+.box_sub_total2 .btn.btn_finalize2:hover{text-decoration: none;}		
 		
 .entry h2{		
 	font-size: 30px;		

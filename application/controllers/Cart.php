@@ -18,9 +18,52 @@ class Cart extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
+
+	function __construct(){
+        parent::__construct();
+        $this->load->model('model_cart');
+    }
+
 	public function index()
 	{
-		$this->load->view('header');
-		$this->load->view('cart');
+		$userID=$this->session->userdata('ses_id');
+
+		if (empty($userID)) {
+			$url=base_url('/Login');
+            echo $this->session->set_flashdata('login_first','Login terlebih dahulu! :)');
+            redirect($url);
+		}
+		elseif (!empty($userID)) {
+			$cart=$this->model_cart->Cart_customer($userID);
+
+			$count_product=0;
+			$total_pay=0;
+			foreach ($cart as $key) {
+				$total_cost = $key->total_cost;
+				$total_pay = $total_pay + $total_cost;
+				$count_product = $count_product + 1;
+			}
+
+			$data = array(
+			'cart_item' => $cart,
+			'total_pay' => $total_pay,
+			'count_product' => $count_product );
+			$this->load->view('header', $data);
+			$this->load->view('cart', $data);
+		}
+
+		
+	}
+
+	public function update()
+	{
+		$id=$this->input->post('cart_id');
+		$this->model_cart->edit($id);
+	}
+
+	public function delete()
+	{
+		$id=$this->input->post('cart_id');
+		$this->model_cart->delete($id);
 	}
 }

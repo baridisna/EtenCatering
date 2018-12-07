@@ -13,6 +13,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<meta name="format-detection" content="telephone=no">
 	<link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
 	<title>Eten Catering</title>
+	<link rel="stylesheet" href="<?php echo base_url()?>/assets/css/bootstrap.css" />
 	<link rel="stylesheet" href="<?php echo base_url()?>/assets/css/fancySelect.css" />
 	<link rel="stylesheet" href="<?php echo base_url()?>/assets/css/uniform.css" />
 	<link rel="stylesheet" href="<?php echo base_url()?>/assets/css/jquery.bxslider.css" />
@@ -29,16 +30,37 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<div class="header-holder">
 				<header id="header">
 					<span class="logo"><a href="index.html">Eten Catering</a></span>
-					<div class="tools-nav_holder">
-						<ul class="tools-nav">
-							<li><a href="#">My account</a></li>
-							<li class="login"><a href="#">Logout</a></li>
-						</ul>
-						<div class="checkout">
-							<span class="grey">1 product, <span class="orange"><strong>Rp 38.000</strong></span></span>
-							<a href="<?php echo base_url()?>Cart" class="btn btn_checkout">Checkout</a>
-						</div>
-					</div>
+
+					<?php
+						$sess=$this->session->userdata('ses_id');
+
+						if (empty($sess)) : ?>
+							<div class="tools-nav_holder">
+								<ul class="tools-nav">
+									<li class="login"><a href="<?php echo base_url('Login/signup') ?>">Sign Up</a></li>
+									<li class="login"><a href="<?php echo base_url('Login') ?>">Login</a></li>
+								</ul>
+								<div class="checkout">
+									<span class="grey">0 product, <span class="orange"><strong>Rp 0</strong></span></span>
+									<a href="<?php echo base_url()?>Cart" class="btn btn_checkout" style="padding: 0 0 0 0">Keranjang</a>
+								</div>
+							</div>
+						<?php elseif (!empty($sess)) : ?>
+							<div class="tools-nav_holder">
+								<div class="tools-nav" style="margin-top: 10px">
+									<span style="color: black">Welcome, <strong><?php echo $this->session->userdata('ses_name');?></strong></span>
+									<ul style="padding-top: 10px">
+										<li><a href="#">My account</a></li>
+										<li class="login"><a href="<?php echo base_url('Login/logout') ?>">Logout</a></li>
+									</ul>
+								</div>
+
+								<div class="checkout">
+									<span class="grey"><?php echo $count_product ?> product, <span class="orange"><strong>Rp <?php echo $total_pay ?></strong></span></span>
+									<a href="<?php echo base_url()?>Cart" class="btn btn_checkout" style="padding: 0 0 0 0">Checkout</a>
+								</div>
+							</div>
+						<?php endif; ?>
 					<div class="clear"></div>
 					<a class="menu_trigger" href="#">menu</a>
 					<nav id="nav">
