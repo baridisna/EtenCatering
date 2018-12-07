@@ -3,136 +3,49 @@
 					<div class="box_images-col">
 						<a href="#"><img src="<?php echo base_url();?>assets/images/JBCweb_catering.jpg" alt="" style="height: 300px; width: 100%; object-fit: cover;"></a>
 					</div>
-
-					
-					<div class="box_sub_total2" style="margin-left: 0px; padding: 0 0; width: 100%;">
+<!-- 
+					<div class="box_sub_total2-col" style="margin-left: 0px; padding-: auto; width: 29%; float: right; height: auto;">
 						<ul>					
 						<h2>Area Yang Dijangkau</h2>
-						<div class="ul_search2" style="font-size: 15px; margin-top: -43px;">
+						<div class="ul_search2" style="font-size: 15px;"> -->
 		<!-- 					<span style="color: #56504e">Nama Kota</span></a> -->
-							<br/>
+							<!-- <br/> -->
 							<!-- <br/> -->							
-							<div class="row">
-									<select id="size" style="position: center">
+<!-- 							<div class="row" style="margin-left: auto; margin-right: auto; width: 193px; margin-top: 0px; position: relative; bottom: 20px;">
+									<select id="size" >
 										<option value="" hidden>-Pilih Kota-</option>
 										<option>Yogyakarta</option>
 										<option>Jakarta</option>
 										<option>Bandung</option>
 									</select>
-							</div>
-						</div >
+							</div> -->
+<!-- 						</div >
 						<a class="btn btn_finalize2"href="#">CEK</a>
 						<br/>
 						</ul>
-					</div>
-					<br>
-					<br>
-					<br>
+					</div> -->
+<!-- 					<br> -->
+<!-- 					<br>
+					<br> -->
 
-					<div class="head" style="font-size: 30px">								
+					<div class="head" style="font-size: 30px; margin-top: 30px; line-height: 35px;">								
 							<p><strong><center>LANGKAH PEMESANAN</center></strong></p>
+							<br>
 					</div>
-						<br>
-						<br>
-				<div class="row well" style="position: relative; margin-left: 90px;">
-					<ul id="progressbar" class="progressbar">
-					<li class="active" >Mencari makanan</li>
+
+				<div class="row well" style="position: relative; margin-left: 9%; margin-right: auto;%; left: auto;">
+					<ul id="progressbar" class="progressbar" style="left: auto; margin-right: 0%; ">
+					<li class="active" style="">Mencari makanan</li>
 					<li class="active" >Memilih makanan sesuai dengan jumlah yang diinginkan</li>
 					<li class="active" >Membayar pesanan</li>            
 					</ul>
+					<br>
 				</div>	
+				<br>
+				<br>
+				<div class="clear"></div>
 
-					<div class="clear"></div>
-					<section class="container">
-						<div class="bottom-slider">
-							<a href="#" class="btn-left"></a>
-							<div class="slides">
-								<p>Best Seller</p>
-								<ul class="item-list">
-									<li>
-										<div class="item">
-											<div class="image_home">
-											<a href="#"><img src="<?php echo base_url()?>assets/images/makanan.jpeg"  alt="" /></a>
-												<div class="hover" style="margin-top: -20px">
-													<p>Perspiciatis unde omnis iste natus voluptatem</p>
-													<strong>Rp 120.000</strong>								
-												</div>
-											</div>
-										</div>
-									</li>
-									<li>
-										<div class="item">
-											<div class="image_home">
-												<a href="#"><img src="<?php echo base_url()?>assets/images/makanan2.jpeg"  alt="" /></a>
-												<div class="hover" style="margin-top: -20px">
-													<p>Perspiciatis unde omnis iste natus voluptatem</p>
-													<strong>Rp 120.000</strong>
-												</div>
-											</div>
-										</div>
-									</li>
-									<li>
-										<div class="item">
-											<div class="image_home">
-												<a href="#"><img src="<?php echo base_url()?>assets/images/makanan3.jpeg"  alt="" /></a>
-												<div class="hover" style="margin-top: -20px">
-													<p>Perspiciatis unde omnis iste natus voluptatem</p>
-													<strong>Rp 120.000</strong>
-												</div>
-											</div>
-										</div>
-									</li>
-									<li>
-										<div class="item">
-											<div class="image_home">
-												<a href="#"><img src="<?php echo base_url()?>assets/images/makanan4.jpeg"  alt="" /></a>
-												<div class="hover" style="margin-top: -20px">
-													<p>Perspiciatis unde omnis iste natus voluptatem</p>
-													<strong>Rp 120.000</strong>
-												</div>
-											</div>
-										</div>
-									</li>
-									<li class="last">
-										<div class="item">
-											<div class="image_home">
-												<a href="#"><img src="<?php echo base_url()?>assets/images/makanan5.jpeg"  alt="" /></a>
-												<div class="hover" style="margin-top: -20px">
-													<p>Perspiciatis unde omnis iste natus voluptatem</p>
-													<strong>Rp 120.000</strong>
-												</div>
-											</div>
-										</div>
-									</li>
-									<li>
-										<div class="item">
-											<div class="image_home">
-												<a href="#"><img src="<?php echo base_url()?>assets/images/makanan6.jpeg"  alt="" /></a>
-												<div class="hover" style="margin-top: -20px">
-													<p>Perspiciatis unde omnis iste natus voluptatem</p>
-													<strong>Rp 120.000</strong>
-												</div>
-											</div>
-										</div>
-									</li>
-									<li>
-										<div class="item">
-											<div class="image_home">
-												<a href="#"><img src="<?php echo base_url()?>assets/images/makanan7.jpeg"  alt="" /></a>
-												<div class="hover" style="margin-top: -20px">
-													<p>Perspiciatis unde omnis iste natus voluptatem</p>
-													<strong>Rp 120.000</strong>
-												</div>
-											</div>
-										</div>
-									</li>									
-								</ul>
-							</div>
-							<a href="#" class="btn-right"></a>
-						</div>
-					</section>
-
-					<div class="head" style="font-size: 45px">								
+					<div class="head" style="font-size: 30px; margin-top: 40px; text-align: center;">		<br>						
 							<p><strong><center>TESTIMONI</center></strong></p>
 					</div>
 						<br>
@@ -141,32 +54,31 @@
 						<li>
 							<div class="item">
 								<div class="image">
-									<a href="index.html"><img src="<?php echo base_url()?>assets/images/salmon.jpg"  alt="" /></a>
+									<a href="index.html"><img src="<?php echo base_url()?>assets/images/testi1.png"  alt="" /></a>
 								</div>
-								<span>So yummy!</span>
-								<span class="name"><a href="index.html">-Isna-</a></span>				
+								<span>Pelayanan dan rasa terbaik.</span>
+								<span class="name"><a href="index.html">-Najwa Shihab-</a></span>				
 							</div>
 						</li>
 						<li>
 							<div class="item">
 								<div class="image">
-									<a href="index.html"><img src="<?php echo base_url()?>assets/images/posts-8414709.jpg"  alt="" /></a>
+									<a href="index.html"><img src="<?php echo base_url()?>assets/images/testi2.png"  alt="" /></a>
 								</div>
-								<span>Legit!</span>
-								<span class="name"><a href="index.html">-Nita-</a></span>
+								<span>Catering best in town!</span>
+								<span class="name"><a href="index.html">-Alice Norin-</a></span>
 							</div>
 						</li>
 						<li>
 							<div class="item">
 								<div class="image">
-									<a href="index.html"><img src="<?php echo base_url()?>assets/images/post_3124034.jpeg"  alt="" /></a>
+									<a href="index.html"><img src="<?php echo base_url()?>assets/images/testi3.png"  alt="" /></a>
 								</div>
-								<span>The taste is so good</span>
+								<span>Taste good and healthy!</span>
 								<span class="name"><a href="index.html">-Fella-</a></span>
 							</div>
 						</li>
 					</ul>
-				
 
 					<div class="clear"></div>
 					<section class="container">
@@ -229,24 +141,18 @@
 							</div>
 							<a href="#" class="btn-right"></a>
 						</div>
-						<form action="#" class="form-newsletter">
-							<fieldset>
-								<input type="text" placeholder="Put your email..." />
-								<input class="btn black normal" type="submit" value="Subscribe" />
-							</fieldset>
-						</form>
-					</div> -->
+					</section>
 					
 					<div class="clear"></div>
 				</div>
-			</section>
+</section>
 		</div>
 		<footer id="footer">
 			<div class="footer-content">
 				<ul class="left_side">
 					<li>
 						<span>Our Mission :</span>
-						<p style="line-height: 26px;">Veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit quia.</p>
+						<p style="line-height: 26px;">Eten Catering siap menyediakan makanan sehat yang lezat sesuai kebutuhan. Dengan ragam pilihan menu berkualitas, Eten Catering siap menjadi bekal sehat untuk keseharian Anda.</p>
 					</li>
 					<li>
 						<span>  </span>
