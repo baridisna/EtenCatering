@@ -31,7 +31,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<span class="logo"><a href="index.html">Eten Catering</a></span>
 					<div class="tools-nav_holder">
 						<ul class="tools-nav">
-							<li><a href=""http://localhost/EtenCatering/"">My account</a></li>
+							<li><a href="http://localhost/EtenCatering/Home/my_account">My account</a></li>
 							<li class="login"><a href="#">Logout</a></li>
 						</ul>
 						<div class="checkout">

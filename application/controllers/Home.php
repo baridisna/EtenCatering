@@ -28,4 +28,10 @@ class Home extends CI_Controller {
 		$this->load->view('header');
 		$this->load->view('about_us');
 	}
+
+	public function my_account()
+	{
+		$this->load->view('header');
+		$this->load->view('my_account');
+	}
 }

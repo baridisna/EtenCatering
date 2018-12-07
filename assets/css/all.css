@@ -59,11 +59,11 @@ input[type=reset], input[type=submit] {
 	cursor: pointer;
 	font-family: 'Varela Round', sans-serif;
 }
-input[type=text], input[type=email], input[type=reset], input[type=button], input[type=submit], button{
+input[type=text], input[type=email], input[type=reset], input[type=button], input[type=number], input[type=submit], button{
 	-webkit-appearance: none;
 	-webkit-border-radius: 0;
 }
-input[type=url], input[type=password], input[type=text], input[type=email], input[type=reset], input[type=button], input[type=submit], button, textarea{
+input[type=url], input[type=password], input[type=text], input[type=number], input[type=email], input[type=reset], input[type=button], input[type=submit], button, textarea{
      -webkit-appearance: none;
      -webkit-border-radius: 0;
      box-sizing: border-box;-webkit-box-sizing: border-box; -moz-box-sizing: border-box;
@@ -102,6 +102,18 @@ a:hover{text-decoration:underline;}
 	behavior: url(css/PIE.htc);
 	font-size: 14px;
 	background: #B7150A;
+}
+
+.btn-qty{
+	line-height: 35px;
+	width: 50px;
+	color: #978379;
+	text-align: center;
+	display: block;
+    border-radius: 25px;
+	behavior: url(css/PIE.htc);
+	font-size: 14px;
+	background: #ece8e2;
 }
 
 .clear{clear: both;}
@@ -255,7 +267,7 @@ a:hover{text-decoration:underline;}
 	text-align: center;
 }
 #progressbar li:before {
-	content: counter(step);
+	content: counter(headings, decimal); 
 	counter-increment: step;
 	width: 60px;
 	height: 60px;
@@ -287,6 +299,7 @@ a:hover{text-decoration:underline;}
 }
 #progressbar li.active {
 	color: #6e6e6e;
+	counter-reset: headings;
 }
 #progressbar li.danger {
 	color: red;
@@ -871,6 +884,15 @@ div.selector select {
 	float: left;
 	width: 570px;
 }
+
+.item .image1 {
+	float: left;
+}
+.item .image1 img {
+    width: 550px;
+    height: 500px;
+    object-fit: cover;
+}
 .details-info .description{
 	width: 570px;
 	float: right;
@@ -1205,6 +1227,7 @@ div[class*=col-]{
 		background-image: url(../images/exitsearch2x.png);
 		background-size:50px 50px;
 	}
+	
 	#header .searchform input[type="text"]{
 		background-size: 25px 26px;
 	}

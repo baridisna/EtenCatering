@@ -69,7 +69,7 @@
 						<h4>Subtotal: Rp 50.000</h4>
 						<p>+ Shippment: Rp 0</p>
 						<h2>Total to pay: Rp 50.000</h2>
-						<a class="btn btn_finalize" href="#">Finalize and pay</a>
+						<a class="btn btn_finalize" href="http://localhost/EtenCatering/cart/checkout">Finalize and pay</a>
 					</div>
 				</div>
 			</section>

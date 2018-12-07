@@ -1,38 +1,23 @@
-			<section class="main">				
+<section class="main">				
 				<div class="content">
-					<section class="bar">
-						<div class="bar-frame">
-							<ul class="breadcrumbs">
-								<li><a href="<?php echo base_url()?>home">Home</a></li>
-								<li>Promotion</li>
-							</ul>
+
+				<div class="clear"></div>
+
+					<div class="head" style="font-size: 30px; margin-top: 40px; text-align: center;">		
+					<br>											
+
+					<div class="clear"></div>
+					<section class="container" style="color: color: #978379">
+						<div class="bottom-slider" style="width: 30%; margin-left:auto; margin-right: auto; color: #978379">
+							<p style="color: #ffff; padding: 0px 0 12px;">Thank you for ordering!</p>
+							<p style="color: #ffff; padding: 0px 0 50px;">Your order will be processed immadiately.</p>
+							<img src="<?php echo base_url();?>assets/images/tick-inside-circle.png" alt="" style="width: 50px; height: 50px;  margin: 0 auto;"
 						</div>
 					</section>
-					<div class="head" style="font-size: 45px;">								
-							<p><strong><center>ALL DAY VALUE MEAL!!</center></strong></p>
-							<br>
-							<br>
-	
-					</div>
-						<br>
-						<br>					
-					<ul class="item-product">
-						<?php foreach ($data->result() as $key) : ?>
-						<li>
-							<div class="item">
-								<div class="image">
-									<a href=""><img src="<?=base_url(); ?>assets/images/<?= $key->photo_promosi; ?>"  alt="" /></a>
-								</div><br>
-								<span style="font-size: 15px; line-height: 0px;"><strong><?= $key->promotions_name; ?></strong></span>
-								<br>
-								<span class="name1" style="color: #6e6e6e">Valid Until : <?= $key->promotions_date; ?></a></span>
-							</div>
-						</li>
-						<?php endforeach; ?>
 					
 					<div class="clear"></div>
 				</div>
-			</section>
+</section>
 		</div>
 		<footer id="footer">
 			<div class="footer-content">
@@ -62,6 +47,7 @@
 							<a href="https://www.instagram.com/" class="gl">Instagram</a>
 							<a href="https://id.pinterest.com/" class="pn">Pinterest</a>
 						</div>
+
 					</li>
 				</ul>
 				<div class="clear"></div>
@@ -78,5 +64,6 @@
 	<script type="text/javascript" src="<?php echo base_url()?>/assets/js/jquery.bxslider.js"></script>
 	<script src="<?php echo base_url()?>/assets/js/jquery-ui-1.10.4.custom.js"></script>
 	<script type="text/javascript" src="<?php echo base_url()?>/assets/js/main.js"></script>
+	
 </body>
 </html>

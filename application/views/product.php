@@ -10,39 +10,36 @@
 						</div>
 					</section>
 					<div class="details-info">
-						<div class="slid_box">
-							<ul class="bxslider">
-							  <li><img src="<?php echo base_url();?>/assets/images/<?= $detail->photo?>" class="responsive-img" alt="" /></li>
-							</ul>
+						<div class="item">
+							<div class="image1">
+							 <img src="<?php echo base_url();?>/assets/images/<?= $detail->photo?>" height= '500' alt="" />
+							</div>
 						</div>
 						<div class="description">
 							<div class="head">
 								<h1 class="title"><strong><?= $detail->product_name?></strong></h1>
 								<h2>Review : <?= $detail->product_review?></h2>
-								<h3>- Satuan          Rp <?= $detail->product_satuan?> / porsi</h3>
-								<h3>- Box (min 30)    Rp <?= $detail->product_box?> / porsi</h3>
-								<h3>- Gubug (min 100) Rp <?= $detail->product_gubug?> / porsi</h3>
+								<?php foreach ($jenis as $key) : ?>
+								<h3>- <?= $key->variant_name?> : Rp <?= $key->price?> / porsi</h3>
+								<?php endforeach; ?>
 							</div>
 							<div class="section">
-								<form class="form-sort page" action="cart.html">
+								<form class="form-sort page" action="<?php echo base_url(); ?>product/cart">
 									<fieldset>
 										<div class="row">
 											<div class="row">
 												<label for="price"><strong>Packet :</strong></label>
 												<select id="price">
 													<option value="">Select</option>
-													<option value="Satuan">Satuan</option>
-													<option value="Box">Box</option>
-													<option value="Gubug">Gubug</option>
+													<?php foreach ($jenis as $key) : ?>
+													<option><?= $key->variant_name?></option>
+													<?php endforeach; ?>
 												</select>
 											</div>
+
 											<div class="row">
 												<label for="quantity"><strong>Quantity :</strong></label>
-												<select id="quantity">
-													<option value="">Select</option>
-													<option>1</option>
-													<option>2</option>
-												</select>
+													<input type="number" class="btn-qty" />
 											</div>
 											<div class="clear"></div>
 										</div>

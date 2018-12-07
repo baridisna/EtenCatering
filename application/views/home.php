@@ -82,7 +82,7 @@
 
 					<div class="clear"></div>
 					<section class="container">
-						<div class="bottom-slider">
+						<div class="bottom-slider" style="background: #FF8C00">
 							<a href="#" class="btn-left"></a>
 							<div class="slides">
 								<p style="color: #ffffff">Best Seller</p>
@@ -116,51 +116,7 @@
 			            </div>
 			           </div>
 			          </div>
-			         </li>
-<!-- 			         <li>
-			          <div class="item">
-			           <div class="image_home" style="margin: 0 30px;">
-			            <a href="#"><img src="<?php echo base_url()?>assets/images/makanan4.jpeg"  alt="" /></a>
-			            <div class="hover" style="margin-top: -20px">
-			             <p>Perspiciatis unde omnis iste natus voluptatem</p>
-			             <strong>Rp 120.000</strong>
-			            </div>
-			           </div>
-			          </div>
-			         </li> -->
-			         <!-- <li class="last">
-			          <div class="item">
-			           <div class="image_home" style="margin: 0 10px;">
-			            <a href="#"><img src="<?php echo base_url()?>assets/images/makanan5.jpeg"  alt="" /></a>
-			            <div class="hover" style="margin-top: -20px">
-			             <p>Perspiciatis unde omnis iste natus voluptatem</p>
-			             <strong>Rp 120.000</strong>
-			            </div>
-			           </div>
-			          </div>
-			         </li>
-			         <li>
-			          <div class="item">
-			           <div class="image_home" style="margin: 0 10px;">
-			            <a href="#"><img src="<?php echo base_url()?>assets/images/makanan6.jpeg"  alt="" /></a>
-			            <div class="hover" style="margin-top: -20px">
-			             <p>Perspiciatis unde omnis iste natus voluptatem</p>
-			             <strong>Rp 120.000</strong>
-			            </div>
-			           </div>
-			          </div>
-			         </li>
-			         <li>
-			          <div class="item">
-			           <div class="image_home" style="margin: 0 10px;">
-			            <a href="#"><img src="<?php echo base_url()?>assets/images/makanan7.jpeg"  alt="" /></a>
-			            <div class="hover" style="margin-top: -20px">
-			             <p>Perspiciatis unde omnis iste natus voluptatem</p>
-			             <strong>Rp 120.000</strong>
-			            </div>
-			           </div>
-			          </div>
-			         </li>         							 -->
+			         </li>       							
 								</ul>
 							</div>
 							<a href="#" class="btn-right"></a>
@@ -190,14 +146,15 @@
 				</ul>
 				<ul class="right_side">
 					<li>
-						<span>S						<div class="social">
+						<span>Social Media:</span>
+						<div class="social">
 							<a href="https://www.facebook.com/" class="fb">Facebook</a>
 							<a href="https://twitter.com/" class="tw">Twitter</a>
 						</div>
 						<div class="social">
 							<a href="https://www.instagram.com/" class="gl">Instagram</a>
 							<a href="https://id.pinterest.com/" class="pn">Pinterest</a>
-						</div>ocial Media:</span>
+						</div>
 
 					</li>
 				</ul>

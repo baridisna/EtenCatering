@@ -23,4 +23,16 @@ class Cart extends CI_Controller {
 		$this->load->view('header');
 		$this->load->view('cart');
 	}
+
+	public function checkout()
+	{
+		$this->load->view('header');
+		$this->load->view('checkout');
+	}
+
+	public function done_ordering()
+	{
+		$this->load->view('header');
+		$this->load->view('done_ordering');
+	}
 }

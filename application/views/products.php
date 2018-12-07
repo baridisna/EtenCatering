@@ -9,45 +9,53 @@
 						</div>
 					</section>
 					<div class="top-bar">
-						<form class="form-sort" action="#">
+						<form class="form-sort" method = "POST" action="<?php echo base_url(); ?>product/sort">
 							<fieldset>
 								<div class="row">
 									<label for="sort"><strong>Sort by :</strong></label>
-									<select id="sort">
+									<select id="sort" name='sort'>
 										<option value=''>Select</option>
-										<option value='Popular'>Populer</option>
-										<option value='Price'>Price</option>
+										<option value='popular'>Populer</option>
+										<option value='price'>Price</option>
 									</select>
 								</div>
 								<div class="row">
-									<label for="page"><strong>Meal's origin:</strong></label>
-									<select id="page">
+									<label for="origin"><strong>Meal's origin :</strong></label>
+									<select id="origin" name="origin">
 										<option value=''>Select</option>
-										<option>Western</option>
-										<option>Indonesian</option>
+										<option value='Western'>Western</option>
+										<option value='Indonesian'>Indonesian</option>
 									</select>
 								</div>
 								<div class="row">
-									<label for="page"><strong>Type of meal:</strong></label>
-									<select id="page">
+									<label for="type"><strong>Type of meal :</strong></label>
+									<select id="type" name='type'>
 										<option value=''>Select</option>
-										<option>Appetizer</option>
-										<option>Main Course</option>
-										<option>Dessert</option>
+										<option value='Appetizer'>Appetizer</option>
+										<option value='Main Course'>Main Course</option>
+										<option value='Dessert'>Dessert</option>
 									</select>
 								</div>
-							</fieldset>
+								<div class="row">
+									<input type="submit" value="GO" style="margin-top: 23px" class="btn pink" />
+								</div>
+							</fieldset>							
 						</form>
 					</div>
 					<ul class="item-product">
-						<?php foreach ($data->result() as $key) : ?>
+						<?php foreach ($data as $key) : ?>
 						<li>							
 							<div class="item">
+								<a href="<?php echo base_url(); ?>product/product_detail/<?= $key->product_id ?>">
 								<div class="image">
+<<<<<<< HEAD
 									<a href="index.php"><img src="<?=base_url(); ?>assets/images/<?= $key->photo; ?>"  alt="" /></a>
+=======
+									<img src="<?=base_url(); ?>assets/images/<?= $key->photo; ?>"  alt="" />
+>>>>>>> master
 								</div>
 								<span class="name"><?= $key->product_name; ?></span>
-								<span class="name2">Rp <?= $key->product_price;?></span>
+								<span class="name2">Rp <?= $key->product_price;?></span></a>
 							</div>							
 						</li>
 						<?php endforeach; ?>

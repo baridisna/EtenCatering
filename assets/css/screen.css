@@ -17,6 +17,20 @@
 	.container .bottom-slider .slides{width: 904px!important;}
 	.footer-content ul.left_side{width: 70%;}
 	.slid_box{	width: 50%;}
+/*	.profil .entry_left{
+		width: 50%;
+	}*/
+/*	.profil .entry_left{
+		margin-left: 6%;
+		width: 31%;
+	}*/
+/*	.profil .entry_right{
+		width: 50%;
+	}*/
+/*	.profil .entry_right{
+		margin-right: 6%;
+		width: 31%;
+	}*/
 	.details-info .description{	width: 48%;}
 	#bx-pager a img{	width: 100%;	height: 97px;border-radius: 5px;}
 	#bx-pager a{width: 21%;margin: 0 0 0 5.2%;}
@@ -216,6 +230,7 @@
 		margin-left: 6%;
 		width: 31%;
 	}
+
 }
 @media only screen and (max-width : 580px){
 	.block-advice .advice-holder{float: none;text-align: center;margin: 0 0 10px;line-height: 20px;}
