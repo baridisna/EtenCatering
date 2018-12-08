@@ -26,7 +26,7 @@
 								<img src="<?php echo base_url()?>assets/images/<?= $key->photo ?>" height="110" width="105" alt="" />
 								<div class="description">
 									<h3><a href="#"><?= $key->product_name ?></a></h3>
-									<p>variant: <?= $key->variant_name ?></p>
+									<p>Variant : <?= $key->variant_name ?></p>
 								</div>
 							</td>
 							<td class="white two" style="width: 15%">Rp <?= $key->unit_cost ?></td>
@@ -43,7 +43,7 @@
 						<h4>Subtotal : Rp <?php echo $total_pay ?></h4>
 						<p>+ Shipment : Rp 5000</p>
 						<h2 style="color: orangered">Total to Pay : Rp <?php echo $total_pay + 5000 ?></h2>
-						<a class="btn btn_finalize" href="#" style="padding: 0">Checkout and pay</a>
+						<a class="btn btn_finalize" href="<?php echo base_url(); ?>order" style="padding: 0">Checkout and pay</a>
 					</div>
 				</div>
 			</section>
@@ -55,8 +55,9 @@
 		        <!-- Modal content-->
 			        <div class="modal-content">
 			        	<div class="modal-header">
-			            	<button type="button" class="close" data-dismiss="modal">&times;</button>
+			            	
 			            	<h4 class="modal-title">Edit Cart Items</h4>
+			            	<button type="button" class="close" data-dismiss="modal" pull-right>&times;</button>
 			        	</div>
 			      		<div class="modal-body">
 
@@ -75,14 +76,13 @@
 					            <label>Quantity :</label>
 					          </div>
 					          <div class="col-md-8">
-					            <input type="number" name="quantity" id="qty_edit" class="form-control" style="width: : 100%" readonly required>
+					            <input type="number" name="quantity" id="qty_edit" class="form-control" style="width: : 100%">
 					          </div>
 					        </div>
 					    </div>
 
 			            <div class="modal-footer">
 				            <button class="btn btn-info" id="btn_update">Update</button>
-				            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 			            </div>
 
 			        </div>

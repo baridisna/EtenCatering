@@ -8,6 +8,7 @@ class Home extends CI_Controller {
 		parent::__construct();
 		$this->load->model('model_product');
 		$this->load->model('model_cart');
+		$this->load->model('model_user');
 
 	}
 
@@ -90,7 +91,9 @@ class Home extends CI_Controller {
 			'total_pay' => $total_pay,
 			'count_product' => $count_product );
 
+		$data['account']= $this->model_user->get_customer($userID);
+
 		$this->load->view('header', $data);
-		$this->load->view('my_account');
+		$this->load->view('my_account', $data);
 	}
 }

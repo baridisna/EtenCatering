@@ -10,8 +10,8 @@
 					<section class="container" style="color: color: #978379">
 						<div class="bottom-slider" style="width: 30%; margin-left:auto; margin-right: auto; color: #978379">
 							<p style="color: #ffff; padding: 0px 0 12px;">Thank you for ordering!</p>
-							<p style="color: #ffff; padding: 0px 0 50px;">Your order will be processed immadiately.</p>
-							<img src="<?php echo base_url();?>assets/images/tick-inside-circle.png" alt="" style="width: 50px; height: 50px;  margin: 0 auto;"
+							<p style="color: #ffff; padding: 0px 0 50px;">Your order will be processed immediately.</p>
+							<img src="<?php echo base_url();?>assets/images/tick-inside-circle.png" alt="" style="width: 80px; height: 80px;  margin-top: -25px;"
 						</div>
 					</section>
 					
