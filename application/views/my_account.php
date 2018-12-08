@@ -4,7 +4,7 @@
 						<a href="#>"><img src="<?php echo base_url();?>assets/images/1517622446057.jpg" alt="" style="width: 150px; height: 150px; display: block; margin: 0 auto;"></a>
 					</div>
 							<div class="head" style="font-size: 25px; margin-top: 20px; line-height: 25px; color: #543b35">								
-							<p><strong><center><?php $this->session->userdata('ses_name') ?></center></strong></p>
+							<p><strong><center><?php echo $name ?></center></strong></p>
 							<br>
 							<br>
 							<br>
@@ -37,19 +37,11 @@
 							  </tr>
 							  <tr>
 							    <th style="color: #543b35; font-size: 16px; width:30%"><strong>Email Address</strong></th>
-							    <th style="color: #543b35; font-size: 16px; width:70%; color: #6e6e6e">baridannafiakhansa@gmail.com</th>
+							    <th style="color: #543b35; font-size: 16px; width:70%; color: #6e6e6e"><?php echo $email ?></th>
 							  </tr>
 							  <tr>
 							    <th style="color: #543b35; font-size: 16px; width:30%"><strong>Nomor Telepon</strong></th>
-							    <th style="color: #543b35; font-size: 16px; width:70%;  color: #6e6e6e">1234567890</th>
-							  </tr>
-							  <tr>
-							    <th style="color: #543b35; font-size: 16px; width:30%"><strong>Jenis Kelamin</strong></th>
-							    <th style="color: #543b35; font-size: 16px; width:70%;  color: #6e6e6e">Perempuan</th>
-							  </tr>
-							  <tr>
-							    <th style="color: #543b35; font-size: 16px; width:30%"><strong>Tanggal Lahir</strong></th>
-							    <th style="color: #543b35; font-size: 16px; width:70%;  color: #6e6e6e">12/12/12</th>
+							    <th style="color: #543b35; font-size: 16px; width:70%;  color: #6e6e6e"><?php echo $phone ?></th>
 							  </tr>
 							</table>
 							</div>
@@ -61,11 +53,11 @@
 							  </tr>
 							  <tr>
 							    <th style="color: #543b35; font-size: 16px; width:30%"><strong>Alamat Pengiriman</strong></th>
-							    <th style="color: #543b35; font-size: 16px; width:70%;  color: #6e6e6e">Bantul, Daerah Istimewa Yogyakarta</th>
+							    <th style="color: #543b35; font-size: 16px; width:70%;  color: #6e6e6e"><?php echo $address ?></th>
 							  </tr>
 							  <tr>
-							    <th style="color: #543b35; font-size: 16px; width:30%"><strong>Alamat penagihan</strong></th>
-							    <th style="color: #543b35; font-size: 16px; width:70%;  color: #6e6e6e">Bantul, Daerah Istimewa Yogyakarta</th>
+							    <th style="color: #543b35; font-size: 16px; width:30%"><strong>Kode Pos</strong></th>
+							    <th style="color: #543b35; font-size: 16px; width:70%;  color: #6e6e6e"><?php echo $postal_code ?></th>
 							  </tr>
 							</table>
 							</div>

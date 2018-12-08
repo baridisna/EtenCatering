@@ -14,7 +14,7 @@
 					<br>
 				</div>	
 				<br>
-				<br>
+				
 				<div class="clear"></div>
 
 					<div class="head" style="font-size: 30px; margin-top: 40px; text-align: center;">		<br>						
