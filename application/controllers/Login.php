@@ -44,9 +44,6 @@ class Login extends CI_Controller {
                     $this->session->set_userdata('ses_email', $data['email']);
                     $this->session->set_userdata('ses_name',$data['name']);
                     $this->session->set_userdata('ses_address', $data['address']);
-                    $this->session->set_userdata('ses_provinsi', $data['provinsi']);
-                    $this->session->set_userdata('ses_kabupaten', $data['kabupaten']);
-                    $this->session->set_userdata('ses_kecamatan', $data['kecamatan']);
                     $this->session->set_userdata('ses_postal_code', $data['postal_code']);
                     $this->session->set_userdata('ses_phone', $data['phone']);
 
