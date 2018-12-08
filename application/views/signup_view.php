@@ -10,6 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url()?>/assets/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url()?>/assets/css/animsition.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url()?>/assets/css/all.css">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url()?>/assets/css/login.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url()?>/assets/css/util.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url()?>/assets/css/main.css">
 <!--===============================================================================================-->
