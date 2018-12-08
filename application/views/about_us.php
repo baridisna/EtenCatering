@@ -8,8 +8,9 @@
 							</ul>
 						</div>
 					</section>
+					<br>
 					<div class="entry">
-						<h2 style="font-size: 45px; color: #978379; text-align: center;">WHO ARE WE?</h2>
+						<h2 style="font-size: 45px; color: #978379; text-align: center;"><strong>WHO ARE WE?</strong></h2>
 						<br>
 						<br>
 						<div class="text">
@@ -19,7 +20,7 @@
 						<br>
 						<br>
 
-						<h2 style="font-size: 45px; color: #978379; text-align: center; ">OUR PHILOSOPHY</h2>
+						<h2 style="font-size: 45px; color: #978379; text-align: center; "><strong>OUR PHILOSOPHY</strong></h2>
 						<br>
 						<br>
 						<div class="text">

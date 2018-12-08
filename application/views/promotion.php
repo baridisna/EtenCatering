@@ -9,7 +9,7 @@
 						</div>
 					</section>
 					<br>
-					<div class="head" style="font-size: 45px">								
+					<div class="head" style="font-size: 45px; margin-bottom: 30px;">								
 							<p><strong><center>SPECIAL OFFER</center></strong></p>
 					</div>
 						<br>

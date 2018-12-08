@@ -30,7 +30,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<div class="wrapper-holder">
 			<div class="header-holder">
 				<header id="header">
-					<span class="logo"><a href="index.html">Eten Catering</a></span>
+					<span class="logo"><a href="<?php echo base_url()?>home">Eten Catering</a></span>
 
 					<?php
 						$sess=$this->session->userdata('ses_id');
@@ -51,7 +51,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								<div class="tools-nav" style="margin-top: 10px">
 									<span style="color: black">Welcome, <strong><?php echo $this->session->userdata('ses_name');?></strong></span>
 									<ul style="padding-top: 10px">
-										<li><a href="http://localhost/EtenCatering/Home/my_account">My account</a></li>
+										<li><a href="<?php echo base_url()?>my_account">My account</a></li>
 										<li class="login"><a href="<?php echo base_url('Login/logout') ?>">Logout</a></li>
 									</ul>
 								</div>

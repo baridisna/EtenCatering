@@ -1,7 +1,7 @@
 			<section class="main">
 				<div class="content">
 					<div class="box_images-col">
-						<a href="#>"><img src="<?php echo base_url();?>assets/images/1517622446057.jpg" alt="" style="width: 150px; height: 150px; display: block; margin: 0 auto;"></a>
+						<a href="#>"><img src="<?php echo base_url();?>assets/images/greet.png" alt="" style="width: auto; height: 125px; display: block; margin: 0 auto; object-fit: cover;"></a>
 					</div>
 							<div class="head" style="font-size: 25px; margin-top: 20px; line-height: 25px; color: #543b35">								
 							<p><strong><center><?php echo $name ?></center></strong></p>
