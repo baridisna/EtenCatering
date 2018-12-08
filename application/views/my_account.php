@@ -4,7 +4,7 @@
 						<a href="#>"><img src="<?php echo base_url();?>assets/images/greet.png" alt="" style="width: auto; height: 125px; display: block; margin: 0 auto; object-fit: cover;"></a>
 					</div>
 							<div class="head" style="font-size: 25px; margin-top: 20px; line-height: 25px; color: #543b35">								
-							<p><strong><center><?php echo $name ?></center></strong></p>
+							<p><strong><center><?php echo $account->name ?></center></strong></p>
 							<br>
 							<br>
 							<br>
@@ -37,11 +37,11 @@
 							  </tr>
 							  <tr>
 							    <th style="color: #543b35; font-size: 16px; width:30%"><strong>Email Address</strong></th>
-							    <th style="color: #543b35; font-size: 16px; width:70%; color: #6e6e6e"><?php echo $email ?></th>
+							    <th style="color: #543b35; font-size: 16px; width:70%; color: #6e6e6e"><?php echo $account->email ?></th>
 							  </tr>
 							  <tr>
 							    <th style="color: #543b35; font-size: 16px; width:30%"><strong>Nomor Telepon</strong></th>
-							    <th style="color: #543b35; font-size: 16px; width:70%;  color: #6e6e6e"><?php echo $phone ?></th>
+							    <th style="color: #543b35; font-size: 16px; width:70%;  color: #6e6e6e"><?php echo $account->phone ?></th>
 							  </tr>
 							</table>
 							</div>
@@ -53,11 +53,11 @@
 							  </tr>
 							  <tr>
 							    <th style="color: #543b35; font-size: 16px; width:30%"><strong>Alamat Pengiriman</strong></th>
-							    <th style="color: #543b35; font-size: 16px; width:70%;  color: #6e6e6e"><?php echo $address ?></th>
+							    <th style="color: #543b35; font-size: 16px; width:70%;  color: #6e6e6e"><?php echo $account->address ?></th>
 							  </tr>
 							  <tr>
 							    <th style="color: #543b35; font-size: 16px; width:30%"><strong>Kode Pos</strong></th>
-							    <th style="color: #543b35; font-size: 16px; width:70%;  color: #6e6e6e"><?php echo $postal_code ?></th>
+							    <th style="color: #543b35; font-size: 16px; width:70%;  color: #6e6e6e"><?php echo $account->postal_code ?></th>
 							  </tr>
 							</table>
 							</div>

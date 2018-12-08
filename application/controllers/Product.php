@@ -131,28 +131,4 @@ class Product extends CI_Controller {
 		$this->load->view('header', $cart);
 		$this->load->view('products', $data);
 	}
-
-	public function add()
-	{
-		$id_product = $this->uri->segment(3);
-		$get = $this->model_product->get_where('products', array('product_id' => $id_product))->row();
-
-        $data = array(
-            'id' => $get->product_id,
-            'name' => $get->product_name,
-            'price' => $get->price,
-            'quantity' => 1
-        );
-
-         $this->cart->insert($data);
-
-         echo '<script type="text/javascript">window.history.go(-1);</script>';
-	}
-
-	function testing()
-	{
-		$data['detail'] = $this->model_product->product_detail('BRG1');
-		
-		$this->load->view('testing', $data);	
-	}
 }

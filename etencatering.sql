@@ -1,13 +1,15 @@
 -- phpMyAdmin SQL Dump
--- version 4.5.1
--- http://www.phpmyadmin.net
+-- version 4.8.0.1
+-- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 08, 2018 at 08:24 AM
--- Server version: 10.1.19-MariaDB
--- PHP Version: 5.5.38
+-- Generation Time: Dec 08, 2018 at 08:14 PM
+-- Server version: 10.1.32-MariaDB
+-- PHP Version: 7.2.5
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -51,7 +53,17 @@ CREATE TABLE `cart_item` (
 
 INSERT INTO `cart_item` (`cart_id`, `variant_id`, `customer_id`, `quantity`, `status`) VALUES
 (7, 4, 'isnabarid', 5, 'non-active'),
-(8, 8, 'isnabarid', 23, 'non-active');
+(8, 8, 'isnabarid', 23, 'non-active'),
+(16, 0, 'fellanaura', 0, 'active'),
+(18, 8, 'fellanaura', 5, 'non-active'),
+(19, 21, 'fellanaura', 8, 'non-active'),
+(20, 14, 'fellanaura', 6, 'non-active'),
+(21, 1, 'fellanaura', 5, 'non-active'),
+(22, 2, 'fellanaura', 2, 'non-active'),
+(23, 4, 'fellanaura', 2, 'non-active'),
+(24, 5, 'fellanaura', 6, 'active'),
+(25, 10, 'fellanaura', 4, 'active'),
+(26, 4, 'fellanaura', 7, 'active');
 
 -- --------------------------------------------------------
 
@@ -72,8 +84,8 @@ CREATE TABLE `customer` (
 --
 
 INSERT INTO `customer` (`UserID`, `name`, `address`, `postal_code`, `phone`) VALUES
-('fellanaura', 'thufaila', NULL, NULL, NULL),
-('isnabarid', 'Isna Barid', NULL, NULL, NULL);
+('fellanaura', 'Thufaila Khansa', 'Perum. Pandansari 06 Angkasa Raya', 55198, '081392042416'),
+('isnabarid', 'Isna Barid', 'Perum. Indah Sari No 40 Yogyakarta', 55198, '081392784562');
 
 -- --------------------------------------------------------
 
@@ -109,7 +121,13 @@ INSERT INTO `orders` (`order_id`, `date_created`, `date_shipped`, `order_detail_
 (13, NULL, NULL, 11, 7),
 (14, NULL, NULL, 11, 8),
 (15, NULL, NULL, 12, 7),
-(16, NULL, NULL, 12, 8);
+(16, NULL, NULL, 12, 8),
+(17, NULL, NULL, 13, 18),
+(18, NULL, NULL, 13, 19),
+(19, NULL, NULL, 13, 20),
+(20, NULL, NULL, 15, 21),
+(21, NULL, NULL, 16, 22),
+(22, NULL, NULL, 17, 23);
 
 -- --------------------------------------------------------
 
@@ -143,7 +161,12 @@ INSERT INTO `order_detail` (`order_detail_id`, `recepients_name`, `contact_perso
 (9, 'Isna Barid', '3463435634', '20 Juli 2018', 'perum', 'perum', 'onthespot'),
 (10, 'Isna Barid', '3463435634', '20 Juli 2018', 'perum', 'perum', 'onthespot'),
 (11, 'Isna Barid', '3463435634', '20 Juli 2018', 'perum', 'perum', 'onthespot'),
-(12, 'Isna Barid', '3463435634', '20 Juli 2018', 'perummm', 'perummm', 'mandiri');
+(12, 'Isna Barid', '3463435634', '20 Juli 2018', 'perummm', 'perummm', 'mandiri'),
+(13, 'thufaila', '768', '25 januari', 'ghj', 'gtyh', 'onthespot'),
+(14, 'thufaila', '', '', '', '', 'onthespot'),
+(15, 'thufaila', '768', '25 januari', 'jhkj', 'vhv', 'mandiri'),
+(16, 'thufaila', '768', '25 januari', 'k', 'k', 'onthespot'),
+(17, 'thufaila', '768', '25 januari', 'i', 'k', 'mandiri');
 
 -- --------------------------------------------------------
 
@@ -343,22 +366,26 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `cart_item`
 --
 ALTER TABLE `cart_item`
-  MODIFY `cart_id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `cart_id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
+
 --
 -- AUTO_INCREMENT for table `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `order_id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `order_id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+
 --
 -- AUTO_INCREMENT for table `order_detail`
 --
 ALTER TABLE `order_detail`
-  MODIFY `order_detail_id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `order_detail_id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+
 --
 -- AUTO_INCREMENT for table `product_variant`
 --
 ALTER TABLE `product_variant`
   MODIFY `variant_id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+
 --
 -- Constraints for dumped tables
 --
@@ -369,6 +396,7 @@ ALTER TABLE `product_variant`
 ALTER TABLE `orders`
   ADD CONSTRAINT `FK_cart` FOREIGN KEY (`cart_id`) REFERENCES `cart_item` (`cart_id`),
   ADD CONSTRAINT `FK_order_detail` FOREIGN KEY (`order_detail_id`) REFERENCES `order_detail` (`order_detail_id`);
+COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
