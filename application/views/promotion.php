@@ -10,7 +10,7 @@
 					</section>
 					<br>
 					<div class="head" style="font-size: 45px">								
-							<p><strong><center>PROMOTIONS</center></strong></p>
+							<p><strong><center>SPECIAL OFFER</center></strong></p>
 					</div>
 						<br>
 						<br>					

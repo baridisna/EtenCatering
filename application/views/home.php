@@ -54,10 +54,10 @@
 
 					<div class="clear"></div>
 					<section class="container">
-						<div class="bottom-slider" style="background: #FF8C00">
+						<div class="bottom-slider" style="background: #FF8C00; position: relative;">
 							<a href="#" class="btn-left"></a>
 							<div class="slides">
-								<p style="color: #ffffff">Best Seller</p>
+								<p style="color: #ffffff; text-align: center;">Best Seller</p>
 								<ul class="item-list">
 			         <li>
 			          <div class="item">
