@@ -73,7 +73,7 @@ class Home extends CI_Controller {
 	{
 		$userID=$this->session->userdata('ses_id');
 
-		$cart=$this->model_cart->Cart_customer($userID);
+		$cart=$this->model_user->Cart_customer($userID);
 
 			$count_product=0;
 			$total_pay=0;

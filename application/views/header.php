@@ -51,7 +51,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								<div class="tools-nav" style="margin-top: 10px">
 									<span style="color: black">Welcome, <strong><?php echo $this->session->userdata('ses_name');?></strong></span>
 									<ul style="padding-top: 10px">
-										<li><a href="<?php echo base_url()?>my_account">My account</a></li>
+										<li><a href="<?php echo base_url();?>Home/my_account">My account</a></li>
 										<li class="login"><a href="<?php echo base_url('Login/logout') ?>">Logout</a></li>
 									</ul>
 								</div>

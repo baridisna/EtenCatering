@@ -26,7 +26,7 @@
 								<img src="<?php echo base_url()?>assets/images/<?= $key->photo ?>" height="110" width="105" alt="" />
 								<div class="description">
 									<h3><a href="#"><?= $key->product_name ?></a></h3>
-									<p>variant: <?= $key->variant_name ?></p>
+									<p>Variant : <?= $key->variant_name ?></p>
 								</div>
 							</td>
 							<td class="white two" style="width: 15%">Rp <?= $key->unit_cost ?></td>
@@ -43,7 +43,7 @@
 						<h4>Subtotal : Rp <?php echo $total_pay ?></h4>
 						<p>+ Shipment : Rp 5000</p>
 						<h2 style="color: orangered">Total to Pay : Rp <?php echo $total_pay + 5000 ?></h2>
-						<a class="btn btn_finalize" href="#" style="padding: 0">Checkout and pay</a>
+						<a class="btn btn_finalize" href="<?php echo base_url(); ?>order" style="padding: 0">Checkout and pay</a>
 					</div>
 				</div>
 			</section>
