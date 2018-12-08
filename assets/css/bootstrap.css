@@ -38,7 +38,7 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 
 html {
@@ -593,7 +593,7 @@ pre code {
   margin-left: auto;
 }
 
-.row {
+.rowBS {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

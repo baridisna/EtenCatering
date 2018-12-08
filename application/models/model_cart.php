@@ -5,7 +5,7 @@ class model_cart extends CI_Model {
 
 	function Cart_customer($id_customer)
 	{
-		$query=$this->db->query("SELECT a.cart_id, a.variant_id, a.customer_id, a.quantity, a.quantity*b.price as total_cost, b.variant_name, b.product_id, b.price as unit_cost, c.product_name, c.photo FROM cart_item a JOIN product_variant b ON a.variant_id=b.variant_id JOIN products c ON b.product_id=c.product_id WHERE a.customer_id='$id_customer'");
+		$query=$this->db->query("SELECT a.cart_id, a.variant_id, a.customer_id, a.quantity, a.quantity*b.price as total_cost, b.variant_name, b.product_id, b.price as unit_cost, c.product_name, c.photo FROM cart_item a JOIN product_variant b ON a.variant_id=b.variant_id JOIN products c ON b.product_id=c.product_id WHERE a.customer_id='$id_customer' AND a.status='active'");
 		return $query->result();
 	}
 

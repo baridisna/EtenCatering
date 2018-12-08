@@ -5,7 +5,7 @@ class model_user extends CI_Model {
 	function user($username)
 	{
 		$query=$this->db->query("SELECT * FROM user where UserID='$username'");
-		return $query;
+		return $query->row();
 	}
 
 	function auth_customer($email, $password)
@@ -18,6 +18,12 @@ class model_user extends CI_Model {
 	{
 		$query=$this->db->query("SELECT * FROM user JOIN admin ON user.UserID = admin.UserID WHERE user.UserId='$username' AND user.Password='$password'");
 		return $query;
+	}
+
+	function get_customer($id)
+	{
+		$query=$this->db->query("SELECT * FROM user JOIN customer ON user.UserID = customer.UserID WHERE user.UserID='$id'");
+		return $query->row();
 	}
 
 	function add_user($data, $customer)

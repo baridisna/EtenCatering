@@ -107,36 +107,5 @@ class Cart extends CI_Controller {
 
 	}
 
-	public function order()
-	{
-		$userID=$this->session->userdata('ses_id');
 
-		if (empty($userID)) {
-			$url=base_url('/Login');
-            echo $this->session->set_flashdata('login_first','Login terlebih dahulu! :)');
-            redirect($url);
-		}
-		elseif (!empty($userID)) {
-			$cart=$this->model_cart->Cart_customer($userID);
-
-			$count_product=0;
-			$total_pay=0;
-
-			if (!empty($cart)) {
-				foreach ($cart as $key) {
-				$total_cost = $key->total_cost;
-				$total_pay = $total_pay + $total_cost;
-				$count_product = $count_product + 1;
-				}
-			}
-
-			$data = array(
-			'cart_item' => $cart,
-			'total_pay' => $total_pay,
-			'count_product' => $count_product );
-
-			$this->load->view('header', $data);
-			$this->load->view('checkout', $data);
-		}	
-	}
 }
