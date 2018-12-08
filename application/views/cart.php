@@ -3,7 +3,7 @@
 					<section class="bar">
 						<div class="bar-frame">
 							<ul class="breadcrumbs">
-								<li><a href="index.html">Home</a></li>
+								<li><a href="<?php echo base_url()?>home">Home</a></li>
 								<li>Cart</li>
 							</ul>
 						</div>
@@ -29,19 +29,20 @@
 									<p>variant: <?= $key->variant_name ?></p>
 								</div>
 							</td>
-							<td class="white two" style="width: 15%">Rp<?= $key->unit_cost ?></td>
+							<td class="white two" style="width: 15%">Rp <?= $key->unit_cost ?></td>
 							<td class="white three" style="width: 10%"><?= $key->quantity ?> porsi</td>
-							<td class="white four" style="width: 15%">Rp<?= $key->unit_cost * $key->quantity ?></td>
+							<td class="white four" style="width: 15%">Rp <?= $key->unit_cost * $key->quantity ?></td>
 							<td class="white last" style="width: 15%"><div class="row" style="display: inline-flex">
-								<button data-toggle="modal" data-target="#editCartItem" class="btn edit_data" id="<?= $key->product_id ?>_<?= $key->variant_id ?>_<?= $key->quantity ?>" style="margin: 5px; background: dodgerblue; color: white; line-height: 15px">Edit</button>
-								<button id="del_<?= $key->cart_id ?>" class="btn-delete delete" style="margin-top: 5px">delete</button>	
+								<button data-toggle="modal" data-target="#editCartItem" class="btn edit_data" id="<?= $key->product_id ?>_<?= $key->variant_id ?>_<?= $key->quantity ?>" style="margin: 5px; height:35px; background: dodgerblue; color: white; line-height: 15px">Edit</button>
+								<button id="del_<?= $key->cart_id ?>" value="X" class="btn pink delete" style="margin-top: 5px; height:35px; line-height: 15px">X</button>	
 							</div></td>
 						</tr>
 					<?php endforeach; ?>
 					</table>
 					<div class="box_sub_total">
-						<h4>Subtotal: Rp <?php echo $total_pay ?></h4>
-						<h4 style="color: orangered">Total to pay: Rp <?php echo $total_pay ?></h4>
+						<h4>Subtotal : Rp <?php echo $total_pay ?></h4>
+						<p>+ Shipment : Rp 5000</p>
+						<h2 style="color: orangered">Total to Pay : Rp <?php echo $total_pay + 5000 ?></h2>
 						<a class="btn btn_finalize" href="#" style="padding: 0">Checkout and pay</a>
 					</div>
 				</div>

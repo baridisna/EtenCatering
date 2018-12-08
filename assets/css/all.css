@@ -922,7 +922,7 @@ div.selector select {
 	margin: 0 0 23px;
 }
 .form-sort.page div.fancy-select div.trigger{min-width:57px;}
-.form-sort.page div.fancy-select{width: 91px;float: right;}
+.form-sort.page div.fancy-select{width: 130px;float: right;}
 .form-sort.page div.fancy-select div.trigger{padding: 11px 22px 11px 12px;background-position: 85% 50%;}
 .form-sort.page div.fancy-select ul.options{min-width: 91px;right: 0;}
 .form-sort.page label {float: left;margin: 13px 15px 0 0;font-size: 14px;}
@@ -982,6 +982,7 @@ div.selector select {
 	border-radius: 0 5px 0 0;
 	behavior: url(css/PIE.htc);
 	width: 5%;
+	color: #fff;
 }
 .list_table .braun.price,.list_table  .white.two{
 	width: 10%;
@@ -991,7 +992,7 @@ div.selector select {
 	width: 15%;
 	color: #fff;
 }
-.list_table .braun.total,.list_table .white.four{
+.list_table .braun.total,.list_table .white.last{
 	width: 10%;
 	color: #fff;
 }
@@ -1018,6 +1019,7 @@ div.selector select {
 	vertical-align: middle;
 	margin: 0 20px 0 0;
 	float: left;
+	object-fit: cover;
 }
 .list_table  .white.first .description{
 	overflow: hidden;
@@ -1043,7 +1045,7 @@ div.selector select {
 .btn-delete {
 	width: 27px;
 	height: 27px;
-	background: url(../images/deleteorder.png) no-repeat;
+	background: #B7150A;
 	overflow: hidden;
 	text-indent: -9999px;
 	display: block;
@@ -1054,11 +1056,10 @@ div[class*=col-]{
     float: left;
     padding: 15px;
 }
-}
 
 .box_sub_total{
 	text-align: center;
-	width: 370px;
+	width: 425px;
 	margin: 0 auto 49px;
 	border-radius: 5px;
 	behavior: url(css/PIE.htc);
