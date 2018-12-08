@@ -55,8 +55,9 @@
 		        <!-- Modal content-->
 			        <div class="modal-content">
 			        	<div class="modal-header">
-			            	<button type="button" class="close" data-dismiss="modal">&times;</button>
+			            	
 			            	<h4 class="modal-title">Edit Cart Items</h4>
+			            	<button type="button" class="close" data-dismiss="modal" pull-right>&times;</button>
 			        	</div>
 			      		<div class="modal-body">
 
@@ -75,14 +76,13 @@
 					            <label>Quantity :</label>
 					          </div>
 					          <div class="col-md-8">
-					            <input type="number" name="quantity" id="qty_edit" class="form-control" style="width: : 100%" readonly required>
+					            <input type="number" name="quantity" id="qty_edit" class="form-control" style="width: : 100%">
 					          </div>
 					        </div>
 					    </div>
 
 			            <div class="modal-footer">
 				            <button class="btn btn-info" id="btn_update">Update</button>
-				            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 			            </div>
 
 			        </div>

@@ -92,11 +92,11 @@
 									  </tr>
 									  <tr>
 									    <td style="color: #543b35; font-size: 16px; width:40%; vertical-align: top;"><strong>Alamat Pengiriman</strong></td>
-									    <td><textarea rows="3" class="form-group" type="text" name="shipping_address" style="color: #543b35; width:90%;" value="$cust_data->alamat" placeholder="Alamat pesanan akan dikirimkan"></textarea></td>
+									    <td><textarea rows="3" class="form-group" type="text" name="shipping_address" style="color: #543b35; width:90%;" value="<?= $cust_data->address ?>" placeholder="Alamat pesanan akan dikirimkan"></textarea></td>
 									  </tr>
 									  <tr>
 									    <th style=" vertical-align: top; color: #543b35; font-size: 16px; width:40%"><strong>Alamat Penagihan</strong></th>
-									    <th><textarea rows="3" class="form-group" type="text" name="billing_address" style="color: #543b35; width:90%;" value="$cust_data->alamat" placeholder="Alamat tagihan akan ditagihkan"></textarea></th>
+									    <th><textarea rows="3" class="form-group" type="text" name="billing_address" style="color: #543b35; width:90%;" value="<?= $cust_data->address ?>" placeholder="Alamat tagihan akan ditagihkan"></textarea></th>
 									  </tr>
 									</table>
 								</div>
