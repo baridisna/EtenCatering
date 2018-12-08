@@ -1,15 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.0.1
--- https://www.phpmyadmin.net/
+-- version 4.5.1
+-- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 07, 2018 at 12:17 PM
--- Server version: 10.1.32-MariaDB
--- PHP Version: 7.2.5
+-- Generation Time: Dec 08, 2018 at 08:24 AM
+-- Server version: 10.1.19-MariaDB
+-- PHP Version: 5.5.38
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
-START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -40,12 +38,20 @@ CREATE TABLE `admin` (
 --
 
 CREATE TABLE `cart_item` (
-  `cart_id` int(100) NOT NULL,
-  `variant_id` int(100) NOT NULL,
+  `cart_id` int(20) NOT NULL,
+  `variant_id` int(20) NOT NULL,
   `customer_id` varchar(100) NOT NULL,
-  `quantity` int(100) DEFAULT NULL,
-  `unit_cost` int(100) DEFAULT NULL
+  `quantity` int(20) NOT NULL,
+  `status` varchar(20) NOT NULL DEFAULT 'active'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `cart_item`
+--
+
+INSERT INTO `cart_item` (`cart_id`, `variant_id`, `customer_id`, `quantity`, `status`) VALUES
+(7, 4, 'isnabarid', 5, 'non-active'),
+(8, 8, 'isnabarid', 23, 'non-active');
 
 -- --------------------------------------------------------
 
@@ -56,10 +62,7 @@ CREATE TABLE `cart_item` (
 CREATE TABLE `customer` (
   `UserID` varchar(100) NOT NULL,
   `name` varchar(100) DEFAULT NULL,
-  `address` varchar(100) DEFAULT NULL,
-  `provinsi` varchar(100) DEFAULT NULL,
-  `kabupaten` varchar(100) DEFAULT NULL,
-  `kecamatan` varchar(100) DEFAULT NULL,
+  `address` varchar(200) DEFAULT NULL,
   `postal_code` int(8) DEFAULT NULL,
   `phone` varchar(20) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -68,8 +71,9 @@ CREATE TABLE `customer` (
 -- Dumping data for table `customer`
 --
 
-INSERT INTO `customer` (`UserID`, `name`, `address`, `provinsi`, `kabupaten`, `kecamatan`, `postal_code`, `phone`) VALUES
-('fellanaura', 'thufaila', NULL, NULL, NULL, NULL, NULL, NULL);
+INSERT INTO `customer` (`UserID`, `name`, `address`, `postal_code`, `phone`) VALUES
+('fellanaura', 'thufaila', NULL, NULL, NULL),
+('isnabarid', 'Isna Barid', NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -78,12 +82,68 @@ INSERT INTO `customer` (`UserID`, `name`, `address`, `provinsi`, `kabupaten`, `k
 --
 
 CREATE TABLE `orders` (
-  `order_id` varchar(100) NOT NULL,
+  `order_id` int(100) NOT NULL,
   `date_created` date DEFAULT NULL,
   `date_shipped` date DEFAULT NULL,
-  `customer_name` varchar(1000) DEFAULT NULL,
-  `shipping_id` varchar(199) DEFAULT NULL
+  `order_detail_id` int(20) NOT NULL,
+  `cart_id` int(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `orders`
+--
+
+INSERT INTO `orders` (`order_id`, `date_created`, `date_shipped`, `order_detail_id`, `cart_id`) VALUES
+(1, NULL, NULL, 4, 7),
+(2, NULL, NULL, 4, 8),
+(3, NULL, NULL, 5, 7),
+(4, NULL, NULL, 5, 8),
+(5, NULL, NULL, 7, 7),
+(6, NULL, NULL, 7, 8),
+(7, NULL, NULL, 8, 7),
+(8, NULL, NULL, 8, 8),
+(9, NULL, NULL, 9, 7),
+(10, NULL, NULL, 9, 8),
+(11, NULL, NULL, 10, 7),
+(12, NULL, NULL, 10, 8),
+(13, NULL, NULL, 11, 7),
+(14, NULL, NULL, 11, 8),
+(15, NULL, NULL, 12, 7),
+(16, NULL, NULL, 12, 8);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `order_detail`
+--
+
+CREATE TABLE `order_detail` (
+  `order_detail_id` int(20) NOT NULL,
+  `recepients_name` varchar(100) NOT NULL,
+  `contact_person` varchar(100) NOT NULL,
+  `shipping_date` varchar(100) NOT NULL,
+  `shipping_address` varchar(200) NOT NULL,
+  `billing_address` varchar(200) NOT NULL,
+  `payment_method` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `order_detail`
+--
+
+INSERT INTO `order_detail` (`order_detail_id`, `recepients_name`, `contact_person`, `shipping_date`, `shipping_address`, `billing_address`, `payment_method`) VALUES
+(1, 'Isna Barid', '3463435634', '20 Juli 2018', 'perum', 'perum', 'onthespot'),
+(2, 'Isna Barid', '3463435634', '20 Juli 2018', 'perum', 'perum', 'onthespot'),
+(3, 'Isna Barid', '3463435634', '20 Juli 2018', 'perum', 'perum', 'onthespot'),
+(4, 'Isna Barid', '3463435634', '20 Juli 2018', 'perum', 'perum', 'onthespot'),
+(5, 'Isna Barid', '3463435634', '20 Juli 2018', 'perum', 'perum', 'onthespot'),
+(6, 'Isna Barid', '3463435634', '20 Juli 2018', 'perum', 'perum', 'onthespot'),
+(7, 'Isna Barid', '3463435634', '20 Juli 2018', 'perum', 'perum', 'onthespot'),
+(8, 'Isna Barid', '3463435634', '20 Juli 2018', 'perum', 'perum', 'onthespot'),
+(9, 'Isna Barid', '3463435634', '20 Juli 2018', 'perum', 'perum', 'onthespot'),
+(10, 'Isna Barid', '3463435634', '20 Juli 2018', 'perum', 'perum', 'onthespot'),
+(11, 'Isna Barid', '3463435634', '20 Juli 2018', 'perum', 'perum', 'onthespot'),
+(12, 'Isna Barid', '3463435634', '20 Juli 2018', 'perummm', 'perummm', 'mandiri');
 
 -- --------------------------------------------------------
 
@@ -211,7 +271,8 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`UserID`, `Password`, `email`) VALUES
-('fellanaura', 'passeten', 'thufellanaura@yahoo.com');
+('fellanaura', 'passeten', 'thufellanaura@yahoo.com'),
+('isnabarid', 'apasaja', 'isnanurbarid@gmail.com');
 
 --
 -- Indexes for dumped tables
@@ -225,21 +286,89 @@ ALTER TABLE `admin`
   ADD UNIQUE KEY `uc_UserID` (`UserID`);
 
 --
+-- Indexes for table `cart_item`
+--
+ALTER TABLE `cart_item`
+  ADD PRIMARY KEY (`cart_id`);
+
+--
+-- Indexes for table `customer`
+--
+ALTER TABLE `customer`
+  ADD PRIMARY KEY (`UserID`);
+
+--
+-- Indexes for table `orders`
+--
+ALTER TABLE `orders`
+  ADD PRIMARY KEY (`order_id`),
+  ADD KEY `FK_order_detail` (`order_detail_id`),
+  ADD KEY `FK_cart` (`cart_id`);
+
+--
+-- Indexes for table `order_detail`
+--
+ALTER TABLE `order_detail`
+  ADD PRIMARY KEY (`order_detail_id`);
+
+--
+-- Indexes for table `products`
+--
+ALTER TABLE `products`
+  ADD PRIMARY KEY (`product_id`);
+
+--
 -- Indexes for table `product_variant`
 --
 ALTER TABLE `product_variant`
   ADD PRIMARY KEY (`variant_id`);
 
 --
+-- Indexes for table `promotions`
+--
+ALTER TABLE `promotions`
+  ADD PRIMARY KEY (`promotions_id`);
+
+--
+-- Indexes for table `user`
+--
+ALTER TABLE `user`
+  ADD PRIMARY KEY (`UserID`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
+--
+-- AUTO_INCREMENT for table `cart_item`
+--
+ALTER TABLE `cart_item`
+  MODIFY `cart_id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+--
+-- AUTO_INCREMENT for table `orders`
+--
+ALTER TABLE `orders`
+  MODIFY `order_id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+--
+-- AUTO_INCREMENT for table `order_detail`
+--
+ALTER TABLE `order_detail`
+  MODIFY `order_detail_id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 --
 -- AUTO_INCREMENT for table `product_variant`
 --
 ALTER TABLE `product_variant`
   MODIFY `variant_id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
-COMMIT;
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `orders`
+--
+ALTER TABLE `orders`
+  ADD CONSTRAINT `FK_cart` FOREIGN KEY (`cart_id`) REFERENCES `cart_item` (`cart_id`),
+  ADD CONSTRAINT `FK_order_detail` FOREIGN KEY (`order_detail_id`) REFERENCES `order_detail` (`order_detail_id`);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
