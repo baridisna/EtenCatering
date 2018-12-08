@@ -53,12 +53,12 @@
 					<li>
 						<span>Social Media:</span>
 						<div class="social">
-							<a href="#" class="fb">Facebook</a>
-							<a href="#" class="tw">Twitter</a>
+							<a href="https://www.facebook.com/" class="fb">Facebook</a>
+							<a href="https://twitter.com/" class="tw">Twitter</a>
 						</div>
 						<div class="social">
-							<a href="#" class="gl">Google+</a>
-							<a href="#" class="pn">Pinterest</a>
+							<a href="https://www.instagram.com/" class="gl">Instagram</a>
+							<a href="https://id.pinterest.com/" class="pn">Pinterest</a>
 						</div>
 					</li>
 				</ul>
