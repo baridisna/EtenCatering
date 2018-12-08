@@ -587,7 +587,12 @@ div[class*=col-]{
 	line-height: 18px;
 	margin: 65px 12px -10px;
 }
-.container{position: relative;margin: 28px 0 58px 0;}
+.container{
+	position: relative;
+	margin: 35px 0 58px 0;
+	display: inline;
+	}
+
 .container .bottom-slider {
 	width: 1130px;
 	z-index: 99;
@@ -596,6 +601,7 @@ div[class*=col-]{
 	background: #FF8C00;
 	border-radius: 7px;
 	behavior: url(css/PIE.htc);
+	
 }
 .container .bottom-slider .btn-left {
 	background: url(../images/btn_prev.png) no-repeat;

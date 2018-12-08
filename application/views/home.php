@@ -53,8 +53,8 @@
 					</ul>
 
 					<div class="clear"></div>
-					<section class="container">
-						<div class="bottom-slider" style="background: #FF8C00; position: relative;">
+					<section class="container" style="display: inline;">
+						<div class="bottom-slider" style="background: #FF8C00;  ">
 							<a href="#" class="btn-left"></a>
 							<div class="slides">
 								<p style="color: #ffffff; text-align: center;">Best Seller</p>
@@ -94,7 +94,7 @@
 			           <div class="image_home" style="margin: 0 20px;">
 			            <a href="#"><img src="<?php echo base_url()?>assets/images/Sate_Padang-Indonesia_Main_Course.jpg"  alt="" /></a>
 			            <div class="hover" style="margin-top: -35px">
-			             <p style="font-size: 13px; margin: 65px 12px -10px;"><span>Sate padang yang merupakan makanan khas padang. Daging ayamnya yang lembut ditambah perpaduan bumbu khas padang.</span></p>
+			             <p style="font-size: 13px; margin: 65px 12px -10px;"><span>Sate padang yang merupakan makanan khas padang. Daging ayamnya yang lembut ditambah perpaduan bumbu khas padang seolah memanjakan lidah nusantara.</span></p>
 			            </div>
 			           </div>
 			          </div>
@@ -114,6 +114,7 @@
 							<a href="#" class="btn-right"></a>
 						</div>
 					</section>
+					<br>
 					
 					<div class="clear"></div>
 				</div>
