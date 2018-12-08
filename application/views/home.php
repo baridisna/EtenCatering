@@ -3,42 +3,14 @@
 					<div class="box_images-col">
 						<a href="#"><img src="<?php echo base_url();?>assets/images/JBCweb_catering.jpg" alt="" style="height: 300px; width: 100%; object-fit: cover;"></a>
 					</div>
-<!-- 
-					<div class="box_sub_total2-col" style="margin-left: 0px; padding-: auto; width: 29%; float: right; height: auto;">
-						<ul>					
-						<h2>Area Yang Dijangkau</h2>
-						<div class="ul_search2" style="font-size: 15px;"> -->
-		<!-- 					<span style="color: #56504e">Nama Kota</span></a> -->
-							<!-- <br/> -->
-							<!-- <br/> -->							
-<!-- 							<div class="row" style="margin-left: auto; margin-right: auto; width: 193px; margin-top: 0px; position: relative; bottom: 20px;">
-									<select id="size" >
-										<option value="" hidden>-Pilih Kota-</option>
-										<option>Yogyakarta</option>
-										<option>Jakarta</option>
-										<option>Bandung</option>
-									</select>
-							</div> -->
-<!-- 						</div >
-						<a class="btn btn_finalize2"href="#">CEK</a>
-						<br/>
-						</ul>
-					</div> -->
-<!-- 					<br> -->
-<!-- 					<br>
-					<br> -->
 
 					<div class="head" style="font-size: 30px; margin-top: 30px; line-height: 35px;">								
 							<p><strong><center>LANGKAH PEMESANAN</center></strong></p>
 							<br>
 					</div>
 
-				<div class="row well" style="position: relative; margin-left: 9%; margin-right: auto;%; left: auto;">
-					<ul id="progressbar" class="progressbar" style="left: auto; margin-right: 0%; ">
-					<li class="active" style="">Mencari makanan</li>
-					<li class="active" >Memilih makanan sesuai dengan jumlah yang diinginkan</li>
-					<li class="active" >Membayar pesanan</li>            
-					</ul>
+				<div class="row well">
+						<img src="<?php echo base_url();?>assets/images/progressbar.png" alt="" style="height: 135px; width: auto; display: block; margin: 0 auto; position: relative; object-fit: cover;">     
 					<br>
 				</div>	
 				<br>
