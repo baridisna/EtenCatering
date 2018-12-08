@@ -37,20 +37,20 @@
 							  </tr>
 							  <tr>
 							    <th style="color: #543b35; font-size: 16px; width:30%"><strong>Email Address</strong></th>
-							    <th style="color: #543b35; font-size: 16px; width:70%; color: #6e6e6e">baridannafiakhansa@gmail.com</th>
+							    <th style="color: #543b35; font-size: 16px; width:70%; color: #6e6e6e"><?php $this->session->userdata('ses_email') ?></th>
 							  </tr>
 							  <tr>
 							    <th style="color: #543b35; font-size: 16px; width:30%"><strong>Nomor Telepon</strong></th>
-							    <th style="color: #543b35; font-size: 16px; width:70%;  color: #6e6e6e">1234567890</th>
+							    <th style="color: #543b35; font-size: 16px; width:70%;  color: #6e6e6e"><?php $this->session->userdata('ses_phone') ?></th>
 							  </tr>
-							  <tr>
+<!-- 							  <tr>
 							    <th style="color: #543b35; font-size: 16px; width:30%"><strong>Jenis Kelamin</strong></th>
 							    <th style="color: #543b35; font-size: 16px; width:70%;  color: #6e6e6e">Perempuan</th>
 							  </tr>
 							  <tr>
 							    <th style="color: #543b35; font-size: 16px; width:30%"><strong>Tanggal Lahir</strong></th>
 							    <th style="color: #543b35; font-size: 16px; width:70%;  color: #6e6e6e">12/12/12</th>
-							  </tr>
+							  </tr> -->
 							</table>
 							</div>
 
@@ -61,11 +61,11 @@
 							  </tr>
 							  <tr>
 							    <th style="color: #543b35; font-size: 16px; width:30%"><strong>Alamat Pengiriman</strong></th>
-							    <th style="color: #543b35; font-size: 16px; width:70%;  color: #6e6e6e">Bantul, Daerah Istimewa Yogyakarta</th>
+							    <th style="color: #543b35; font-size: 16px; width:70%;  color: #6e6e6e"><?php $this->session->userdata('ses_address') ?></th>
 							  </tr>
 							  <tr>
-							    <th style="color: #543b35; font-size: 16px; width:30%"><strong>Alamat penagihan</strong></th>
-							    <th style="color: #543b35; font-size: 16px; width:70%;  color: #6e6e6e">Bantul, Daerah Istimewa Yogyakarta</th>
+							    <th style="color: #543b35; font-size: 16px; width:30%"><strong>Kode Pos</strong></th>
+							    <th style="color: #543b35; font-size: 16px; width:70%;  color: #6e6e6e"><?php $this->session->userdata('ses_postal_code') ?></th>
 							  </tr>
 							</table>
 							</div>
