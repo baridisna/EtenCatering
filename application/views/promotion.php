@@ -1,5 +1,13 @@
 			<section class="main">				
 				<div class="content">
+					<section class="bar">
+						<div class="bar-frame">
+							<ul class="breadcrumbs">
+								<li><a href="index.html">Home</a></li>
+								<li>Promotions</li>
+							</ul>
+						</div>
+					</section>
 					<br>
 					<div class="head" style="font-size: 45px">								
 							<p><strong><center>PROMOTIONS</center></strong></p>
@@ -29,7 +37,7 @@
 				<ul class="left_side">
 					<li>
 						<span>Our Mission :</span>
-						<p style="line-height: 26px;">Veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit quia.</p>
+						<p style="line-height: 26px;">Eten Catering siap menyediakan makanan sehat yang lezat sesuai kebutuhan. Dengan ragam pilihan menu berkualitas, Eten Catering siap menjadi bekal sehat untuk keseharian Anda.</p>
 					</li>
 					<li>
 						<span>  </span>
