@@ -57,7 +57,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								</div>
 
 								<div class="checkout">
-									<span class="grey"><?php echo $count_product ?> product, <span class="orange"><strong>Rp <?php echo $total_pay ?></strong></span></span>
+									<span class="grey"><?php echo $count_product ?> product, <span class="orange"><strong>Rp <?php echo $total_pay+5000?></strong></span></span>
 									<a href="<?php echo base_url()?>Cart" class="btn btn_checkout" style="padding: 0 0 0 0">Checkout</a>
 								</div>
 							</div>
@@ -71,7 +71,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								<div  class="ul_search li">
 									<a class="search" href="#" style="color: #ffffff"><span>search</span></a>
 									<form method="get" class="searchform" action="#">
-										<input type="text" class="field" name="s" id="s" placeholder="What are you looking for?" />
+										<input type="text" class="field" name="s" id="s" placeholder="What food are you looking for?" />
 										<input type="submit" class="submit" value=""  />
 										<div class="clear"></div>
 									</form>
@@ -85,7 +85,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<div  class="ul_search">
 							<a class="search" href="#"><span>search</span></a>
 							<form method="get" class="searchform" action="#">
-								<input type="text" class="field" name="s" id="s" placeholder="What are you looking for?" />
+								<input type="text" class="field" name="s" id="s" placeholder="What food are you looking for?" />
 								<input type="submit" class="submit" value=""  />
 							</form>
 						</div >
