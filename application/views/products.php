@@ -12,7 +12,7 @@
 						<form class="form-sort" method = "POST" action="<?php echo base_url(); ?>product/sort">
 							<fieldset>
 								<div class="row">
-									<label for="sort"><strong>Sort by :</strong></label>
+									<label for="sort" style="color: #FF8C00">Sort by :</label>
 									<select id="sort" name='sort'>
 										<option value=''>Select</option>
 										<option value='popular'>Populer</option>
@@ -20,7 +20,7 @@
 									</select>
 								</div>
 								<div class="row">
-									<label for="origin"><strong>Meal's origin :</strong></label>
+									<label for="origin" style="color: #FF8C00">Meal's origin :</label>
 									<select id="origin" name="origin">
 										<option value=''>Select</option>
 										<option value='Western'>Western</option>
@@ -28,7 +28,7 @@
 									</select>
 								</div>
 								<div class="row">
-									<label for="type"><strong>Type of meal :</strong></label>
+									<label for="type" style="color: #FF8C00">Type of meal :</label>
 									<select id="type" name='type'>
 										<option value=''>Select</option>
 										<option value='Appetizer'>Appetizer</option>
@@ -51,7 +51,7 @@
 									<img src="<?=base_url(); ?>assets/images/<?= $key->photo; ?>"  alt="" />
 								</div>
 								<span class="name"><?= $key->product_name; ?></span>
-								<span class="name2">Rp <?= $key->product_price;?></span></a>
+								<span class="name2" style="color: #b4aaa5">Rp <?= $key->product_price;?></span></a>
 							</div>							
 						</li>
 						<?php endforeach; ?>
