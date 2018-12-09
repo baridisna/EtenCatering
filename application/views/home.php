@@ -59,17 +59,8 @@
 							<div class="slides">
 								<p style="color: #ffffff; text-align: center;">Best Seller</p>
 								<ul class="item-list">
-			         <li>
-			          <div class="item">
-			           <div class="image_home" style="margin: 0 20px;">
-			           <a href="#"><img src="<?php echo base_url()?>assets/images/Ayam Bakar_Taliwang-Indonesian_main_course.jpg"  alt="" /></a>
-			            <div class="hover" style="margin-top: -35px;">
-			             <p style="font-size: 13px; margin: 65px 12px -10px;"><span>Sensasi rasa ayam taliwang yang pedas dengan kuatnya kencur. Ayam yang digunakan ialah ayam kampung muda agar terasa lebih gurih dan empuk.</span></p>   
-			            </div>
-			           </div>
-			          </div>
-			         </li>
-			         <li>
+			     	 
+			     	 <li>
 			          <div class="item">
 			           <div class="image_home" style="margin: 0 20px;">
 			            <a href="#"><img src="<?php echo base_url()?>assets/images/Baked_Salmon_wetern_main_course.png"  alt="" /></a>
@@ -82,13 +73,13 @@
 			         <li>
 			          <div class="item">
 			           <div class="image_home" style="margin: 0 20px;">
-			            <a href="#"><img src="<?php echo base_url()?>assets/images/Cinnamon_Rolls-Western_Dessert.jpg"  alt="" /></a>
+			            <a href="#"><img src="<?php echo base_url()?>assets/images/MeatballPasta-Westernmaincourse.png"  alt="" /></a>
 			            <div class="hover" style="margin-top: -35px">
-			             <p style="font-size: 13px; margin: 65px 12px -10px;"><span>Cinnamon rolls yang disajikan bersama glaze cheese cream, dengan rasa yang pas tidak terlalu manis dan harum kayu manis yang semerbak.</span></p>
+			             <p style="font-size: 13px; margin: 65px 12px -10px;"><span>Spaghetti yang diolah secara fresh dan bakso sapi asli yang hangat disajikan dengan saus marinara yang lezat.</span></p>
 			            </div>
 			           </div>
 			          </div>
-			         </li>       	
+			         </li> 
 			         <li>
 			          <div class="item">
 			           <div class="image_home" style="margin: 0 20px;">
@@ -102,9 +93,19 @@
 			         <li>
 			          <div class="item">
 			           <div class="image_home" style="margin: 0 20px;">
-			            <a href="#"><img src="<?php echo base_url()?>assets/images/ChickenBuffaloWings-western&appetizer.jpeg"  alt="" /></a>
+			           <a href="#"><img src="<?php echo base_url()?>assets/images/Ayam Bakar_Taliwang-Indonesian_main_course.jpg"  alt="" /></a>
+			            <div class="hover" style="margin-top: -35px;">
+			             <p style="font-size: 13px; margin: 65px 12px -10px;"><span>Sensasi rasa ayam taliwang yang pedas dengan kuatnya kencur. Ayam yang digunakan ialah ayam kampung muda agar terasa lebih gurih dan empuk.</span></p>   
+			            </div>
+			           </div>
+			          </div>
+			         </li>      	
+			         <li>
+			          <div class="item">
+			           <div class="image_home" style="margin: 0 20px;">
+			            <a href="#"><img src="<?php echo base_url()?>assets/images/PempekSpesial-IndonesiaAppetizer.jpg"  alt="" /></a>
 			            <div class="hover" style="margin-top: -35px">
-			             <p style="font-size: 13px; margin: 65px 12px -10px;"><span>Sayap Ayam yang renyah dengan bumbu yang menggoda selera. Dijamin ketagihaan!</span></p>
+			             <p style="font-size: 13px; margin: 65px 12px -10px;"><span>Pempek khas Palembang yang terbuat dari daging ikan tenggiri asli yang digiling lembut dan tepung kanji.</span></p>
 			            </div>
 			           </div>
 			          </div>
