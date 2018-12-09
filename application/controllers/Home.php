@@ -96,4 +96,23 @@ class Home extends CI_Controller {
 		$this->load->view('header', $data);
 		$this->load->view('my_account', $data);
 	}
+
+	public function update_customer()
+	{
+		$id = $this->input->post('UserID');
+		$name = $this->input->post('name');
+		$phone = $this->input->post('phone');
+		$address = $this->input->post('address');
+		$postal_code = $this->input->post('postal_code');
+
+		$data = array(
+			'name' => $name,
+			'phone' => $phone,
+			'address' => $address,
+			'postal_code' => $postal_code );
+
+		$this->model_user->update_customer($id, $data);
+
+		redirect('Home/my_account');
+	}
 }

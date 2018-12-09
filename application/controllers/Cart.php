@@ -96,7 +96,11 @@ class Cart extends CI_Controller {
 	public function update()
 	{
 		$id=$this->input->post('cart_id');
-		$this->model_cart->edit($id);
+		$data = array(
+			'variant_id' => $this->input->post('variant'),
+			'quantity' => $this->input->post('qty') );
+
+		$this->model_cart->edit($id, $data);
 	}
 
 	public function delete()

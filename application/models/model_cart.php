@@ -14,7 +14,7 @@ class model_cart extends CI_Model {
 		$this->db->insert('cart_item', $data);
 	}
 
-	function edit($id)
+	function edit($id, $data)
 	{
 		$this->db->where('cart_id', $id);
 		$this->db->update('cart_item', $data);
