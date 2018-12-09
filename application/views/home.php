@@ -25,28 +25,28 @@
 						<li>
 							<div class="item">
 								<div class="image">
-									<a href="index.html"><img src="<?php echo base_url()?>assets/images/testi1.png"  alt="" /></a>
+									<a ><img src="<?php echo base_url()?>assets/images/testi1.png"  alt="" /></a>
 								</div>
 								<span>Pelayanan dan rasa terbaik.</span>
-								<span class="name"><a href="index.html">-Najwa Shihab-</a></span>				
+								<span class="name"><a >-Najwa Shihab-</a></span>				
 							</div>
 						</li>
 						<li>
 							<div class="item">
 								<div class="image">
-									<a href="index.html"><img src="<?php echo base_url()?>assets/images/testi2.png"  alt="" /></a>
+									<a ><img src="<?php echo base_url()?>assets/images/testi2.png"  alt="" /></a>
 								</div>
 								<span>Catering best in town!</span>
-								<span class="name"><a href="index.html">-Alice Norin-</a></span>
+								<span class="name"><a >-Alice Norin-</a></span>
 							</div>
 						</li>
 						<li>
 							<div class="item">
 								<div class="image">
-									<a href="index.html"><img src="<?php echo base_url()?>assets/images/testi3.png"  alt="" /></a>
+									<a ><img src="<?php echo base_url()?>assets/images/testi3.png"  alt="" /></a>
 								</div>
 								<span>Taste good and healthy!</span>
-								<span class="name"><a href="index.html">-Fella-</a></span>
+								<span class="name"><a >-Fella-</a></span>
 							</div>
 						</li>
 					</ul>
@@ -62,50 +62,50 @@
 			     	 <li>
 			          <div class="item">
 			           <div class="image_home" style="margin: 0 20px;">
-			            <a href="#"><img src="<?php echo base_url()?>assets/images/Baked_Salmon_wetern_main_course.png"  alt="" /></a>
+			            <a href="<?php echo base_url()?>product/product_detail/1"><img src="<?php echo base_url()?>assets/images/Baked_Salmon_wetern_main_course.png"  alt="" />
 			            <div class="hover" style="margin-top: -35px">
 			             <p style="font-size: 13px; margin: 65px 12px -10px;"><span>Salmon panggang yang diolah dengan bumbu spesial, seperti kecap asin dan gula coklat. Dengan sedikit aroma lemon dan bawang putih.</span></p>
-			            </div>
+			            </div></a>
 			           </div>
 			          </div>
 			         </li>
 			         <li>
 			          <div class="item">
 			           <div class="image_home" style="margin: 0 20px;">
-			            <a href="#"><img src="<?php echo base_url()?>assets/images/MeatballPasta-Westernmaincourse.png"  alt="" /></a>
+			            <a href="<?php echo base_url()?>product/product_detail/4"><img src="<?php echo base_url()?>assets/images/MeatballPasta-Westernmaincourse.png"  alt="" />
 			            <div class="hover" style="margin-top: -35px">
 			             <p style="font-size: 13px; margin: 65px 12px -10px;"><span>Spaghetti yang diolah secara fresh dan bakso sapi asli yang hangat disajikan dengan saus marinara yang lezat.</span></p>
-			            </div>
+			            </div></a>
 			           </div>
 			          </div>
 			         </li> 
 			         <li>
 			          <div class="item">
 			           <div class="image_home" style="margin: 0 20px;">
-			            <a href="#"><img src="<?php echo base_url()?>assets/images/Sate_Padang-Indonesia_Main_Course.jpg"  alt="" /></a>
+			            <a href="#<?php echo base_url()?>product/product_detail/8"><img src="<?php echo base_url()?>assets/images/Sate_Padang-Indonesia_Main_Course.jpg"  alt="" />
 			            <div class="hover" style="margin-top: -35px">
 			             <p style="font-size: 13px; margin: 65px 12px -10px;"><span>Sate padang yang merupakan makanan khas padang. Daging ayamnya yang lembut ditambah perpaduan bumbu khas padang seolah memanjakan lidah nusantara.</span></p>
-			            </div>
+			            </div></a>
 			           </div>
 			          </div>
 			         </li>
 			         <li>
 			          <div class="item">
 			           <div class="image_home" style="margin: 0 20px;">
-			           <a href="#"><img src="<?php echo base_url()?>assets/images/Ayam Bakar_Taliwang-Indonesian_main_course.jpg"  alt="" /></a>
+			           <a href="<?php echo base_url()?>product/product_detail/5"><img src="<?php echo base_url()?>assets/images/Ayam Bakar_Taliwang-Indonesian_main_course.jpg"  alt="" />
 			            <div class="hover" style="margin-top: -35px;">
 			             <p style="font-size: 13px; margin: 65px 12px -10px;"><span>Sensasi rasa ayam taliwang yang pedas dengan kuatnya kencur. Ayam yang digunakan ialah ayam kampung muda agar terasa lebih gurih dan empuk.</span></p>   
-			            </div>
+			            </div></a>
 			           </div>
 			          </div>
 			         </li>      	
 			         <li>
 			          <div class="item">
 			           <div class="image_home" style="margin: 0 20px;">
-			            <a href="#"><img src="<?php echo base_url()?>assets/images/PempekSpesial-IndonesiaAppetizer.jpg"  alt="" /></a>
+			            <a href="<?php echo base_url()?>product/product_detail/7"><img src="<?php echo base_url()?>assets/images/PempekSpesial-IndonesiaAppetizer.jpg"  alt="" />
 			            <div class="hover" style="margin-top: -35px">
 			             <p style="font-size: 13px; margin: 65px 12px -10px;"><span>Pempek khas Palembang yang terbuat dari daging ikan tenggiri asli yang digiling lembut dan tepung kanji.</span></p>
-			            </div>
+			            </div></a>
 			           </div>
 			          </div>
 			         </li> 						

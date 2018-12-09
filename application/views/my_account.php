@@ -109,7 +109,7 @@
 								            <label>Alamat :</label>
 								          </div>
 								          <div class="col-md-8">
-								            <textarea rows="3" name="address" class="form-control" style="width: : 100%" value="<?= $account->address ?>"></textarea>
+								            <textarea rows="3" name="address" class="form-control" style="width: : 100%"><?= $account->address ?></textarea>
 								          </div>
 								        </div>
 
