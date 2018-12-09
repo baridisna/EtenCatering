@@ -1,7 +1,7 @@
 <section class="main">				
 				<div class="content">
 					<div class="box_images-col">
-						<a href="#"><img src="<?php echo base_url();?>assets/images/JBCweb_catering.jpg" alt="" style="height: 300px; width: 100%; object-fit: cover;"></a>
+						<a><img src="<?php echo base_url();?>assets/images/JBCweb_catering.jpg" alt="" style="height: 300px; width: 100%; object-fit: cover;"></a>
 					</div>
 
 					<div class="head" style="font-size: 30px; margin-top: 40px; line-height: 35px;">								
@@ -64,7 +64,7 @@
 			           <div class="image_home" style="margin: 0 20px;">
 			            <a href="<?php echo base_url()?>product/product_detail/1"><img src="<?php echo base_url()?>assets/images/Baked_Salmon_wetern_main_course.png"  alt="" />
 			            <div class="hover" style="margin-top: -35px">
-			             <p style="font-size: 13px; margin: 65px 12px -10px;"><span>Salmon panggang yang diolah dengan bumbu spesial, seperti kecap asin dan gula coklat. Dengan sedikit aroma lemon dan bawang putih.</span></p>
+			             <p style="font-size: 13px; margin-top: 72px; margin-bottom: 15px; text-align: center;"><span>Salmon panggang yang diolah dengan bumbu spesial, seperti kecap asin dan gula coklat. Dengan sedikit aroma lemon dan bawang putih.</span></p>
 			            </div></a>
 			           </div>
 			          </div>
@@ -74,7 +74,7 @@
 			           <div class="image_home" style="margin: 0 20px;">
 			            <a href="<?php echo base_url()?>product/product_detail/4"><img src="<?php echo base_url()?>assets/images/MeatballPasta-Westernmaincourse.png"  alt="" />
 			            <div class="hover" style="margin-top: -35px">
-			             <p style="font-size: 13px; margin: 65px 12px -10px;"><span>Spaghetti yang diolah secara fresh dan bakso sapi asli yang hangat disajikan dengan saus marinara yang lezat.</span></p>
+			             <p style="font-size: 13px; margin-top: 80px; margin-bottom: 15px; text-align: center;"><span>Spaghetti yang diolah secara fresh dan bakso sapi asli yang hangat disajikan dengan saus marinara yang lezat.</span></p>
 			            </div></a>
 			           </div>
 			          </div>
@@ -84,7 +84,7 @@
 			           <div class="image_home" style="margin: 0 20px;">
 			            <a href="#<?php echo base_url()?>product/product_detail/8"><img src="<?php echo base_url()?>assets/images/Sate_Padang-Indonesia_Main_Course.jpg"  alt="" />
 			            <div class="hover" style="margin-top: -35px">
-			             <p style="font-size: 13px; margin: 65px 12px -10px;"><span>Sate padang yang merupakan makanan khas padang. Daging ayamnya yang lembut ditambah perpaduan bumbu khas padang seolah memanjakan lidah nusantara.</span></p>
+			             <p style="font-size: 13px; margin-top: 73px; margin-bottom: 15px; text-align: center;"><span>Sate padang yang merupakan makanan khas padang. Daging ayamnya yang lembut ditambah perpaduan bumbu khas padang.</span></p>
 			            </div></a>
 			           </div>
 			          </div>
@@ -94,7 +94,7 @@
 			           <div class="image_home" style="margin: 0 20px;">
 			           <a href="<?php echo base_url()?>product/product_detail/5"><img src="<?php echo base_url()?>assets/images/Ayam Bakar_Taliwang-Indonesian_main_course.jpg"  alt="" />
 			            <div class="hover" style="margin-top: -35px;">
-			             <p style="font-size: 13px; margin: 65px 12px -10px;"><span>Sensasi rasa ayam taliwang yang pedas dengan kuatnya kencur. Ayam yang digunakan ialah ayam kampung muda agar terasa lebih gurih dan empuk.</span></p>   
+			             <p style="font-size: 13px; margin-top: 73px; margin-bottom: 15px; text-align: center;"><span>Sensasi rasa ayam taliwang yang pedas dengan kuatnya kencur. Dengan ayam kampung muda terasa lebih gurih dan empuk.</span></p>   
 			            </div></a>
 			           </div>
 			          </div>
@@ -104,7 +104,7 @@
 			           <div class="image_home" style="margin: 0 20px;">
 			            <a href="<?php echo base_url()?>product/product_detail/7"><img src="<?php echo base_url()?>assets/images/PempekSpesial-IndonesiaAppetizer.jpg"  alt="" />
 			            <div class="hover" style="margin-top: -35px">
-			             <p style="font-size: 13px; margin: 65px 12px -10px;"><span>Pempek khas Palembang yang terbuat dari daging ikan tenggiri asli yang digiling lembut dan tepung kanji.</span></p>
+			             <p style="font-size: 13px; margin-top: 80px; margin-bottom: 15px; text-align: center;"><span>Pempek khas Palembang yang terbuat dari daging ikan tenggiri asli yang digiling lembut dan tepung kanji.</span></p>
 			            </div></a>
 			           </div>
 			          </div>

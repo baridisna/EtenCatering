@@ -21,7 +21,7 @@
 								<div class="image">
 									<a href=""><img src="<?=base_url(); ?>assets/images/<?= $key->photo_promosi; ?>"  alt="" /></a>
 								</div><br>
-								<span style="font-size: 15px; line-height: 0px;"><strong><?= $key->promotions_name; ?></strong></span>
+								<span style="font-size: 15px; line-height: 0px; color: #FF8C00"><strong><?= $key->promotions_name; ?></strong></span>
 								<br>
 								<span class="name1" style="color: #6e6e6e">Valid Until : <?= $key->promotions_date; ?></a></span>
 							</div>

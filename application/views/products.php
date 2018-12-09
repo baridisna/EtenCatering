@@ -50,7 +50,7 @@
 								<div class="image">
 									<img src="<?=base_url(); ?>assets/images/<?= $key->photo; ?>"  alt="" />
 								</div>
-								<span class="name"><?= $key->product_name; ?></span>
+								<span class="name"><strong><?= $key->product_name; ?></strong></span>
 								<span class="name2" style="color: #b4aaa5">Rp <?= $key->product_price;?></span></a>
 							</div>							
 						</li>
