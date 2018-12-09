@@ -20,30 +20,40 @@
 							<td class="braun total" style="width: 15%"><span>Total</span></td>
 							<td class="braun last" style="width: 15%"></td>
 						</tr>
-					<?php foreach ($cart_item as $key) : ?>
+					<?php if ($count_product == 0) : ?>
 						<tr>
-							<td class="white first" style="width: 45%">
-								<img src="<?php echo base_url()?>assets/images/<?= $key->photo ?>" height="110" width="105" alt="" />
-								<div class="description">
-									<h3><a href="#"><?= $key->product_name ?></a></h3>
-									<p>Variant : <?= $key->variant_name ?></p>
-								</div>
-							</td>
-							<td class="white two" style="width: 15%">Rp <?= $key->unit_cost ?></td>
-							<td class="white three" style="width: 10%"><?= $key->quantity ?> porsi</td>
-							<td class="white four" style="width: 15%">Rp <?= $key->unit_cost * $key->quantity ?></td>
-							<td class="white last" style="width: 15%"><div class="row" style="display: inline-flex">
-								<button data-toggle="modal" data-target="#editCartItem" class="btn edit_data" id="<?= $key->product_id ?>_<?= $key->variant_id ?>_<?= $key->quantity ?>" style="margin: 5px; height:35px; background: dodgerblue; color: white; line-height: 15px">Edit</button>
-								<button id="del_<?= $key->cart_id ?>" value="X" class="btn pink delete" style="margin-top: 5px; height:35px; line-height: 15px">X</button>	
-							</div></td>
+							<td colspan="5" style="color: grey; text-align: center; padding-top: 20px">Kamu belum memasukkan makanan apapun ke keranjang =)</td>
 						</tr>
-					<?php endforeach; ?>
+					<?php else : ?>
+						<?php foreach ($cart_item as $key) : ?>
+							<tr>
+								<td class="white first" style="width: 45%">
+									<img src="<?php echo base_url()?>assets/images/<?= $key->photo ?>" height="110" width="105" alt="" />
+									<div class="description">
+										<h3><a href="#"><?= $key->product_name ?></a></h3>
+										<p>Variant : <?= $key->variant_name ?></p>
+									</div>
+								</td>
+								<td class="white two" style="width: 15%">Rp <?= $key->unit_cost ?></td>
+								<td class="white three" style="width: 10%"><?= $key->quantity ?> porsi</td>
+								<td class="white four" style="width: 15%">Rp <?= $key->unit_cost * $key->quantity ?></td>
+								<td class="white last" style="width: 15%"><div class="row" style="display: inline-flex">
+									<button data-toggle="modal" data-target="#editCartItem" class="btn edit_data" id="<?= $key->product_id ?>_<?= $key->variant_id ?>_<?= $key->quantity?>_<?= $key->cart_id ?>" style="margin: 5px; height:35px; background: dodgerblue; color: white; line-height: 15px">Edit</button>
+									<button id="del_<?= $key->cart_id ?>" value="X" class="btn pink delete" style="margin-top: 5px; height:35px; line-height: 15px">X</button>	
+								</div></td>
+							</tr>
+						<?php endforeach; ?>
+					<?php endif ?>
 					</table>
 					<div class="box_sub_total">
 						<h4>Subtotal : Rp <?php echo $total_pay ?></h4>
-						<p>+ Shipment : Rp 5000</p>
-						<h2 style="color: orangered">Total to Pay : Rp <?php echo $total_pay + 5000 ?></h2>
-						<a class="btn btn_finalize" href="<?php echo base_url(); ?>order" style="padding: 0">Checkout and pay</a>
+						<!-- <p>+ Shipment : Rp 5000</p> -->
+						<h2 style="color: orangered">Total to Pay : Rp <?php echo $total_pay ?></h2>
+						<?php if ($count_product==0) : ?>
+							<button class="btn btn_finalize" style="padding: 0" disabled>Checkout and pay</a>
+						<?php else : ?>	
+							<a class="btn btn_finalize" href="<?php echo base_url(); ?>order" style="padding: 0">Checkout and pay</a>
+						<?php endif ?>
 					</div>
 				</div>
 			</section>
@@ -66,6 +76,7 @@
 					            <label>Variant :</label>
 					          </div>
 					          <div class="col-md-8">
+					          	<input type="hidden" name="id_cart" id="id_cart" value="">
 								<select id="variant_edit" name="variant" value="">
 								</select>
 					          </div>
@@ -176,8 +187,9 @@
             	id_product = splitid[0];
             	id_variant = splitid[1];
             	quantity = splitid[2];
+            	id_cart = splitid[3];
 
-            	editCart(id_product, id_variant, quantity);
+            	editCart(id_product, id_variant, quantity, id_cart);
       		});
 
       		$('#btn_update').click(function(){
@@ -186,7 +198,7 @@
 
 		});
 
-		function editCart(id_product, id_variant, quantity)  {
+		function editCart(id_product, id_variant, quantity, id_cart)  {
            $.ajax({  
                 url:"<?php echo base_url();?>Cart/get_product_variant",  
                 method:"POST",  
@@ -207,14 +219,15 @@
 
 					//quantity data
 					$('#qty_edit').val(quantity);
+					$('#id_cart').val(id_cart);
                 }  
            });
 		}
 
 		function updateCart() {
-	    	var cart_id = $('#id_edit');
-	    	var qty = $('#qty_edit');
-	    	var variant = $('#variant_edit');
+	    	var cart_id = $('#id_cart').val();
+	    	var qty = $('#qty_edit').val();
+	    	var variant = $('#variant_edit').val();
 
 	      	$.ajax({
 	        	url:"<?php echo base_url();?>Cart/Update",  

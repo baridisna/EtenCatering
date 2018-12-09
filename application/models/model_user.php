@@ -26,6 +26,12 @@ class model_user extends CI_Model {
 		return $query->row();
 	}
 
+	function update_customer($id, $data)
+	{
+		$this->db->where('UserID', $id);
+		$this->db->update('customer', $data);
+	}
+
 	function add_user($data, $customer)
 	{
         $this->db->insert('user',$data);

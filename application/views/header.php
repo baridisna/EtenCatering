@@ -57,8 +57,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								</div>
 
 								<div class="checkout">
-									<span class="grey"><?php echo $count_product ?> product, <span class="orange"><strong>Rp <?php echo $total_pay+5000?></strong></span></span>
-									<a href="<?php echo base_url()?>Cart" class="btn btn_checkout" style="padding: 0 0 0 0">Checkout</a>
+									<span class="grey"><?php echo $count_product ?> product, <span class="orange"><strong>Rp <?php echo $total_pay?></strong></span></span>
+									<a href="<?php echo base_url()?>Cart" class="btn btn_checkout" style="padding: 0 0 0 0">Keranjang</a>
 								</div>
 							</div>
 						<?php endif; ?>

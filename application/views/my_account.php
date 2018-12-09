@@ -29,6 +29,7 @@
 							}
 							</style>
 
+							<button data-toggle="modal" data-target="#editProfile" class="btn" style="line-height: 20px; margin: 0 0 20px 50px">Edit Profile & Address</button>
 							<div id="wrap">
 							<div class="entry_left" style="margin-left: 50px; margin-bottom: 50px;">	
 							<table style="width:100%">
@@ -38,6 +39,10 @@
 							  <tr>
 							    <th style="color: #543b35; font-size: 16px; width:30%"><strong>Email Address</strong></th>
 							    <th style="color: #543b35; font-size: 16px; width:70%; color: #6e6e6e"><?php echo $account->email ?></th>
+							  </tr>
+							  <tr>
+							    <th style="color: #543b35; font-size: 16px; width:30%"><strong>Username</strong></th>
+							    <th style="color: #543b35; font-size: 16px; width:70%; color: #6e6e6e"><?php echo $account->UserID ?></th>
 							  </tr>
 							  <tr>
 							    <th style="color: #543b35; font-size: 16px; width:30%"><strong>Nomor Telepon</strong></th>
@@ -61,10 +66,74 @@
 							  </tr>
 							</table>
 							</div>
+
 						</div>
 						<br>
 						<br>
 					</div>
+
+				<!-- Modal Edit Cart item-->
+				    <div id="editProfile" class="modal fade" role="dialog">
+				      	<div class="modal-dialog">
+
+				        <!-- Modal content-->
+					        <div class="modal-content">
+					        	<form method="post" action="<?php base_url();?>update_customer">
+						        	<div class="modal-header">	            	
+						            	<h4 class="modal-title">Edit Profile & Address</h4>
+						            	<button type="button" class="close" data-dismiss="modal" pull-right>&times;</button>
+						        	</div>
+						      		<div class="modal-body">
+
+								        <div class="rowBS" style="padding-bottom: 5px">
+								          <div class="col-md-4">
+								            <label>Nama Lengkap :</label>
+								          </div>
+								          <div class="col-md-8">
+								          	<input type="hidden" name="UserID" id="UserID" value="<?= $account->UserID ?>">
+								          	<input class="form-control" type="text" name="name" value="<?= $account->name; ?>">
+								          </div>
+								        </div>
+
+								        <div class="rowBS" style="padding-bottom: 5px">
+								          <div class="col-md-4">
+								            <label>No Telephone :</label>
+								          </div>
+								          <div class="col-md-8">
+								            <input type="text" name="phone" class="form-control" style="width: : 100%" value="<?= $account->phone ?>">
+								          </div>
+								        </div>
+
+								        <div class="rowBS" style="padding-bottom: 5px">
+								          <div class="col-md-4">
+								            <label>Alamat :</label>
+								          </div>
+								          <div class="col-md-8">
+								            <textarea rows="3" name="address" class="form-control" style="width: : 100%" value="<?= $account->address ?>"></textarea>
+								          </div>
+								        </div>
+
+								        <div class="rowBS" style="padding-bottom: 5px">
+								          <div class="col-md-4">
+								            <label>Kode Pos :</label>
+								          </div>
+								          <div class="col-md-8">
+								            <input type="number" name="postal_code" class="form-control" style="width: : 100%" value="<?= $account->postal_code?>">
+								          </div>
+								        </div>
+								    </div>
+
+						            <div class="modal-footer">
+							            <button class="btn btn-info" id="btn_update">Update</button>
+						            </div>
+					            </form>
+
+					        </div>
+
+				      	</div>
+				    </div>
+		<!-- END Modal Input Setoran -->
+
 					<br>
 					<br>
 				</div>
@@ -110,6 +179,7 @@
 	<script type="text/javascript" src="<?php echo base_url()?>/assets/js/jcarousellite.js"></script>
 	<script type="text/javascript" src="<?php echo base_url()?>/assets/js/jquery.placeholder.js"></script>
 	<script type="text/javascript" src="<?php echo base_url()?>/assets/js/jquery.uniform.min.js"></script>
+	<script type="text/javascript" src="<?php echo base_url()?>/assets/js/bootstrap.js"></script>
 	<script type="text/javascript" src="<?php echo base_url()?>/assets/js/fancySelect.js"></script>
 	<script type="text/javascript" src="<?php echo base_url()?>/assets/js/jquery.bxslider.js"></script>
 	<script src="<?php echo base_url()?>/assets/js/jquery-ui-1.10.4.custom.js"></script>
