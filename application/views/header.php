@@ -67,7 +67,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<a class="menu_trigger" href="#">menu</a>
 					<nav id="nav">
 						<ul class="navi">
-							<li class="searc_li" >
+<!-- 							<li class="searc_li" >
 								<div  class="ul_search li">
 									<a class="search" href="#" style="color: #ffffff"><span>search</span></a>
 									<form method="get" class="searchform" action="#">
@@ -76,19 +76,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 										<div class="clear"></div>
 									</form>
 								</div >
-							</li>
+							</li> -->
 							<li><a href="<?php echo base_url()?>">Home</a></li>
 							<li><a href="<?php echo base_url()?>Product">Menu</a></li>
 							<li><a href="<?php echo base_url()?>Promotion">Promotions</a></li>
 							<li><a href="<?php echo base_url()?>Home/about_us">About Us</a></li>
 						</ul>
-						<div  class="ul_search">
+<!-- 						<div  class="ul_search">
 							<a class="search" href="#"><span>search</span></a>
 							<form method="get" class="searchform" action="#">
 								<input type="text" class="field" name="s" id="s" placeholder="What food are you looking for?" />
 								<input type="submit" class="submit" value=""  />
 							</form>
-						</div >
+						</div > -->
 					</nav>
 				</header>
 			</div>
