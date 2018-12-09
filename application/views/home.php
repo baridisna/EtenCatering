@@ -4,8 +4,8 @@
 						<a href="#"><img src="<?php echo base_url();?>assets/images/JBCweb_catering.jpg" alt="" style="height: 300px; width: 100%; object-fit: cover;"></a>
 					</div>
 
-					<div class="head" style="font-size: 30px; margin-top: 30px; line-height: 35px;">								
-							<p><strong><center>LANGKAH PEMESANAN</center></strong></p>
+					<div class="head" style="font-size: 30px; margin-top: 40px; line-height: 35px;">								
+							<p><strong><center>ORDERING STEPS</center></strong></p>
 							<br>
 					</div>
 
@@ -13,12 +13,11 @@
 						<img src="<?php echo base_url();?>assets/images/progressbar.png" alt="" style="height: 135px; width: auto; display: block; margin: 0 auto; position: relative; object-fit: cover;">     
 					<br>
 				</div>	
-				<br>
 				
 				<div class="clear"></div>
 
 					<div class="head" style="font-size: 30px; margin-top: 40px; text-align: center;">		<br>						
-							<p><strong><center>TESTIMONI</center></strong></p>
+							<p><strong><center>TESTIMONIALS</center></strong></p>
 					</div>
 						<br>
 						<br>					
@@ -57,7 +56,7 @@
 						<div class="bottom-slider" style="background: #FF8C00;  ">
 							<a href="#" class="btn-left"></a>
 							<div class="slides">
-								<p style="color: #ffffff; text-align: center;">Best Seller</p>
+								<p style="color: #ffffff; text-align: center;"><strong>BEST SELLER</strong></p>
 								<ul class="item-list">
 			     	 
 			     	 <li>
