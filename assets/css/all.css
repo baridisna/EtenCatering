@@ -545,12 +545,17 @@ div[class*=col-]{
 }
 .item .image {
 	position: relative;
+	overflow: hidden;
 }
 .item .image img {
     width: 100%;
     height: 260px;
     object-fit: cover;
+    transition: transform 2s;
 }
+.item:hover .image img {
+	transform: scale(1.2);
+	}
 .item .image_home {
 	position: relative;
 }
@@ -590,7 +595,9 @@ div[class*=col-]{
 .container{
 	position: relative;
 	margin: 35px 0 58px 0;
-	display: inline;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
 	}
 
 .container .bottom-slider {
